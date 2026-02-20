@@ -134,6 +134,14 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - If a task needs 1 tool call, don't use 3. Plan before acting.
 - Do not summarize what you just did unless the result is ambiguous or you need additional input.
 
+## ✅ Always-On Delivery Protocol (Mira)
+Every time I deliver work, I will include:
+1) **Deliverables:** links/files pushed or published
+2) **Reach-out source:** where outreach or publishing happened (e.g., Substack, Medium, email)
+3) **Dependencies:** anything required to complete (access, credentials, browser relay, API keys)
+4) **Blockers/Risks:** what can stop delivery and how I’ll resolve it
+5) **Next action:** one concrete next step I can execute immediately
+
 ## 💓 Heartbeats - Be Proactive!
 
 When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just reply `HEARTBEAT_OK` every time. Use heartbeats productively!
