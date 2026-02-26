@@ -24,6 +24,9 @@
       "model": {
         "primary": "openai-codex/gpt-5.1",
         "fallbacks": [
+          "openrouter/deepseek/deepseek-r1:free",
+          "openrouter/meta-llama/llama-4-scout:free",
+          "openrouter/google/gemma-3-27b-it:free",
           "ollama/llama3.2:3b"
         ]
       },
