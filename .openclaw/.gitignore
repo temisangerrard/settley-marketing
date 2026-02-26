@@ -1,0 +1,25 @@
+# Auth tokens and credentials — NEVER commit
+agents/main/agent/auth.json
+agents/main/agent/auth-profiles.json
+
+# Logs
+logs/
+
+# Runtime state
+workspace-state.json
+update-check.json
+delivery-queue/
+sandboxes/
+browser/
+telegram/
+devices/
+identity/
+completions/
+media/
+canvas/
+
+# Sessions (conversation history — too large, regenerated)
+agents/main/sessions/
+
+# Memory index (regenerated from source files)
+memory/

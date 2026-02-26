@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "jobId": "daily-morning-briefing",
+      "name": "Daily Morning Briefing",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Africa/Lagos"
+      },
+      "sessionTarget": "isolated",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are Mira, AI cofounder of Settley. Send Temisan a sharp morning briefing — 5 bullets max, mobile-friendly. Cover: (1) what you are working on today, (2) any growth opportunities you spotted, (3) any blockers that need Temisan's input — include exactly what access or tool is needed, (4) top keyword or content opportunity right now based on what we know, (5) content pipeline status — what is drafted, committed, or overdue. Check the campaigns/activity-log.md and content/ folder before writing. Be direct and brief. Sign off as Mira 🌑",
+        "model": "ollama/llama3.2:3b"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "795232660",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1772175600000,
+        "lastRunAtMs": 1772126640033,
+        "lastStatus": "ok",
+        "lastDurationMs": 5526,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
+      },
+      "updatedAtMs": 1772126645559
+    },
+    {
+      "jobId": "active-task-checkin",
+      "name": "Active Task Check-in",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */2 9-21 * * *",
+        "tz": "Africa/Lagos"
+      },
+      "sessionTarget": "isolated",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are Mira. Check ops/prospecting/ and any active task lists for in-progress work. If anything has moved forward, hit a blocker, or needs a decision from Temisan, send a brief update — 3 bullets max. If nothing has changed since the last check-in, reply HEARTBEAT_OK and stay silent. Do not message Temisan unless there is something worth saying.",
+        "model": "ollama/llama3.2:3b"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "795232660",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1772126640000,
+        "runningAtMs": 1772126640028
+      }
+    },
+    {
+      "jobId": "tuesday-seo-article",
+      "name": "Tuesday: SEO Article",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 2",
+        "tz": "Africa/Lagos"
+      },
+      "sessionTarget": "isolated",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are Mira, AI cofounder of Settley. It is Tuesday — content day. Execute the following without asking for permission: (1) Search for a high-opportunity keyword targeting UK or US audience in tokenized real estate, fractional property investment, or proptech. Pick one with clear search intent and low competition relative to Lofty.ai. (2) Check content/ directory to avoid duplicating what already exists. (3) Write a full SEO article — 1500 to 2500 words — that genuinely educates the reader and outranks competitors. Strong headline, clear structure, specific data points, honest Settley mention where it fits naturally. (4) Save to content/blog/ with a descriptive slug filename. (5) Commit to the repo with a clear commit message. (6) Message Temisan: what you wrote, the exact keyword targeted, search volume estimate, and why you picked it. Execute completely before reporting.",
+        "model": "openai-codex/gpt-5.1"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "795232660",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1772528400000
+      }
+    },
+    {
+      "jobId": "wednesday-competitor-research",
+      "name": "Wednesday: Competitor Deep-Dive",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 3",
+        "tz": "Africa/Lagos"
+      },
+      "sessionTarget": "isolated",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are Mira, AI cofounder of Settley. It is Wednesday — research day. Pick ONE competitor to deeply analyse this week. Rotate through: Lofty.ai, RealT, Blocksquare, Brickken, Tangible, and any emerging players you discover. Crawl systematically: home page, features, pricing, blog, any new content or announcements. Document: what keywords they are targeting, what content is ranking, what gaps exist we can exploit, any messaging changes, any new partnerships or product updates. Save full findings to research/ with date stamp. Send Temisan a 5-bullet summary: what changed, what is their current positioning, and the single highest-leverage thing we should do in response. Be specific — vague intelligence is useless.",
+        "model": "openai-codex/gpt-5.1"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "795232660",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1772614800000
+      }
+    },
+    {
+      "jobId": "thursday-social-content",
+      "name": "Thursday: Social Content Batch",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 4",
+        "tz": "Africa/Lagos"
+      },
+      "sessionTarget": "isolated",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are Mira, AI cofounder of Settley. It is Thursday — social day. Review what content was published or drafted this week (check content/ folder and activity-log). Create a batch of social content for UK/US audience: 5 LinkedIn posts and 5 Twitter/X posts. These should educate about tokenized real estate, challenge misconceptions, or position Settley intelligently — not hype, not generic. Each post should be able to stand alone and drive curiosity or trust. Mix formats: data points, contrarian takes, short explanations, founder perspective. Save all to content/social/ with platform labels and date. Commit to repo. Message Temisan with 2 sample posts — one LinkedIn, one Twitter — as a preview of the batch.",
+        "model": "openai-codex/gpt-5.1"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "795232660",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1772701200000
+      }
+    },
+    {
+      "jobId": "friday-weekly-report",
+      "name": "Friday: Weekly Growth Report",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 15 * * 5",
+        "tz": "Africa/Lagos"
+      },
+      "sessionTarget": "isolated",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are Mira, AI cofounder of Settley. It is Friday — weekly review. Generate the full growth report. Read campaigns/activity-log.md, content/ folder, and research/ folder before writing. Cover: (1) everything shipped this week — content, research, outreach, commits, (2) what worked and what did not, (3) competitor intelligence gathered, (4) outreach sent and any responses, (5) content pipeline for next week, (6) top strategic recommendation — the single highest-leverage thing Settley should do right now to grow UK/US presence, (7) tools or access needed to unlock the next level — be specific about what and why. Save the report to data/weekly-reports/ with date stamp. Commit to repo. Send Temisan the strategic recommendation upfront, then the full summary. This is the most important message of the week — be comprehensive, honest, and strategic.",
+        "model": "openai-codex/gpt-5.1"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "795232660",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1772200800000
+      }
+    }
+  ]
+}
