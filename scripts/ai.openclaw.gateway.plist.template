@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>ai.openclaw.gateway</string>
+    
+    <key>Comment</key>
+    <string>OpenClaw Gateway — Mira (v2026.2.25)</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/opt/homebrew/Cellar/node/25.6.1_1/bin/node</string>
+      <string>/opt/homebrew/lib/node_modules/openclaw/dist/index.js</string>
+      <string>gateway</string>
+      <string>--port</string>
+      <string>18790</string>
+    </array>
+
+    <key>StandardOutPath</key>
+    <string>/Users/temisan/Downloads/settley-marketing/.openclaw/logs/gateway.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/temisan/Downloads/settley-marketing/.openclaw/logs/gateway.err.log</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+    <key>HOME</key>
+    <string>/Users/temisan</string>
+    <key>TMPDIR</key>
+    <string>/var/folders/8t/l5hnzxy95tj0yt9s8lq23ty00000gn/T/</string>
+    <key>PATH</key>
+    <string>/Users/temisan/.bun/bin:/Users/temisan/.nvm:/Users/temisan/.local/bin:/Users/temisan/.npm-global/bin:/Users/temisan/bin:/Users/temisan/.volta/bin:/Users/temisan/.asdf/shims:/Users/temisan/Library/Application Support/fnm/aliases/default/bin:/Users/temisan/.fnm/aliases/default/bin:/Users/temisan/Library/pnpm:/Users/temisan/.local/share/pnpm:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>OPENCLAW_STATE_DIR</key>
+    <string>/Users/temisan/Downloads/settley-marketing/.openclaw</string>
+    <key>GMAIL_ADDRESS</key>
+    <string>mirasettley@gmail.com</string>
+    <key>GMAIL_APP_PASSWORD</key>
+    <string>YOUR_GMAIL_APP_PASSWORD</string>
+    <key>OPENCLAW_GATEWAY_PORT</key>
+    <string>18790</string>
+    <key>OPENCLAW_LAUNCHD_LABEL</key>
+    <string>ai.openclaw.gateway</string>
+    <key>OPENCLAW_SYSTEMD_UNIT</key>
+    <string>openclaw-gateway.service</string>
+    <key>OPENCLAW_SERVICE_MARKER</key>
+    <string>openclaw</string>
+    <key>OPENCLAW_SERVICE_KIND</key>
+    <string>gateway</string>
+    <key>OPENCLAW_SERVICE_VERSION</key>
+    <string>2026.2.25</string>
+    </dict>
+  </dict>
+</plist>
