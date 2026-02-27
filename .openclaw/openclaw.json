@@ -41,7 +41,7 @@
       },
       "heartbeat": {
         "every": "30m",
-        "model": "ollama/llama3.2:3b",
+        "model": "openrouter/google/gemma-3-27b-it:free",
         "target": "last",
         "activeHours": {
           "start": "08:00",

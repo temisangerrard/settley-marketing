@@ -14,7 +14,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "You are Mira, AI cofounder of Settley. Send Temisan a sharp morning briefing — 5 bullets max, mobile-friendly. Cover: (1) what you are working on today, (2) any growth opportunities you spotted, (3) any blockers that need Temisan's input — include exactly what access or tool is needed, (4) top keyword or content opportunity right now based on what we know, (5) content pipeline status — what is drafted, committed, or overdue. Check the campaigns/activity-log.md and content/ folder before writing. Be direct and brief. Sign off as Mira 🌑",
-        "model": "ollama/llama3.2:3b"
+        "model": "openrouter/google/gemma-3-27b-it:free"
       },
       "delivery": {
         "mode": "announce",
@@ -23,16 +23,16 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772175600000,
-        "lastRunAtMs": 1772126640033,
-        "lastStatus": "ok",
-        "lastDurationMs": 5526,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered"
+        "nextRunAtMs": 1772262000000,
+        "lastRunAtMs": 1772182320188,
+        "lastStatus": "error",
+        "lastDurationMs": 600211,
+        "consecutiveErrors": 9,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "cron: job execution timed out"
       },
-      "updatedAtMs": 1772126645559
+      "updatedAtMs": 1772182920399
     },
     {
       "jobId": "active-task-checkin",
@@ -47,7 +47,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "You are Mira. Check ops/prospecting/ and any active task lists for in-progress work. If anything has moved forward, hit a blocker, or needs a decision from Temisan, send a brief update — 3 bullets max. If nothing has changed since the last check-in, reply HEARTBEAT_OK and stay silent. Do not message Temisan unless there is something worth saying.",
-        "model": "ollama/llama3.2:3b"
+        "model": "openrouter/google/gemma-3-27b-it:free"
       },
       "delivery": {
         "mode": "announce",
@@ -56,8 +56,8 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772126640000,
-        "runningAtMs": 1772126640028
+        "nextRunAtMs": 1772184240000,
+        "runningAtMs": 1772184240051
       }
     },
     {
@@ -158,6 +158,29 @@
       },
       "state": {
         "nextRunAtMs": 1772200800000
+      }
+    },
+    {
+      "id": "79edccf7-3084-4790-ab91-29b4d508c254",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "prospecting-progress-check",
+      "enabled": true,
+      "createdAtMs": 1772126882616,
+      "updatedAtMs": 1772126882616,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1-5",
+        "tz": "Europe/London"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[Prospecting Reminder] Mira: Review and update ops/prospecting/investors.md, ops/prospecting/partners.md, and ops/prospecting/distribution.md. Ensure there is at least one concrete outreach batch either drafted or sent from mirasettley@gmail.com today, and report prospecting status plus next actions in this chat."
+      },
+      "state": {
+        "nextRunAtMs": 1772186400000
       }
     }
   ]
