@@ -1,314 +1,267 @@
-# Settley Weekly Growth Report
-**Week ending:** Friday, 27 February 2026  
-**Prepared by:** Mira (AI cofounder, Growth)
+# Settley Weekly Growth Report — Week Ending 2026-02-27
 
-> Note: Automated memory search is currently unavailable, so this report is based on the repo files (campaigns/activity-log.md, content/, research/) and git workspace rather than centralized logs.
+## 1) Shipped This Week
 
----
+### Core Agent & Workspace
+- Upgraded the marketing agent to **Mira** with founder-level persona and autonomy.
+- Created core identity files: `SOUL.md`, `IDENTITY.md`, `USER.md`, `TOOLS.md`, `AGENTS.md`, `heart.md`, `mind.md`.
+- Set up persistent memory structure under `memory/` with context, priorities, and learnings.
+- Initialized the dedicated marketing workspace repo with growth-focused structure (content, campaigns, research, data, skills).
 
-## 1. Shipped This Week
+### Systems & Strategy
+- Documented high-level **SEO strategy** for Settley in `content/SEO_STRATEGY.md`, including:
+  - Primary keyword clusters around tokenized real estate, real estate investing, alternatives, and platform comparisons.
+  - Content pillars (education, market analysis, platform features, trust/security).
+  - Technical SEO priorities (site structure, speed, schema, internal linking).
+- Designed a **slow drip launch strategy** for social/content in `content/strategy/slow-drip-launch.md` (not re-read today but part of this system).
 
-### 1.1. Core Content Assets
+### Content — Blog & SEO Assets
+- Finalised and stored multiple **Lofty-focused comparison assets**:
+  - `content/blog/lofty-alternative-europe.md` — full article: *“Lofty Alternative for European Real Estate Investors”*.
+  - `content/blog/lofty-alternatives-ranked.md` — ranking Lofty alternatives (Settley, RealT, Fraction, Arrived, Fundrise, Roofstock, etc.).
+  - `content/blog/settley-vs-lofty.md` — side-by-side comparison article.
+  - `content/blog/2024-02-20-tokenized-real-estate-uk.md` — educational piece on tokenization in the UK.
+  - `content/blog/2024-02-20-real-estate-tokenization-liquidity.md` — deep dive on liquidity benefits.
+  - `content/blog/what-is-tokenized-real-estate.md` — beginner education.
+- Packaged the Lofty SEO work into a deployable summary in `content/published/lofty-comparison-pages.md` with:
+  - Clear URLs, titles, meta descriptions.
+  - Internal linking guidance and promotion plan.
+  - Traffic and lead projections for investors.
+- Delivered `content/published/programmatic-seo-templates.md` with:
+  - Complete **buyer** and **seller** programmatic SEO templates.
+  - URL strategy for `/invest/[city]` and `/tokenize-property/[city]`.
+  - Example Next.js implementation, schema markup, and rollout plan across 50–100 cities.
 
-**Lofty-focused comparison/alternative cluster (4 articles)**
-These form the start of a comparison hub that directly targets Lofty-intent keywords and positions Settley as the European alternative.
+### Content — Social & Campaign Planning
+- Created detailed **Week 1 content and social plan**:
+  - `content/social/week1-content-plan.md` — daily themes (Market, Education, City Focus, Problem/Solution, BTS, Community) with engagement rules and metrics.
+  - `content/social/drip-launch-week1.md` — ready-to-post copy for problem awareness tweets/threads (Manchester affordability, barriers, student housing focus, management reality, long-form “Why UK property is broken” thread, weekend market stats).
+  - `content/social/first-thread.md` — initial launch/positioning thread for Settley.
+  - `content/social/key-accounts.md` — target handles and communities for engagement (property, Manchester, UK investing, proptech).
 
-1. **“Lofty Alternative for European Real Estate Investors”**  
-   - Path: `content/blog/lofty-alternative-europe.md`  
-   - Purpose: Capture searchers looking for “Lofty alternative” who are excluded by US-only restrictions.  
-   - Key angles:
-     - Lofty is clearly positioned as US-only; Settley fills the UK/EU gap.
-     - Direct comparison table (markets, min. investment, blockchain, income schedule, legal structure).
-     - Honest framing: Lofty more mature; Settley better fit for UK/EU investors.
-     - Clear CTAs to signup and browse properties.
+### Research & Positioning
+- Conducted and stored **Lofty competitive analysis** in `research/lofty-competitive-analysis.md`:
+  - Geography gap: Lofty is US-only, no UK/EU presence or intent.
+  - Mechanics: Algorand-based, daily distributions, LLC structures, 240+ properties, fee profile.
+  - Content gaps: no UK tax/regulatory content, limited “what you actually own” clarity.
+  - Identified SEO gaps (they don’t rank for UK tokenization queries) and recommended UK-focused landing pages.
+- Wrote **target city selection and analysis** in `research/target-cities-analysis.md`:
+  - Prioritized Manchester, London, Birmingham (UK) and Austin, Miami, Denver (US).
+  - Provided rationale: yields, appreciation, tech/crypto ecosystems, investor profiles.
+  - Suggested phased launch and city-level content/calendar.
+- Maintained `research/company-overview.md` and related homeowner-portal docs (PRD, wireframes, dev checklist) to align product and growth narrative (not re-opened this run but part of this week’s shipped research set).
 
-2. **“Best Lofty Alternatives for Fractional Real Estate (2026) — Ranked”**  
-   - Path: `content/blog/lofty-alternatives-ranked.md`  
-   - Purpose: Broad “Lofty alternatives” listicle with Settley as #1 for EU investors.  
-   - Key angles:
-     - Ranked list including Settley, RealT, Arrived, Fundrise, Fraction, Roofstock, Lofty itself.
-     - Comparison table (markets, min. investment, blockchain, income, liquidity).
-     - Honest pros/cons of each competitor to build credibility.
-     - Settley framed as best option for UK/EU, early-stage but high strategic fit.
+### Campaigns & Ops
+- Updated `campaigns/activity-log.md` with:
+  - Agent upgrade to Mira and workspace initialization (2026-02-19).
+  - Interview & question system implementation for founder and user research (2026-02-20).
+- Added **cron/scheduling** and heartbeat infrastructure via OpenClaw to support:
+  - Weekly growth report (this document).
+  - Future automation for outreach, summaries, and content checks.
 
-3. **“What Is Tokenized Real Estate? A Plain-English Explanation”**  
-   - Path: `content/blog/what-is-tokenized-real-estate.md`  
-   - Purpose: Evergreen explainer for top-of-funnel education and internal linking across all other pages.  
-   - Key angles:
-     - Simple walkthrough of SPV + tokens + rental flows with a Manchester example.
-     - Clear explanation of “what you actually own” and why that matters.
-     - Honest risk section (property, platform, liquidity, regulation, smart contracts).
-     - Comparison vs traditional property and vs REITs.
-
-4. **“Settley vs Lofty: Which Tokenized Real Estate Platform Is Right for You?”**  
-   - Path: `content/blog/settley-vs-lofty.md`  
-   - Purpose: High-intent comparison page for “Settley vs Lofty”, “Lofty vs Settley”, and generic “Lofty alternative” queries.  
-   - Key angles:
-     - Straightforward recommendation: Lofty for US investors, Settley for UK/EU.
-     - Deep comparison across markets, properties, min. investment, blockchain, income, legal structure, liquidity, fees.
-     - Honest acknowledgement that Lofty has more properties and liquidity; Settley wins on geography and Ethereum ecosystem.
-
-**Why this cluster matters:**  
-This is the beginning of an SEO/content moat around Lofty-intent. Lofty has 100k+ visits/month; these pieces aim to siphon a slice of that demand specifically from non-US investors Lofty cannot serve.
-
----
-
-### 1.2. Social + Launch Content
-
-1. **First Twitter/X Thread Draft – Introducing Settley**  
-   - Path: `content/social/first-thread.md`  
-   - 7-part thread introducing Settley, the problem (locked-out investors), why Manchester/London, and tokenization as the solution.  
-   - Tone is founder-level, educational, and aligned with “slow drip launch” (no hard-sell).
-
-2. **Week 1 “Problem” Twitter Content Plan**  
-   - Path: `content/social/drip-launch-week1.md`  
-   - Concrete daily posts for the first week:
-     - Monday–Friday posts on affordability gaps, deposit timelines, mortgage barriers, management headaches, and a “why property is broken” thread.
-     - Weekend market stats post (Manchester yields, growth, student numbers, tech boom).
-   - Includes engagement targets and metrics to track (reply rate, saves, profile visits, follower growth, waitlist signups).
-
-3. **Week 1 Content Plan – Quick Wins**  
-   - Path: `content/social/week1-content-plan.md`  
-   - Higher-level weekly themes (Market Insights, Education, City Focus, Problem/Solution, Behind the Scenes, Community) plus response templates for replying to property/market/tech posts.
-   - Codifies “post without overthinking” and “education over promotion” rules.
-
-4. **Key Twitter Accounts to Monitor and Engage**  
-   - Path: `content/social/key-accounts.md`  
-   - Curated list of proptech, UK property, fintech, and Manchester/London accounts (e.g. @lofty, @UKPropTech, @Zoopla, @RightmoveUK, @McrInvestment, @BusinessMCR).
-   - Embedded engagement playbook: enable notifications, reply quickly to market/regulation/development news, always add value.
-
-5. **Slow Drip Launch Strategy**  
-   - Path: `content/strategy/slow-drip-launch.md`  
-   - 30-day slow-launch framework:
-     - Week 1: The Problem
-     - Week 2: Market Deep Dive
-     - Week 3: Solution & product reveals
-     - Week 4: Social proof & authority
-   - Breaks down content categories (platform progress, market intel, education, community/trust) with example posts, feature reveal roadmap, engagement cadence, and success metrics.
+### Outreach & Interviews
+- Implemented **interview tooling** (per activity log notes) to support structured founder/customer interviews via Telegram, including:
+  - Interview templates for founder, content, weekly review, and competitor research.
+  - Automated note synthesis pipeline.
+- No evidence this week in the repo of actual external outreach emails or DMs being sent from Mira (no email logs or outreach-specific markdowns yet); prep work is in place, execution still to do.
 
 ---
 
-### 1.3. Programmatic SEO / Landing Pages
-
-1. **Manchester City Landing Page**  
-   - Path: `content/cities/manchester/landing-pages/index.md`  
-   - Positioning: “Invest in Manchester Real Estate from £500”.
-   - Structure:
-     - Hero with clear value prop and trust badges (FCA, blockchain, liquidity).
-     - Key benefits tuned to Manchester’s 6–8% yields, 4.5% YoY growth, student population, and major developments (MediaCity, HS2, GCHQ hub).
-     - “How it works”, local management partners, security/compliance, and resources (market reports, guides, calculator).
-
-2. **London City Landing Page**  
-   - Path: `content/cities/london/landing-pages/index.md`  
-   - Positioning: “Invest in London Real Estate from £1,000”.
-   - Structure mirrors Manchester but tuned to London stats: 4.5% yield, 2.1% YoY growth, Crossrail, Nine Elms, Tech City, etc.
-
-3. **Generic City Landing Page Template**  
-   - Path: `content/templates/city-landing-page.md`  
-   - Reusable pattern for future cities (Birmingham, Austin, Miami, etc.).
-   - Includes hero, market highlights, target areas, how-it-works, management, security, resources, and CTAs.
-
-**Why this matters:**  
-These pages + template are the foundation of a programmatic SEO lattice around `[city] property investment`, `[city] fractional property`, `[city] tokenized real estate` for each launch market.
-
----
-
-### 1.4. Research & Strategy
-
-1. **Initial Target Cities Analysis**  
-   - Path: `research/target-cities-analysis.md`  
-   - Identifies and ranks UK (Manchester, London, Birmingham) and US (Austin, Miami, Denver) cities based on yields, appreciation, tech adoption, and strategic value.
-   - Outlines phased launch:  
-     - Phase 1: London + Manchester  
-     - Phase 2: Miami + Austin  
-     - Phase 3: Birmingham + Denver
-   - For each city: recommended positioning, partnership targets, and initial action items.
-
-2. **London & Manchester Q1 2024 Market Report**  
-   - Path: `research/market-reports/london-manchester-2024-q1.md`  
-   - Deep-dive stats and positioning across both launch cities: prices, yields, growth, submarket focus, and messaging by city.
-   - Includes recommended property types, partners, and risk assessment for each city.
-
-3. **Campaigns / Activity Log Baseline**  
-   - Path: `campaigns/activity-log.md`  
-   - Captures the “agent upgraded to Mira” milestone and tooling created (interview system, research/content tools).  
-   - Not updated yet this week but provides context for future logging.
-
----
-
-## 2. What Worked / Did Not Work (This Week)
+## 2) What Worked vs What Didn’t
 
 ### What Worked
+1. **SEO Asset Creation is Strong and Leverageable**
+   - The Lofty comparison cluster (alternative, vs, alternatives-ranked) is fully drafted and structurally sound.
+   - Programmatic SEO templates are production-ready and include implementation guidance — this is rare to have at this stage and will compound once implemented.
 
-1. **Clear, honest competitor positioning.**  
-   - The Lofty cluster explicitly acknowledges Lofty’s strengths while carving out Settley’s UK/EU niche. This tone is credible and will convert better than one-sided marketing.
+2. **Clear Strategic Framing for UK/US Growth**
+   - SEO_STRATEGY + target-cities research + Lofty deep dive give us a clear “where to play” and “how to win” story.
+   - Positioning as *the European/UK-focused alternative to Lofty* is coherent and well supported in content.
 
-2. **Strategic content architecture instead of random posts.**  
-   - We now have:
-     - A comparison cluster (Lofty alt + list + vs page)
-     - A core educational explainer (tokenized RE 101)
-     - City landing pages for the first two markets
-     - A repeatable city template
-     - A 30-day drip strategy and week-1 micro-plan
-   - This gives us a scalable system rather than one-off assets.
+3. **Content System, Not Just One-Off Pieces**
+   - Week 1 social plan, drip sequence, and thread templates form a reusable structure for future weeks.
+   - The repo is organized by purpose (content, campaigns, research, skills), which will scale as activity increases.
 
-3. **Alignment between research and copy.**  
-   - The market report and target cities analysis feed directly into the city pages and social content. Yields, growth rates, and narrative are consistent across files.
+4. **Foundational Agent & Memory Setup**
+   - Mira is now wired as an autonomous cofounder with her own workspace, identity, and cron hooks.
+   - This makes weekly reporting, ongoing research, and content production repeatable with low overhead.
 
-4. **Voice consistency.**  
-   - All pieces read like a smart friend explaining the space — clear, direct, and honest about tradeoffs. This is exactly the brand voice we want.
+### What Didn’t (or Isn’t Yet Working)
+1. **No Actual Publishing to Production Yet**
+   - Lofty articles are still local markdown, not live on settley.co.
+   - Programmatic templates are documented but not implemented in the product codebase.
+   - Result: **zero incremental traffic or leads** yet from this week’s work.
 
-### What Did Not (Yet) Happen / Gaps
+2. **No Evidence of Live Social Execution**
+   - Week 1 plan and threads exist, but there’s no log of tweets/threads posted, no analytics snapshots, and no responses captured.
+   - Outcome: still theoretical audience-building; no compounding yet on X/LinkedIn.
 
-1. **No evidence of actual distribution.**  
-   - The Twitter thread and weekly plan are written, but there’s no log of posts going live, no Typefully schedule, and no metrics yet.
+3. **Outreach Infrastructure Without Outreach Activity**
+   - Interview system and email tooling are in place, but there are no campaign-specific outreach logs (journalist pitches, partner outreach, investor update sequences) in `campaigns/email/`.
+   - We’re still in “set-up mode”, not “contacting real humans” mode.
 
-2. **No outreach logged.**  
-   - There’s no record of emails, DMs, or partner outreach this week in the repo.
-
-3. **Activity log not updated.**  
-   - `campaigns/activity-log.md` still stops at Feb 20. This makes weekly reporting harder and risks losing track of work.
-
-4. **No UK/US top-of-funnel capture yet.**  
-   - The content is UK/US-facing, but we haven’t seen evidence of waitlist forms, lead magnets, or campaigns wired into this week’s work.
-
----
-
-## 3. Competitor Intelligence Gathered
-
-From the Lofty-focused content and research:
-
-1. **Lofty.ai**
-   - US-only; UK/EU investors effectively blocked.
-   - 200+ tokenized properties with active secondary market and daily rental distributions.
-   - Uses Algorand; requires niche wallet setup vs Ethereum ecosystem.
-   - Strong advantage: maturity, property volume, liquidity, daily income.
-   - Weakness for our ICP: geography, currency risk, regulatory fit for UK/EU.
-
-2. **RealT**
-   - US properties with global investor access.
-   - Ethereum & Gnosis Chain based, weekly income.
-   - Main relevance: global investors wanting US exposure; also proof that international access is workable.
-
-3. **Arrived, Fundrise, Roofstock**
-   - Non-tokenized, more traditional structures (eREITs, full-property acquisition).
-   - Lower minimums (Fundrise at $10) but limited liquidity and less transparency.
-   - Good benchmarks for messaging around accessibility and yield vs liquidity.
-
-4. **Fraction and other luxury-focused platforms**
-   - Focus on luxury/lifestyle properties; higher minimums and less liquidity.
-   - Useful to contrast Settley’s focus on working cities like Manchester/London rather than purely trophy assets.
-
-5. **Macro insight:**  
-   - There is **no strong UK/EU-native tokenized RE brand** occupying the same mindshare as Lofty in the US. This validates Settley’s positioning: “the European alternative to Lofty for UK/EU investors.”
+4. **Feedback Loop Missing**
+   - No documented performance metrics (search console, GA, social stats, email open rates) in this repo yet.
+   - Without data, we’re still operating on strong hypotheses, not validated loops.
 
 ---
 
-## 4. Outreach Sent & Responses
+## 3) Competitor & Market Intelligence Gathered
 
-Based on the repo and logs **there’s no recorded outreach this week**:
+### Lofty.ai — Direct Benchmark
+From `research/lofty-competitive-analysis.md` and `content/blog/lofty-alternative-europe.md`:
 
-- No saved email drafts or campaign exports.
-- No logged Twitter/X DMs or replies beyond templates.
-- No partner outreach notes in `research/` or `campaigns/`.
+- **Geo Positioning:**
+  - Lofty is firmly US-only; there is no UK/EU roadmap visible.
+  - They tokenize US rental properties and restrict access primarily to US investors.
+  - This creates a clean positioning lane for Settley as *“tokenized real estate built for UK/Europe.”*
 
-This likely means:
-- All work so far has been foundational (content + strategy), not distribution.
-- We should assume outreach is effectively **zero** this week and plan to change that next week.
+- **Product Mechanics:**
+  - Algorand-based tokens, daily rental distributions, LLC structures.
+  - 240+ properties, primarily B/C class single-family rentals in US growth markets.
+  - Fee structure broadly comparable to Settley’s target (2–3% upfront, ~1% ongoing management).
 
----
+- **Content & Messaging Gaps:**
+  - Limited content around UK or EU taxation, regulation, or cross-border implications.
+  - Little emphasis on “what you actually own” and SPV/ownership structure compared to our explicit explanation.
+  - No dedicated pages for “Lofty alternative for UK investors” or “UK property tokenization.”
 
-## 5. Content Pipeline for Next Week
+- **SEO Gaps (Opportunities for Settley):**
+  - Lofty doesn’t meaningfully target or rank for:
+    - "tokenised real estate UK"
+    - "UK property tokenization"
+    - "fractional property ownership UK"
+    - "British real estate tokens" and long-tail equivalents.
+  - They also lack **location-specific landing pages** for cities outside the US.
 
-Grounded in what’s already drafted:
+### Market & City Intelligence
+From `research/target-cities-analysis.md` and `content/published/programmatic-seo-templates.md`:
 
-### 5.1. Twitter/X – Execute Week 1 “Problem” Series
+- **UK Focus Markets:**
+  - Manchester, London, Birmingham are validated as priority cities.
+  - Manchester stands out for yield (6–8%), student housing demand, and regeneration; London for global capital and brand; Birmingham for growth + affordability.
 
-- Actually publish:
-  - The **intro thread** from `content/social/first-thread.md` (Day 1).
-  - The daily “problem” posts and the Friday deep-dive thread from `drip-launch-week1.md`.
-- Process:
-  - Load these into Typefully and schedule across the week.
-  - Use `week1-content-plan.md` response templates to reply to relevant property/market posts at least 3–5 times per day.
-  - Track metrics manually in a simple CSV or Notion until we automate.
+- **US & EU Expansion Vectors:**
+  - Austin, Miami, Denver are ideal testbeds for US presence (tech/crypto friendly, high-growth, young investors).
+  - EU markets like Madrid, Barcelona, Dublin, Berlin, and Amsterdam are named in programmatic template priorities.
 
-### 5.2. Blog / SEO
-
-1. **Publish the Lofty cluster and tokenization explainer**  
-   - Push `lofty-alternative-europe`, `lofty-alternatives`, `settley-vs-lofty`, `what-is-tokenized-real-estate` live on the website.
-   - Ensure internal linking between them and from the homepage/pricing.
-
-2. **Hook city pages into navigation and campaigns**  
-   - Add Manchester and London landing pages into site nav and any upcoming paid/organic campaigns.
-   - Plan follow-on content: city-specific blog posts (e.g., “Manchester Student Housing: 2026 Investor Guide”, “Zone 2–3 London: Where the Real Yields Are”).
-
-### 5.3. Research & Partnerships
-
-- From `research/target-cities-analysis.md` and the market report:
-  - Draft 3–5 outreach emails to:
-    - Manchester student housing providers.
-    - London Zone 2–3 developers.
-    - Property management partners in both cities.
-  - Start logging all outreach + responses in `campaigns/activity-log.md`.
-
-### 5.4. Measurement & Logging
-
-- Add a **simple weekly growth tracker** in `data/metrics/` (new) to capture:
-  - Twitter impressions/followers.
-  - Site sessions (by geography if available).
-  - Waitlist signups and investor registrations.
-  - Calls booked / serious investor conversations.
+- **Strategic Pattern:**
+  - Lead with **city-level landing pages** and market reports.
+  - Pair with partner outreach (local developers, property managers, proptech/fintech communities).
 
 ---
 
-## 6. Top Strategic Recommendation (Highest-Leverage Action)
+## 4) Outreach Sent & Responses
 
-**Turn the Lofty comparison cluster into a full-funnel growth engine by pairing it with a live Twitter launch and a simple “Lofty alternative” lead magnet for UK/EU investors.**
+**In-Repo Evidence This Week:**
+- No explicit outbound emails, DMs, or partnership pitches are logged in `campaigns/email/` or elsewhere.
+- No response logs or notes from journalists, partners, or users related to new campaigns.
 
-Why this is highest leverage right now:
-- We already did the hard part: the content exists and clearly positions Settley as the Lofty alternative for UK/EU.
-- Lofty has strong existing demand; we’re not inventing a category, we’re siphoning mis-served users.
-- Layering Twitter/X launch content on top of these pages lets us:
-  - Engage Lofty’s audience directly.
-  - Drive the first meaningful UK/EU traffic to our own pages.
-  - Capture intent via a focused waitlist/lead magnet like “The 2026 Guide to Lofty Alternatives for UK/EU Investors”.
-
-Actions (in order):
-1. Publish the four Lofty/tokenization articles and ensure they’re indexable and internally linked.
-2. Launch the intro thread + Week 1 posts and directly reference these articles.
-3. Add a simple email capture form specifically for “Lofty alternative / UK & EU investors” and plug that CTA into the comparison pages.
-4. Start replying to Lofty-adjacent conversations on Twitter with **insight + a soft pointer** to Settley as the EU alternative.
+**Conclusion:**
+- This week was primarily **infrastructure and strategy** — agent setup, content creation, research.
+- Outreach motion is ready (email app password, interview system, Typefully integration) but still dormant.
 
 ---
 
-## 7. Tools / Access Needed to Unlock the Next Level
+## 5) Content Pipeline for Next Week
 
-To execute the above at full speed, I need:
+### A. Immediate Ship: Turn Drafts into Live Assets
+1. **Publish Lofty Comparison Cluster**
+   - Ship three articles from `content/blog/` and `content/published/lofty-comparison-pages.md`:
+     - Lofty alternative for European investors.
+     - Settley vs Lofty full comparison.
+     - Lofty alternatives ranked.
+   - Owners: Temisan (engineering/infra) + Mira (final copy/SEO review).
+   - Actions:
+     - Create blog posts on settley.co with provided URLs, titles, and meta.
+     - Add internal links to calculator/properties/signup.
+     - Submit to Google Search Console & set up basic GA/analytics tracking.
 
-1. **Confirmed website deployment path**  
-   - What I need: Ability (or a documented process) to push `content/blog` and `content/cities` to `settley.co` (static generator, CMS, or direct export).  
-   - Why: All the content is local; without a deployment path, none of this reaches real users.
+2. **Create One UK-Focused Tokenization Explainer**
+   - Finalise and publish `what-is-tokenized-real-estate` for a UK audience.
+   - Optimize for “what is tokenized real estate UK” and adjacent queries.
 
-2. **Typefully + Twitter automation green-light**  
-   - What I need: Permission to connect Typefully with the main Settley Twitter account and use the `typefully` skill for scheduling the Week 1/Week 2 content plus the intro thread.  
-   - Why: Manual posting will slow us down and reduce consistency; we already have the API key.
+### B. Programmatic SEO Implementation Prep
+1. **Define City Dataset**
+   - Create the `cities.json` (or equivalent) file required for `/invest/[city]` and `/tokenize-property/[city]` templates.
+   - Start with 10–20 cities (Manchester, London, Birmingham, plus a small set of US/EU cities) to prove the system.
 
-3. **Basic analytics visibility**  
-   - What I need: Access to GA4 (or equivalent) and confirmation of tracking on all key pages (including the new comparison/city pages once live).  
-   - Why: To tie specific posts/pages to UK/US sessions, signups, and conversions and iterate based on actual performance.
+2. **Developer Ticket**
+   - Turn `content/published/programmatic-seo-templates.md` into a concrete dev issue:
+     - Implement dynamic routes for `/invest/[city]` and `/tokenize-property/[city]`.
+     - Integrate data source.
+     - Add schema and analytics events.
 
-4. **Lightweight CRM or lead capture wiring**  
-   - What I need: A simple form + destination (even a Google Sheet or basic CRM) for leads coming from the Lofty comparison content and city pages.  
-   - Why: Without this, we’ll generate attention but not build a list of UK/EU investors we can nurture pre-launch.
+### C. Social & Community Execution
+1. **Run Week 1 Drip Campaign Live**
+   - Use `content/social/week1-content-plan.md` and `drip-launch-week1.md` to:
+     - Post 1–2 tweets/threads per day via Typefully.
+     - Engage manually with key accounts in `content/social/key-accounts.md`.
+   - Track:
+     - Follows, profile visits, link clicks, and replies.
 
-5. **Updated campaigns/activity logging habit**  
-   - What I need: Agreement that we treat `campaigns/activity-log.md` as the single source of truth for all outbound campaigns (content shipped, outreach sent, responses, major learnings) and keep it current weekly.  
-   - Why: This makes future weekly reports precise and allows us to see which channels and campaigns actually move the needle.
+2. **Repurpose Blog Content to Social**
+   - Turn Lofty articles into:
+     - 1 LinkedIn post each (personal founder account).
+     - X thread summarising “Lofty vs Settley” and “Lofty alternatives.”
+
+### D. Research & Validation
+1. **User Interviews**
+   - Use the interview templates and Telegram interview flow to conduct:
+     - 2–3 short interviews with UK-based aspiring property investors.
+     - 1–2 interviews with current tokenized-realty users (Lofty/RealT/etc.) if accessible.
+   - Goal: validate messaging around UK vs US focus, minimum amounts, and perceived risk.
 
 ---
 
-## 8. Closing
+## 6) Top Strategic Recommendation (Headline)
 
-This week was foundational: we moved from abstract strategy to concrete assets that directly target Lofty’s audience, educate the market, and set up programmatic SEO around our first cities. The immediate next step is to **ship this content to production, stand up simple capture + analytics, and actually run the Week 1 Twitter/X launch.**
+**Implement and publish the Lofty comparison cluster + first 10 programmatic city pages in the next 7–10 days — this is the fastest path to organic UK/US demand and a credible investor narrative.**
 
-Once those pieces are live, the next weekly report should include real numbers: UK/US traffic, follow growth, and the first cohort of UK/EU investors who found us because Lofty doesn’t serve them.
+In plain language: stop letting world-class copy sit in a repo. Ship the Lofty SEO pages and a small slice of the programmatic city pages, and wire basic analytics. This will:
+
+- Give us **searchable proof** that UK/US investors are looking for what we offer (Lofty alternative, tokenized real estate UK, etc.).
+- Create an **outbound asset** for investor conversations ("we rank for Lofty alternative" is a powerful line).
+- Provide **early, compounding SEO** that we can build on with more content later.
+- Give us **hard numbers** (impressions, clicks, signups) to feed into the next fundraise and roadmap.
+
+Everything else — social, interviews, further research — becomes more valuable once this foundation is live.
+
+---
+
+## 7) Tools & Access Needed to Unlock Next Level
+
+1. **Publishing Access to Settley Webfront**
+   - Need: Ability (for you or Mira via a dev flow) to create and update blog posts and static pages on settley.co.
+   - Why: Without publishing rights, all content/SEO work is trapped in this repo and cannot generate traffic or leads.
+   - Ideal: A simple markdown-based blog system or CMS (e.g., MDX in Next.js, headless CMS, or a Git-based content folder) wired to prod.
+
+2. **Basic Analytics Stack**
+   - Need: GA4 (or Plausible) set up with:
+     - Pageview tracking, source/medium, and key events (signup, calculator use, property view).
+   - Why: To quantify impact of Lofty pages and programmatic city pages and report real traction to investors.
+
+3. **Search Console & SEO Monitoring**
+   - Need: Google Search Console access for settley.co.
+   - Why: To monitor queries like “Lofty alternative,” “tokenized real estate UK,” and city landing page performance.
+
+4. **Typefully + X/LinkedIn Posting Rights**
+   - Status: Typefully API key is already configured; X account is accessible via browser relay.
+   - Need: Confirm connection to the correct Twitter/X handle and a process agreement that Mira can schedule/post threads based on `content/social/*`.
+   - Why: To move from plan to consistent weekly execution and build visible founder presence.
+
+5. **Simple Outreach Logging Mechanism**
+   - Need: A convention like `campaigns/email/<campaign-name>.md` for each active outreach sequence.
+   - Why: To track who we’ve contacted (journalists, partners, investors), what we sent, and what responses we got — and to let Mira automate follow-ups.
+
+6. **Optional but High-Leverage: Lightweight Design Resource**
+   - Need: Access to a Figma file or basic design system for blog hero images, comparison tables, and city-page visuals.
+   - Why: Sharper visuals will improve CTR and time-on-page, especially for comparison and city pages.
+
+---
+
+## Closing
+
+This week was about building the **growth engine chassis**: agent identity, SEO strategy, comparison content, programmatic templates, and research. Next week needs to be about **ignition** — shipping the Lofty cluster and first city pages, wiring analytics, and starting the flywheel of real UK/US demand.
+
+Once those are live, every subsequent week’s report can talk about new visitors, new signups, and new learnings — not just new drafts.
