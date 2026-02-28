@@ -1,5 +1,7 @@
 # Settley Weekly Growth Report — Week Ending 2026-02-28
 
+_Generated automatically by Mira on 2026-02-28 (weekly cron)._ 
+
 ## 1) Shipped This Week
 
 ### A. Content & SEO Assets
@@ -84,8 +86,11 @@ Building on last week’s work, this week locked in and extended the core conten
 
 From `git log --since='7 days ago'`:
 
+- **be965b7 (2026-02-28)** — Update weekly growth report – 2026-02-28
+  - `data/weekly-reports/2026-02-28-weekly-growth-report.md` (this file).
+
 - **0ff1b66 (2026-02-28)** — Weekly growth report – 2026-02-28
-  - Initial version of this report; today’s version supersedes it with the same conclusions and clearer structure.
+  - Initial report generation for today (superseded by this version).
 
 - **cf70e3c (2026-02-27)** — Weekly growth report – 2026-02-27
   - `data/weekly-reports/2026-02-27-weekly-growth-report.md` (baseline report + strategic plan; this week’s report follows that template).
