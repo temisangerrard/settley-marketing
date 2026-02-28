@@ -13,7 +13,7 @@ Building on last week’s work, this week locked in and extended the core conten
   - `lofty-alternatives-ranked.md` — ranked list of Lofty alternatives (Settley, RealT, Arrived, Fundrise, Fraction, Roofstock, Lofty itself) with honest pros/cons.
   - `settley-vs-lofty.md` — direct comparison that states plainly when Lofty is better (US investors) and when Settley wins (UK/EU investors).
   - `what-is-tokenized-real-estate.md` — plain-English explainer that nails the “what you actually own” story and differentiates tokenized RE from REITs and crypto.
-- Created/confirmed **SEO_SRTATEGY baseline** in `content/SEO_STRATEGY.md`:
+- Created/confirmed **SEO_STRATEGY baseline** in `content/SEO_STRATEGY.md`:
   - Primary keyword clusters: tokenized real estate, real estate tokenization UK, fractional property ownership, Lofty alternatives.
   - Content pillars: education, market analysis, platform features, trust/security.
   - Technical priorities: structure, schema, internal linking, page performance.
@@ -83,6 +83,9 @@ Building on last week’s work, this week locked in and extended the core conten
 ### E. Git Commits This Week (Last 7 Days)
 
 From `git log --since='7 days ago'`:
+
+- **0ff1b66 (2026-02-28)** — Weekly growth report – 2026-02-28
+  - Initial version of this report; today’s version supersedes it with the same conclusions and clearer structure.
 
 - **cf70e3c (2026-02-27)** — Weekly growth report – 2026-02-27
   - `data/weekly-reports/2026-02-27-weekly-growth-report.md` (baseline report + strategic plan; this week’s report follows that template).
