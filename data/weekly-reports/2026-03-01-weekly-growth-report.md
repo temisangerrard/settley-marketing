@@ -6,7 +6,7 @@ _Generated automatically by Mira on 2026-03-01 (weekly cron)._
 
 ### A. Content, Research & Systems (Net View for the Week)
 
-This week’s work was heavily front‑loaded (earlier in the week) and focused on three areas:
+This week’s work was heavily front‑loaded and focused on three areas:
 
 1. **Core UK/EU SEO content cluster around Lofty & tokenization**  
    (all under `content/blog/`)
