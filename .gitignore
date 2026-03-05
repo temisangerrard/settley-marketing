@@ -1,0 +1,17 @@
+# Environment
+.env
+
+# Database
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Settings (contains active model/provider state)
+settings.json
+
+# OS
+.DS_Store
+.openclaw/
