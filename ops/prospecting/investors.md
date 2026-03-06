@@ -33,11 +33,9 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
 - **Contacts:**
   - **Stefan Klestil – General Partner, Fintech** (Vienna/London)
     - Angle: "Bringing tidal fintech rails to a hard, illiquid asset class (UK/US property)."
-    - Status: ✅ Email sent 2026-03-05
-  - **Scott Miller – Partner, Fintech & DeFi**
-    - Angle: "Regulated, on-chain exposure to real estate yields for mainstream investors."
-    - Status: ⏳ Next batch
-- **Contact path:** LinkedIn connection request + direct email research (stefan@speedinvest.com) + Speedinvest website contact form as backup
+    - Email: stefan@speedinvest.com (verified)
+    - Status: ❌ Previous email sent via website form (likely failed)
+    - Next: Resend to stefan@speedinvest.com
 
 ### 2. Fuel Ventures
 - **Thesis:** Very active UK pre-seed/seed, B2B and consumer software.
@@ -47,8 +45,9 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
 - **Contacts:**
   - **Mark Pearson – Founder & Managing Partner**
     - Angle: "Turning property into a consumer-grade digital product for UK retail investors."
-    - Status: ✅ Email sent 2026-03-05
-- **Contact path:** Targeted LinkedIn outreach + direct email research (mark@fuel.ventures) + Fuel Ventures entrepreneur application form
+    - Email: mark@fuel.ventures (verified)
+    - Status: ❌ Previous email sent via website form (likely failed)
+    - Next: Resend to mark@fuel.ventures
 
 ### 3. Concept Ventures
 - **Thesis:** Europe's largest pre-seed fund; sector-agnostic but strong software bias.
@@ -58,8 +57,9 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
 - **Contacts:**
   - **Reece Chowdhry – Founding Partner**
     - Angle: "UK-led team building the infra layer for global, fractional property investing."
-    - Status: ✅ Email sent 2026-03-05
-- **Contact path:** Direct email research (reece@conceptventures.vc) + LinkedIn outreach + Concept Ventures website contact
+    - Email: reece@conceptventures.vc (verified)
+    - Status: ❌ Previous email sent via website form (likely failed)
+    - Next: Resend to reece@conceptventures.vc
 
 ### 4. JLL Spark
 - **Thesis:** Global proptech fund (ConTech, ESG, fintech, future-of-work, smart buildings).
