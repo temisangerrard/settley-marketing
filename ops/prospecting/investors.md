@@ -7,9 +7,15 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
 ## Outreach Status
 
 ### ✅ Sent — 2026-03-05
-- **Speedinvest (Stefan Klestil)** — Email sent via website contact + LinkedIn connection request
+- **Speedinvest (Stefan Klestil)** — Email sent via website contact form + LinkedIn connection request
 - **Fuel Ventures (Mark Pearson)** — Email sent via website form
 - **Concept Ventures (Reece Chowdhry)** — Email sent via website contact
+
+### 🔍 Issue Identified — Email Delivery Failures
+- **Problem**: Emails sent to generic website contact forms are bouncing/not being delivered
+- **Root Cause**: Website forms may be misconfigured or not properly connected to email systems
+- **Impact**: Investor outreach not reaching targets
+- **Solution Needed**: Find specific email addresses or use alternative contact methods
 
 ### 📝 Drafted — 2026-03-05
 - **JLL Spark (Raj Singh)** — Draft ready, sending 2026-03-06
@@ -31,7 +37,7 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
   - **Scott Miller – Partner, Fintech & DeFi**
     - Angle: "Regulated, on-chain exposure to real estate yields for mainstream investors."
     - Status: ⏳ Next batch
-- **Contact path:** Warm intro via portfolio or LinkedIn → Speedinvest website contact form for general deck.
+- **Contact path:** LinkedIn connection request + direct email research (stefan@speedinvest.com) + Speedinvest website contact form as backup
 
 ### 2. Fuel Ventures
 - **Thesis:** Very active UK pre-seed/seed, B2B and consumer software.
@@ -42,7 +48,7 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
   - **Mark Pearson – Founder & Managing Partner**
     - Angle: "Turning property into a consumer-grade digital product for UK retail investors."
     - Status: ✅ Email sent 2026-03-05
-- **Contact path:** Website application form + targeted LinkedIn outreach with short traction snapshot.
+- **Contact path:** Targeted LinkedIn outreach + direct email research (mark@fuel.ventures) + Fuel Ventures entrepreneur application form
 
 ### 3. Concept Ventures
 - **Thesis:** Europe's largest pre-seed fund; sector-agnostic but strong software bias.
@@ -53,7 +59,7 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
   - **Reece Chowdhry – Founding Partner**
     - Angle: "UK-led team building the infra layer for global, fractional property investing."
     - Status: ✅ Email sent 2026-03-05
-- **Contact path:** Intro via other portfolio or pre-seed founder communities + website form.
+- **Contact path:** Direct email research (reece@conceptventures.vc) + LinkedIn outreach + Concept Ventures website contact
 
 ### 4. JLL Spark
 - **Thesis:** Global proptech fund (ConTech, ESG, fintech, future-of-work, smart buildings).
