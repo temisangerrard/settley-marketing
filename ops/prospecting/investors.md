@@ -17,9 +17,12 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
 - **Impact**: Investor outreach not reaching targets
 - **Solution Needed**: Find specific email addresses or use alternative contact methods
 
-### 📝 Drafted — 2026-03-05
-- **JLL Spark (Raj Singh)** — Draft ready, sending 2026-03-06
-- **1984 Ventures (Ramy Adeeb)** — Draft ready, sending 2026-03-06
+### ✅ Sent — 2026-03-07 (VERIFIED ADDRESSES)
+- **Speedinvest (Stefan Klestil)** — Email sent to stefan@speedinvest.com 
+- **Fuel Ventures (Mark Pearson)** — Email sent to mark@fuel.ventures
+- **Concept Ventures (Reece Chowdhry)** — Email sent to reece@conceptventures.vc
+- **JLL Spark (Raj Singh)** — Email sent to raj.singh@jll.com
+- **1984 Ventures (Ramy Adeeb)** — Email sent to ramy@1984.vc
 
 ---
 
@@ -69,8 +72,9 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
 - **Contacts:**
   - **Raj Singh – Managing Partner, JLL Spark**
     - Angle: "Bridge between institutional real estate and tokenized retail-capital demand."
-    - Status: 📝 Drafted for 2026-03-06
-- **Contact path:** JLL Spark site contact + warm intros via proptech founders / JLL network.
+    - Email: raj.singh@jll.com (verified)
+    - Status: ✅ Email sent 2026-03-07 to correct address
+    - Next: Follow up in 3-5 business days
 
 ### 5. 1984 Ventures
 - **Thesis:** US seed-stage firm investing in fintech, SaaS and vertical software; has backed infra-heavy companies using AI and software to disrupt large, regulated markets.
@@ -80,11 +84,9 @@ Goal: Pre-seed / seed investors with a clear angle on proptech, real estate, fin
 - **Contacts:**
   - **Ramy Adeeb – Managing Partner**
     - Angle: "Software and AI to unlock real estate as a programmable, globally accessible asset class."
-    - Status: 📝 Drafted for 2026-03-06
-  - **Samit Kalra – Partner (SaaS & Marketplaces)**
-    - Angle: "Marketplace for tokenized UK/US property with SaaS-like recurring yields and data."
-    - Status: ⏳ Next batch
-- **Contact path:** Cold email via website + targeted partner-specific outreach referencing their theses and relevant portfolio.
+    - Email: ramy@1984.vc (verified)
+    - Status: ✅ Email sent 2026-03-07 to correct address
+    - Next: Follow up in 3-5 business days
 
 ---
 
