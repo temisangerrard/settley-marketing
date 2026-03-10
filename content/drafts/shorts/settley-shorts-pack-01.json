@@ -1,0 +1,82 @@
+[
+  {
+    "id": "explainer-what-is-tokenized-re",
+    "angle": "education",
+    "title": "Explainer: What is tokenized real estate?",
+    "script": "Most people think you need tens of thousands of pounds to own property. With tokenized real estate, that’s no longer true. Instead of buying an entire flat, you buy small digital shares — ‘tokens’ — that each represent a slice of a real property. The property is owned in a legal structure, rent is collected, and your share of that rent flows back to you based on how many tokens you hold. You don’t deal with mortgages, repairs, tenants, or agents — you just own a percentage and get your cut. When you want out, you sell your tokens instead of selling a whole house. That’s the core idea behind Settley: making real estate ownership behave more like owning shares in a company.",
+    "caption": "You don’t need £50k to start owning property. Tokenized real estate turns buildings into small, affordable pieces.",
+    "hashtags": ["settley", "tokenizedrealestate", "fractionalproperty", "realestateinvesting", "ukinvestor", "propertyinvestment"]
+  },
+  {
+    "id": "myth-crypto-with-extra-steps",
+    "angle": "objection",
+    "title": "Myth busting: Is this just crypto with extra steps?",
+    "script": "Quick check: when you hear ‘tokenized real estate’, do you think ‘oh no, more crypto nonsense’? Here’s the difference. With Settley, the tokens aren’t random coins floating on a meme exchange. Each token is legally tied to a specific property structure — with real tenants, real rent, real underlying bricks and mortar. If the building collects rent, you get paid. If the building is sold, you share in the proceeds. The tech is just plumbing. It makes the process cheaper, faster, and more transparent — but the asset is still a real-world property. So no, it’s not ‘crypto with extra steps’. It’s property ownership with fewer steps.",
+    "caption": "Not another meme coin. Tokenization is just better plumbing for real property, not a replacement for it.",
+    "hashtags": ["settley", "realworldassets", "rwa", "tokenizedrealestate", "ukfinance", "web3butboring"]
+  },
+  {
+    "id": "yield-manchester-vs-london",
+    "angle": "education",
+    "title": "Yield explainer: Why Manchester beats London on returns",
+    "script": "London is great for bragging rights. Manchester is better for yields. Here’s why that matters for tokenized real estate. In many London postcodes, gross yields can sit around 3–4%. High prices, strong demand, but your rent doesn’t stretch as far. In Manchester, prices are lower and rents are strong, so yields can push higher — which means more rental income per pound invested. When you buy tokens in a Manchester property, you’re essentially tapping into that yield advantage without needing to buy the whole flat. Settley’s job is to surface those kinds of opportunities, package them clearly, and make them accessible from much smaller ticket sizes. London might stay on the postcards. Manchester often wins in the spreadsheet.",
+    "caption": "London for status, Manchester for yield. Tokenization means you can finally choose based on data, not postcode envy.",
+    "hashtags": ["settley", "manchesterproperty", "ukproperty", "rentalyields", "tokenizedrealestate", "propertyinvesting"]
+  },
+  {
+    "id": "risk-market-crash",
+    "angle": "risk",
+    "title": "Safety layer: What if the property market crashes?",
+    "script": "‘What if the market crashes?’ is the right question to ask. Here’s how tokenized real estate changes the risk, but doesn’t magically remove it. If property prices fall, the value of the underlying asset — and your tokens — can fall too. There’s no way around that. The difference is: you’re typically investing smaller amounts across multiple properties and locations, not tying everything to one buy‑to‑let. You’re also getting rental income along the way, which can soften price swings over time. Tokenization gives you diversification and flexibility. It doesn’t give you a force field. At Settley, we care more about clear risk than hypey promises. If you want zero risk, this isn’t it. If you want transparent, fractional exposure, that’s where we live.",
+    "caption": "No, tokenization doesn’t delete risk. It just gives you smaller tickets, more diversification, and clearer trade‑offs.",
+    "hashtags": ["settley", "investing101", "riskmanagement", "tokenizedrealestate", "ukinvestor", "propertymarket"]
+  },
+  {
+    "id": "liquidity-how-to-exit",
+    "angle": "education",
+    "title": "Liquidity: How do I get my money out?",
+    "script": "Traditional property is like concrete: solid, but hard to move. Tokenized real estate is designed to be more liquid. With Settley, you own tokens representing a slice of a property. When you want out, you sell the tokens instead of selling the entire building. That means you can exit a portion of your position — not all or nothing. Liquidity still depends on demand and market structure, but the mechanics are more like trading shares than waiting months for a buyer. It’s not instant like a bank transfer, but it’s a big step away from ‘6 months on Rightmove’. That’s the point: real estate returns, with an exit that fits modern life.",
+    "caption": "Property has always been a great store of wealth, just painfully illiquid. Tokenization attacks that exact problem.",
+    "hashtags": ["settley", "liquidity", "realestateinvesting", "fractionalproperty", "ukfinance", "web3realestate"]
+  },
+  {
+    "id": "story-500-to-rent",
+    "angle": "story",
+    "title": "Story: How £500 becomes rental income",
+    "script": "Imagine this: you have £500 sitting in your bank account, slowly losing to inflation. It’s not enough for a deposit, and you’re not trying to become a full‑time landlord. With tokenized real estate, that £500 can buy a small slice of a real rental property. Let’s say the building collects rent each month. Your share, based on your tokens, gets distributed to you. You don’t deal with tenants, repairs, or 3am boiler calls — you just own a fraction and receive your part of the income. Over time, you can add more, build exposure across cities, and still stay flexible. That’s the kind of journey we built Settley for: turning ‘too small to matter’ money into meaningful exposure to real assets.",
+    "caption": "You don’t need to ‘save up for a deposit’ before you’re allowed near property. You just need a way in.",
+    "hashtags": ["settley", "microinvesting", "fractionalproperty", "tokenizedrealestate", "ukmillennials", "genzinvesting"]
+  },
+  {
+    "id": "product-how-settley-works",
+    "angle": "product",
+    "title": "Product explainer: How Settley works in 30 seconds",
+    "script": "Here’s Settley in under 30 seconds. Step one: we source real properties, structure them correctly, and turn them into digital shares — tokens — that map to the underlying asset. Step two: you choose the opportunities that fit your risk and return goals, and buy tokens starting from much smaller amounts than a normal deposit. Step three: rent comes in, gets handled by the property structure, and your share is passed on to you. Over time, if the property value changes, your exposure changes with it. When you want to adjust, you buy or sell tokens instead of tanking your whole portfolio. That’s Settley: real estate exposure that behaves more like a modern investment product, not a 25‑year life decision.",
+    "caption": "The short version of Settley: Real properties. Small tickets. Rental income. More flexibility.",
+    "hashtags": ["settley", "startup", "fintech", "proptech", "tokenizedrealestate", "realestateinvesting"]
+  },
+  {
+    "id": "objection-why-not-reits",
+    "angle": "objection",
+    "title": "Objection: Why not just buy REITs?",
+    "script": "If you’re thinking, ‘Why not just buy a REIT?’, you’re asking the right question. REITs are great for broad exposure, but they’re a bundle of everything: offices, malls, logistics, regions you don’t care about. With tokenized real estate, you can choose specific properties, cities, or strategies you actually believe in. Want more Manchester resi and less random retail? You can tilt your portfolio exactly that way. You also get a clearer line of sight: this property, this rent, this yield — not a black box with a nice ticker symbol. REITs are the index fund of property. Settley is more like building your own custom portfolio from the underlying assets.",
+    "caption": "REITs = broad, blurry exposure. Tokenized real estate = pick the specific buildings and yields you care about.",
+    "hashtags": ["settley", "reits", "investingstrategy", "tokenizedrealestate", "fractionalproperty", "ukinvestor"]
+  },
+  {
+    "id": "credibility-not-going-away",
+    "angle": "credibility",
+    "title": "Credibility: Why this isn’t going away",
+    "script": "Right now, ‘tokenized real estate’ sounds niche. In a few years, it won’t. Institutions are already experimenting with turning real‑world assets into digital, tradable units. Why? Lower friction, clearer ownership, better transparency. The tech isn’t the fad — the fad was pretending magic internet coins were assets by themselves. The real long‑term shift is taking serious assets like property and putting them on better rails. Settley is simply applying that logic to everyday investors: smaller tickets, clearer structures, and more control. If you fast‑forward ten years, owning property via digital units will feel normal. Right now, it just looks early.",
+    "caption": "The ‘hype’ was coins with no backing. The real story is serious assets moving onto better rails.",
+    "hashtags": ["settley", "realworldassets", "rwa", "tokenization", "proptech", "fintech"]
+  },
+  {
+    "id": "founders-pass-early",
+    "angle": "product",
+    "title": "Founders Pass angle: Getting in early",
+    "script": "Every new investing platform has early adopters who get a better deal. Settley is no different. Our Founders Pass is built for the people who want to shape this with us, not just watch from the sidelines. You’re early in two ways: one, in the idea itself — tokenized real estate is just starting to move from trend decks into real products. Two, in the Settley journey — we’re still close enough to the ground that your feedback actually changes what we build. The trade is simple: you back us early, we build the platform you wish existed, and you get a better seat at the table. If that sounds like you, you’re exactly who we’re building Settley for.",
+    "caption": "Most people only notice new asset classes once the easy seats are gone. Founders Pass is for the people who show up before that.",
+    "hashtags": ["settley", "founderspass", "earlyadopter", "startupinvesting", "tokenizedrealestate", "ukstartup"]
+  }
+]
