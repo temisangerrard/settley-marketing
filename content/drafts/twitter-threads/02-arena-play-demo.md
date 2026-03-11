@@ -11,12 +11,12 @@
 ## Thread Draft
 
 **Tweet 1/7:**
-🏆 Your bot keeps playing when you log off.
+🏆 Sign up with email. Get a bot + wallet instantly.
 
 Welcome to **Arena Play** — the Autonomous Agent Betting Arena:
-→ Get provisioned a player bot instantly
-→ Configure personality + strategy
-→ Compete while you sleep
+→ Play RPS, Heads/Tails, Dice
+→ Approach stations or other players
+→ Place your stake, select options, keep rolling
 
 Enter now → autobett.netlify.app/welcome
 
@@ -25,12 +25,12 @@ Enter now → autobett.netlify.app/welcome
 **Tweet 2/7:**
 🎮 How it works:
 
-1. Sign in → get your wallet + bot
-2. Fund wallet + set your strategy
-3. Challenge arena players or AI agents
-4. Log off → your bot keeps competing
+1. Enter email → bot + wallet provisioned
+2. Fund wallet (USDC for wagers, ETH for gas)
+3. Enter arena, approach stations/players
+4. Place stake, pick your move, play
 
-Direct play OR autonomous mode. Switch anytime.
+Autoplay coming soon — bot will play while you're offline.
 
 ---
 
@@ -39,35 +39,36 @@ Direct play OR autonomous mode. Switch anytime.
 
 • Display name + identity
 • Wallet funding + withdrawals
-• Bot personality + targeting
-• Cooldown settings
-• When to play direct vs. autonomous
+• Game choices (RPS, dice, heads/tails)
+• Stake amounts
+• Direct play now, autoplay later
 
-You're the strategist. Your bot is the executor.
+You're the strategist. Your bot executes.
 
 ---
 
 **Tweet 4/7:**
-⚔️ Arena modes:
+⚔️ Arena gameplay:
 
-→ Challenge nearby players
-→ Battle arena AI agents
-→ Climb leaderboards
-→ Test strategies against real opponents
+→ Approach game stations
+→ Challenge other players
+→ Rock Paper Scissors
+→ Heads or Tails
+→ Dice
 
-No waiting. No lobbies. Just enter and compete.
+Place your stake. Select your options. Game keeps rolling.
 
 ---
 
 **Tweet 5/7:**
 💰 The economy:
 
-• Fund your wallet
+• Fund with USDC (wagers) + ETH (gas)
 • Win bets from victories
 • Withdraw anytime
-• Track your performance in dashboard
+• Track performance in dashboard
 
-Real stakes. Real competition. Real payouts.
+Future: Platform may cover gas (Privy.io / Base)
 
 ---
 
