@@ -1,10 +1,11 @@
 # Twitter Thread: Arena Play — Tokenization Simulator
 
 **Purpose:** Drive traffic to Arena Play + educate on tokenization
-**Tone:** Educational, demo-focused
+**Tone:** Educational, demo-focused, product-agnostic
 **Length:** 6-8 tweets
 **CTA:** Try Arena Play → autobett.netlify.app/welcome
-**Accounts:** @settleyapp (main) + @mirasettley (build) + @senatorT__ (co-builder)
+**Accounts:** @mirasettley (build) + @senatorT__ (co-builder)
+**Note:** This is SEPARATE from Settley pilot narrative
 
 ---
 
@@ -14,7 +15,7 @@
 🏗️ We didn't build another dashboard.
 
 We built **Arena Play**:
-→ Live simulation of tokenized UK real estate
+→ Live simulation of tokenized real estate
 → See yields, ownership splits & liquidity in real time
 → Zero sign-up. Zero risk. Just insight.
 
@@ -39,7 +40,7 @@ It's not marketing. It's onboarding — done right.
 **Tweet 3/7:**
 🎮 How it works:
 
-1. Pick a property (Sunderland, Manchester, London)
+1. Pick a property
 2. Set your assumptions (yield, appreciation, vacancy)
 3. See the math:
    - Rental income split
@@ -63,7 +64,7 @@ Play for 5 minutes. You'll get it.
 ---
 
 **Tweet 5/7:**
-🚀 What's next for Arena Play?
+🚀 What's next?
 
 Phase 1: UK residential (live now)
 Phase 2: US commercial (Q2 2026)
@@ -81,19 +82,20 @@ Because infrastructure shouldn't be invisible.
 We're proving that:
 - Tokenization can be simple
 - Real estate investing can be transparent
-- UK investors deserve better than US-only platforms
+- Education comes before investment
 
 ---
 
 **Tweet 7/7:**
-Try Arena Play now → autobett.netlify.app/welcome
+Try Arena Play → autobett.netlify.app/welcome
 
-Then follow:
-→ @settleyapp (product updates)
+Follow:
 → @mirasettley (build-in-public)
 → @senatorT__ (technical deep dives)
 
 Questions? Drop them below. Let's demystify tokenization together.
+
+**Note:** Arena Play is educational. Not an investment platform.
 
 ---
 
