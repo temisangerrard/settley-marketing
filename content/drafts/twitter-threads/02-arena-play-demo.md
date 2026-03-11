@@ -1,76 +1,73 @@
-# Twitter Thread: Arena Play — Tokenization Simulator
+# Twitter Thread: Arena Play — Autonomous Agent Betting Arena
 
-**Purpose:** Drive traffic to Arena Play + educate on tokenization
-**Tone:** Educational, demo-focused, product-agnostic
+**Purpose:** Drive traffic to Arena Play
+**Tone:** Exciting, competitive, gaming-focused
 **Length:** 6-8 tweets
-**CTA:** Try Arena Play → autobett.netlify.app/welcome
+**CTA:** Enter Arena → autobett.netlify.app/welcome
 **Accounts:** @mirasettley (build) + @senatorT__ (co-builder)
-**Note:** This is SEPARATE from Settley pilot narrative
 
 ---
 
 ## Thread Draft
 
 **Tweet 1/7:**
-🏗️ We didn't build another dashboard.
+🏆 Your bot keeps playing when you log off.
 
-We built **Arena Play**:
-→ Live simulation of tokenized real estate
-→ See yields, ownership splits & liquidity in real time
-→ Zero sign-up. Zero risk. Just insight.
+Welcome to **Arena Play** — the Autonomous Agent Betting Arena:
+→ Get provisioned a player bot instantly
+→ Configure personality + strategy
+→ Compete while you sleep
 
-Try it → autobett.netlify.app/welcome
+Enter now → autobett.netlify.app/welcome
 
 ---
 
 **Tweet 2/7:**
-💡 Why does Arena Play matter?
+🎮 How it works:
 
-Most people don't understand tokenized real estate — they see jargon, not opportunity.
+1. Sign in → get your wallet + bot
+2. Fund wallet + set your strategy
+3. Challenge arena players or AI agents
+4. Log off → your bot keeps competing
 
-Arena Play flips that:
-• You *see* fractional ownership visualised
-• You *adjust* yield assumptions live
-• You *feel* liquidity before you fund
-
-It's not marketing. It's onboarding — done right.
+Direct play OR autonomous mode. Switch anytime.
 
 ---
 
 **Tweet 3/7:**
-🎮 How it works:
+🤖 What you control:
 
-1. Pick a property
-2. Set your assumptions (yield, appreciation, vacancy)
-3. See the math:
-   - Rental income split
-   - Token value over time
-   - Exit scenarios
+• Display name + identity
+• Wallet funding + withdrawals
+• Bot personality + targeting
+• Cooldown settings
+• When to play direct vs. autonomous
 
-No spreadsheets. No guesswork. Just clarity.
+You're the strategist. Your bot is the executor.
 
 ---
 
 **Tweet 4/7:**
-📊 What you'll learn:
+⚔️ Arena modes:
 
-✓ How fractional ownership actually works
-✓ What 8% yield looks like in real numbers
-✓ How liquidity events play out
-✓ Why tokenization beats traditional REITs
+→ Challenge nearby players
+→ Battle arena AI agents
+→ Climb leaderboards
+→ Test strategies against real opponents
 
-Play for 5 minutes. You'll get it.
+No waiting. No lobbies. Just enter and compete.
 
 ---
 
 **Tweet 5/7:**
-🚀 What's next?
+💰 The economy:
 
-Phase 1: UK residential (live now)
-Phase 2: US commercial (Q2 2026)
-Phase 3: Real-time data feeds (yield benchmarks, rent rolls, vacancy)
+• Fund your wallet
+• Win bets from victories
+• Withdraw anytime
+• Track your performance in dashboard
 
-This isn't just a demo. It's our R&D lab — open to everyone.
+Real stakes. Real competition. Real payouts.
 
 ---
 
@@ -80,53 +77,51 @@ This isn't just a demo. It's our R&D lab — open to everyone.
 Because infrastructure shouldn't be invisible.
 
 We're proving that:
-- Tokenization can be simple
-- Real estate investing can be transparent
-- Education comes before investment
+- Autonomous agents can compete
+- Players control their bots
+- Gaming meets AI meets crypto
 
 ---
 
 **Tweet 7/7:**
-Try Arena Play → autobett.netlify.app/welcome
+Enter the Arena → autobett.netlify.app/welcome
 
 Follow:
 → @mirasettley (build-in-public)
 → @senatorT__ (technical deep dives)
 
-Questions? Drop them below. Let's demystify tokenization together.
-
-**Note:** Arena Play is educational. Not an investment platform.
+Ready to test your strategy?
 
 ---
 
 ## Visual Suggestions
 
-**Tweet 1:** Screenshot of Arena Play interface
-**Tweet 3:** GIF showing property selection → yield adjustment → results
-**Tweet 5:** Roadmap graphic (Phase 1/2/3)
-**Tweet 7:** Arena Play logo + URL
+**Tweet 1:** Arena Play homepage screenshot or bot visualization
+**Tweet 2:** Flow diagram: Sign in → Bot → Compete → Withdraw
+**Tweet 4:** Arena battle screenshot
+**Tweet 7:** "Enter Arena" CTA graphic
 
 ---
 
 ## Engagement Strategy
 
-**Post timing:** Wednesday-Thursday, 2-3 PM GMT (afternoon browsing)
-**Reply plan:** Respond to every comment, especially technical questions
-**Follow-up:** Quote-tweet with user feedback/testimonials
-**Cross-post:** LinkedIn with longer technical breakdown
+**Post timing:** Thursday-Friday, 6-8 PM GMT (gaming audience active)
+**Reply plan:** Respond to strategy questions, competitor comparisons
+**Follow-up:** Share leaderboard highlights, big wins
+**Cross-post:** Gaming subreddits, AI agent communities
 
 ---
 
 ## Hashtags
 
-#PropTech #RealEstate #Tokenization #UKProperty #RealEstateInvesting #FinTech #Web3 #PropertyInvestment
+#Gaming #AI #AutonomousAgents #Crypto #Web3Gaming #BotBattle #GameFi #AIAgents
 
 ---
 
 ## Notes for Mira
 
-- Pin this thread for 1 week
-- Tag @senatorT__ in the actual post (they're a co-builder)
-- Arena Play is the hero — keep focus on the demo, not the pilot
-- Use this thread to warm up audience before pilot announcement
-- Track clicks to Arena Play (add UTM parameters if needed)
+- This is a GAME, not education
+- Emphasize competition + autonomy
+- Tag @senatorT__ (co-builder)
+- Drive to autobett.netlify.app/welcome
+- Separate from Settley real estate narrative
