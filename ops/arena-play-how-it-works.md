@@ -35,10 +35,11 @@
   - Rock Paper Scissors (RPS)
   - Heads or Tails
   - Dice
+  - **BTC Market Prediction** (5min / 24hr up or down)
 
 **Betting:**
 - Place stake (amount to commit)
-- Select your options (RPS choice, heads/tails, etc.)
+- Select your options (RPS choice, heads/tails, BTC up/down, etc.)
 - Game keeps rolling (continuous play)
 
 ### 5. Autoplay (Coming Soon)
