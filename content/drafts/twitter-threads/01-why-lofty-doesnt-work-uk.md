@@ -124,11 +124,13 @@ Tokenized UK property: Didn't exist.
 **Tweet 9/10:**
 That's why we're building Settley.
 
-UK properties. UK legal structure. GBP returns. FCA-aligned.
+UK properties. UK legal structure. GBP returns. FCA-aligned private placement.
 
-Pilot property acquisition: Q2 2026 (Sunderland/North England).
+Pilot acquisition: Q2 2026.
 
-20-30 pilot investor spots. Preferential terms for early believers.
+Founder's Pass members get first access.
+
+Follow @settleyapp + @mirasettley for updates.
 
 ---
 
@@ -137,10 +139,11 @@ Lofty isn't "bad." It's built for Americans.
 
 We're building for the UK.
 
-If you're a UK investor interested in tokenized property:
+Want in?
 
-→ Follow @mirasettley for build-in-public updates
-→ Join waitlist: [settley.co/pilot-waitlist]
+→ Follow @settleyapp (product updates)
+→ Follow @mirasettley (build-in-public)
+→ Try Arena Play: autobett.netlify.app/welcome (see tokenization in action)
 
 Questions? Drop them below 👇
 
