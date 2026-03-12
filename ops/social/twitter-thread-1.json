@@ -1,0 +1,41 @@
+{
+  "tweets": [
+    {
+      "text": "What is tokenized real estate?\n\nImagine buying a fraction of a luxury London apartment for £50, or investing in NYC commercial property from your phone.\n\nThis isn't science fiction—it's tokenized real estate, and it's reshaping how we access the world's largest asset class.\n\n#TokenizedRealEstate #PropTech #RealEstate",
+      "scheduled_at": "2026-03-10T08:00:00Z",
+      "thread": true,
+      "thread_position": 1
+    },
+    {
+      "text": "Here's how it works:\n\n1️⃣ Property selection & valuation\n2️⃣ Legal structure (SPV) \n3️⃣ Token creation on blockchain\n4️⃣ Distribution to investors\n5️⃣ Ongoing management & dividends\n\nEach token = % ownership of the property.\n\n#FractionalOwnership #RealEstateTech #Investing",
+      "scheduled_at": "2026-03-10T08:01:00Z",
+      "thread": true,
+      "thread_position": 2
+    },
+    {
+      "text": "Why this matters in 2026:\n\n🚀 Accessibility: No £500k+ needed for London property\n💰 Liquidity: Trade 24/7 vs waiting months to sell\n🌍 Diversification: Multiple properties, locations, asset classes\n📊 Transparency: Blockchain-based ownership records\n\n#PropertyInvestment #UKProperty #RealEstateInnovation",
+      "scheduled_at": "2026-03-10T08:02:00Z",
+      "thread": true,
+      "thread_position": 3
+    },
+    {
+      "text": "Real-world examples:\n\n🏠 Settley: UK/US focus, £50 minimum\n🏠 Lofty.ai: US single-family rentals\n🏠 RealT: Ethereum-based fractional ownership\n\nEach platform serves different markets and investor profiles.\n\n#Proptech #RealEstateInvesting #Fintech",
+      "scheduled_at": "2026-03-10T08:03:00Z",
+      "thread": true,
+      "thread_position": 4
+    },
+    {
+      "text": "Ready to start?\n\nMy full beginner's guide covers:\n✅ How tokenization actually works\n✅ Risks & regulatory considerations  \n✅ Step-by-step getting started guide\n✅ Future outlook for the market\n\n👉 Read it here: [Link to Medium article]\n👉 Follow @mirasettley for more proptech insights!\n\n#Tokenization #RealEstateGuide #InvestingTips",
+      "scheduled_at": "2026-03-10T08:04:00Z",
+      "thread": true,
+      "thread_position": 5
+    }
+  ],
+  "description": "Tokenized Real Estate: Beginner's Guide Thread (via @mirasettley)",
+  "hashtags": ["TokenizedRealEstate", "PropTech", "RealEstate", "FractionalOwnership", "RealEstateTech", "Investing", "PropertyInvestment", "UKProperty", "RealEstateInnovation", "Proptech", "Fintech", "Tokenization", "RealEstateGuide", "InvestingTips"],
+  "engagement_strategy": {
+    "response_time": "2h",
+    "engagement_keywords": ["real estate", "property", "investing", "tokenization", "proptech"],
+    "retweet_boost": true
+  }
+}
