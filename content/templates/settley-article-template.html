@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{META_TITLE}} | Settley</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta property="og:title" content="{{META_TITLE}} | Settley">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:type" content="article">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── Design tokens (matches Settley site) ─── */
+    :root {
+      --primary:       #272342;
+      --primary-soft:  #f3f3fb;
+      --primary-softer:#f7f7ff;
+      --accent:        #4f46e5;
+      --border:        #d4d4d8;
+      --border-soft:   #e4e4e7;
+      --text:          #111827;
+      --muted:         #6b7280;
+      --muted-light:   #9ca3af;
+      --bg:            #ffffff;
+      --bg-soft:       #f9fafb;
+      --warn-bg:       #fffbeb;
+      --warn-border:   #f59e0b;
+      --info-bg:       #f0f4ff;
+      --info-border:   #272342;
+      --radius-lg:     16px;
+      --radius-md:     10px;
+      --radius-sm:     6px;
+      --shadow:        0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    /* ─── Reset ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ─── Page shell ─── */
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── Minimal nav (matches Settley) ─── */
+    .site-nav {
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .site-nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--primary);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-cta {
+      display: flex;
+      gap: 8px;
+    }
+    .btn {
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 7px 16px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.15s;
+    }
+    .btn-outline {
+      border-color: var(--border);
+      color: var(--text);
+      background: #fff;
+    }
+    .btn-outline:hover { border-color: var(--primary); }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover { opacity: 0.9; }
+
+    /* ─── Layout ─── */
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    /* ─── Breadcrumb ─── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    .breadcrumb a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .breadcrumb a:hover { color: var(--primary); }
+    .breadcrumb-sep { color: var(--border); }
+
+    /* ─── Article header ─── */
+    .article-header { margin-bottom: 40px; }
+    .article-category {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .article-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .article-subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 13px;
+      color: var(--muted-light);
+      padding-top: 20px;
+      border-top: 1px solid var(--border-soft);
+    }
+    .meta-divider { color: var(--border); }
+
+    /* ─── Reading progress bar ─── */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--primary);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s linear;
+    }
+
+    /* ─── Prose ─── */
+    .article-body { font-size: 16px; line-height: 1.8; }
+
+    .article-body h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 48px 0 16px;
+      line-height: 1.25;
+    }
+    .article-body h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 32px 0 12px;
+    }
+    .article-body p {
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+    .article-body ul,
+    .article-body ol {
+      padding-left: 22px;
+      margin-bottom: 20px;
+    }
+    .article-body li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .article-body a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .article-body strong { font-weight: 600; color: var(--primary); }
+
+    /* ─── Callout boxes ─── */
+    .callout {
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin: 28px 0;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .callout-warning {
+      background: var(--warn-bg);
+      border: 1px solid #fcd34d;
+      border-left: 4px solid var(--warn-border);
+    }
+    .callout-info {
+      background: var(--info-bg);
+      border: 1px solid #c7d2fe;
+      border-left: 4px solid var(--info-border);
+    }
+    .callout-title {
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+    .callout-warning .callout-title { color: #92400e; }
+    .callout-info .callout-title    { color: var(--primary); }
+
+    /* ─── Timeline ─── */
+    .timeline {
+      margin: 28px 0;
+      position: relative;
+      padding-left: 28px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: var(--border-soft);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: 7px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--border);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--border);
+    }
+    .timeline-item.active::before {
+      background: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+    .timeline-date {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 2px;
+    }
+    .timeline-text {
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    /* ─── Data table ─── */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 28px 0;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 480px;
+    }
+    th {
+      background: var(--bg-soft);
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    td {
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border-soft);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: var(--bg-soft); }
+    .td-label { font-weight: 500; color: var(--primary); }
+    .td-muted  { color: var(--muted); font-size: 13px; }
+
+    /* ─── Key points / summary box ─── */
+    .key-points {
+      background: var(--primary-soft);
+      border: 1px solid #ddd8f8;
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+      margin: 36px 0;
+    }
+    .key-points-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .key-points ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+    .key-points li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: var(--primary);
+    }
+
+    /* ─── Inline stat ─── */
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .stat {
+      background: var(--bg-soft);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      text-align: center;
+    }
+    .stat-number {
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* ─── Disclaimer ─── */
+    .disclaimer {
+      margin-top: 56px;
+      padding: 24px 28px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .disclaimer-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .disclaimer p + p { margin-top: 10px; }
+
+    /* ─── Sources ─── */
+    .sources {
+      margin-top: 40px;
+    }
+    .sources-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .sources ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sources li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .sources a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ─── CTA strip ─── */
+    .article-cta {
+      margin: 48px 0;
+      background: var(--primary);
+      border-radius: var(--radius-lg);
+      padding: 32px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta-text { color: #fff; }
+    .cta-text h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+    }
+    .cta-text p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.5; }
+    .btn-cta {
+      background: #fff;
+      color: var(--primary);
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      white-space: nowrap;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.15s;
+    }
+    .btn-cta:hover { opacity: 0.9; }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 64px; }
+      .site-nav  { padding: 0 16px; }
+      .nav-links { display: none; }
+      .article-cta { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="progress-bar" id="progress"></div>
+
+  <!-- ── Nav ── -->
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="logo">Settley.</a>
+      <ul class="nav-links">
+        <li><a href="/listings">Listings</a></li>
+        <li><a href="/how-it-works">How it Works</a></li>
+        <li><a href="/blog">Learn</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="/login"  class="btn btn-outline">Login</a>
+        <a href="/signup" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-wrap">
+
+    <!-- ── Breadcrumb ── -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/learn">Learn</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>{{ARTICLE_CATEGORY}}</span>
+    </nav>
+
+    <!-- ── Article header ── -->
+    <header class="article-header">
+      <span class="article-category">{{ARTICLE_CATEGORY}}</span>
+      <h1 class="article-title">{{ARTICLE_TITLE}}</h1>
+      <p class="article-subtitle">{{ARTICLE_SUBTITLE}}</p>
+      <div class="article-meta">
+        <span>{{PUBLISH_DATE}}</span>
+        <span class="meta-divider">·</span>
+        <span>{{READ_TIME}} min read</span>
+        <span class="meta-divider">·</span>
+        <span>Last updated {{UPDATED_DATE}}</span>
+      </div>
+    </header>
+
+    <!-- ═════════════════════════════════════════════════════ -->
+    <!--  ARTICLE BODY PATTERN (v3)                          -->
+    <!--  Use this sequence for all new Settley SEO articles -->
+    <!-- ═════════════════════════════════════════════════════ -->
+    <article class="article-body">
+
+      <!-- 0) REQUIRED: Risk callout (all investment content) -->
+      <div class="callout callout-warning">
+        <div class="callout-title">⚠ Important</div>
+        This article is for educational purposes only. It is not financial, legal, or tax advice. Investing involves risk. Capital at risk.
+      </div>
+
+      <!-- 1) Optional: key stats row (use for pillar/regulation/comparison) -->
+      <div class="stat-row">
+        <div class="stat">
+          <div class="stat-number">{{STAT_1_NUMBER}}</div>
+          <div class="stat-label">{{STAT_1_LABEL}}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">{{STAT_2_NUMBER}}</div>
+          <div class="stat-label">{{STAT_2_LABEL}}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">{{STAT_3_NUMBER}}</div>
+          <div class="stat-label">{{STAT_3_LABEL}}</div>
+        </div>
+      </div>
+
+      <!-- 2) REQUIRED: Key takeaways (3–5 bullets, plain language) -->
+      <div class="key-points">
+        <div class="key-points-title">Key Takeaways</div>
+        <ul>
+          <li>{{KEY_TAKEAWAY_1}}</li>
+          <li>{{KEY_TAKEAWAY_2}}</li>
+          <li>{{KEY_TAKEAWAY_3}}</li>
+          <li>{{KEY_TAKEAWAY_4}}</li>
+          <li>{{KEY_TAKEAWAY_5}}</li>
+        </ul>
+      </div>
+
+      <!-- 3) REQUIRED: Intro section (keyword in first 100 words) -->
+      <h2>{{SECTION_1_TITLE}}</h2>
+      <p>{{SECTION_1_PARA_1}}</p>
+      <p>{{SECTION_1_PARA_2}}</p>
+
+      <!-- 4) REQUIRED: Core explanation -->
+      <h2>{{SECTION_2_TITLE}}</h2>
+      <p>{{SECTION_2_PARA_1}}</p>
+      <p>{{SECTION_2_PARA_2}}</p>
+
+      <div class="callout callout-info">
+        <div class="callout-title">{{INFO_CALLOUT_TITLE}}</div>
+        {{INFO_CALLOUT_BODY_LINE_1}}<br>
+        {{INFO_CALLOUT_BODY_LINE_2}}<br>
+        {{INFO_CALLOUT_BODY_LINE_3}}
+      </div>
+
+      <!-- 5) Optional: timeline for regulation/process content -->
+      <h2>{{SECTION_3_TITLE}}</h2>
+
+      <div class="timeline">
+        <div class="timeline-item active">
+          <div class="timeline-date">{{TIMELINE_1_DATE}}</div>
+          <div class="timeline-text">{{TIMELINE_1_TEXT}}</div>
+        </div>
+        <div class="timeline-item active">
+          <div class="timeline-date">{{TIMELINE_2_DATE}}</div>
+          <div class="timeline-text">{{TIMELINE_2_TEXT}}</div>
+        </div>
+        <div class="timeline-item active">
+          <div class="timeline-date">{{TIMELINE_3_DATE}}</div>
+          <div class="timeline-text">{{TIMELINE_3_TEXT}}</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">{{TIMELINE_4_DATE}}</div>
+          <div class="timeline-text">{{TIMELINE_4_TEXT}}</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">{{TIMELINE_5_DATE}}</div>
+          <div class="timeline-text">{{TIMELINE_5_TEXT}}</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">{{TIMELINE_6_DATE}}</div>
+          <div class="timeline-text">{{TIMELINE_6_TEXT}}</div>
+        </div>
+      </div>
+
+      <!-- 6) REQUIRED: Practical application section -->
+      <h2>{{SECTION_4_TITLE}}</h2>
+      <p>{{SECTION_4_PARA_1}}</p>
+
+      <ul>
+        <li>{{SECTION_4_BULLET_1}}</li>
+        <li>{{SECTION_4_BULLET_2}}</li>
+        <li>{{SECTION_4_BULLET_3}}</li>
+        <li>{{SECTION_4_BULLET_4}}</li>
+      </ul>
+
+      <!-- 7) REQUIRED: Risks and constraints section -->
+      <h2>{{SECTION_5_TITLE}}</h2>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">{{RISK_CALLOUT_TITLE}}</div>
+        {{RISK_CALLOUT_BODY}}
+      </div>
+
+      <h3>{{SECTION_5_SUBHEADING_1}}</h3>
+      <p>{{SECTION_5_PARA_1}}</p>
+
+      <h3>{{SECTION_5_SUBHEADING_2}}</h3>
+      <p>{{SECTION_5_PARA_2}}</p>
+
+      <!-- 8) Optional: comparison/data table -->
+      <h2>{{SECTION_6_TITLE}}</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>{{TABLE_1_COL_1}}</th>
+              <th>{{TABLE_1_COL_2}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-label">{{TABLE_1_ROW_1_KEY}}</td>
+              <td>{{TABLE_1_ROW_1_VALUE}}</td>
+            </tr>
+            <tr>
+              <td class="td-label">{{TABLE_1_ROW_2_KEY}}</td>
+              <td>{{TABLE_1_ROW_2_VALUE}}</td>
+            </tr>
+            <tr>
+              <td class="td-label">{{TABLE_1_ROW_3_KEY}}</td>
+              <td>{{TABLE_1_ROW_3_VALUE}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 9) REQUIRED: Actionable steps -->
+      <h2>{{SECTION_7_TITLE}}</h2>
+      <ol>
+        <li>{{SECTION_7_STEP_1}}</li>
+        <li>{{SECTION_7_STEP_2}}</li>
+        <li>{{SECTION_7_STEP_3}}</li>
+        <li>{{SECTION_7_STEP_4}}</li>
+      </ol>
+
+      <!-- 10) REQUIRED for FAQ intent keywords -->
+      <h2>{{FAQ_SECTION_TITLE}}</h2>
+      <h3>{{FAQ_QUESTION_1}}</h3>
+      <p>{{FAQ_ANSWER_1}}</p>
+      <h3>{{FAQ_QUESTION_2}}</h3>
+      <p>{{FAQ_ANSWER_2}}</p>
+      <h3>{{FAQ_QUESTION_3}}</h3>
+      <p>{{FAQ_ANSWER_3}}</p>
+
+      <!-- 11) REQUIRED: Bottom line / summary -->
+      <h2>{{BOTTOM_LINE_TITLE}}</h2>
+      <p>{{BOTTOM_LINE_PARAGRAPH}}</p>
+
+      <!-- ── CTA strip ── -->
+      <div class="article-cta">
+        <div class="cta-text">
+          <h3>{{CTA_HEADLINE}}</h3>
+          <p>{{CTA_COPY}}</p>
+        </div>
+        <a href="{{CTA_LINK}}" class="btn-cta">{{CTA_BUTTON_LABEL}}</a>
+      </div>
+
+    </article>
+
+    <!-- ── Disclaimer ── -->
+    <div class="disclaimer">
+      <div class="disclaimer-title">Disclaimer</div>
+      <p>{{DISCLAIMER_LINE_1}}</p>
+      <p>{{DISCLAIMER_LINE_2}}</p>
+      <p>{{DISCLAIMER_LINE_3}}</p>
+      <p><strong>{{DISCLAIMER_STRONG_LINE}}</strong></p>
+    </div>
+
+    <!-- ── Sources ── -->
+    <div class="sources">
+      <div class="sources-title">Sources</div>
+      <ul>
+        <li><a href="{{SOURCE_LINK_1_URL}}" target="_blank" rel="noopener">{{SOURCE_LINK_1_TEXT}}</a></li>
+        <li><a href="{{SOURCE_LINK_2_URL}}" target="_blank" rel="noopener">{{SOURCE_LINK_2_TEXT}}</a></li>
+        <li><a href="{{SOURCE_LINK_3_URL}}" target="_blank" rel="noopener">{{SOURCE_LINK_3_TEXT}}</a></li>
+        <li><a href="{{SOURCE_LINK_4_URL}}" target="_blank" rel="noopener">{{SOURCE_LINK_4_TEXT}}</a></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <script>
+    // Reading progress bar
+    const bar = document.getElementById("progress");
+    window.addEventListener("scroll", () => {
+      const scrolled = window.scrollY;
+      const total = document.body.scrollHeight - window.innerHeight;
+      bar.style.width = Math.min((scrolled / total) * 100, 100) + "%";
+    });
+  </script>
+
+  <!-- Optional: FAQ schema block (only keep when FAQ section is fully populated) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "{{FAQ_QUESTION_1}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ_ANSWER_1}}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "{{FAQ_QUESTION_2}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ_ANSWER_2}}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "{{FAQ_QUESTION_3}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{FAQ_ANSWER_3}}"
+        }
+      }
+    ]
+  }
+  </script>
+
+</body>
+</html>
