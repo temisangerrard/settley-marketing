@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokenized Real Estate vs REITs: An Honest Comparison (2026) | Settley</title>
+  <meta name="description" content="Tokenized real estate or REITs? Compare returns, liquidity, control, and risks. UK investor guide to choosing the right property investment pathway.">
+  <meta property="og:title" content="Tokenized Real Estate vs REITs: An Honest Comparison (2026) | Settley">
+  <meta property="og:description" content="Tokenized real estate or REITs? Compare returns, liquidity, control, and risks. UK investor guide to choosing the right property investment pathway.">
+  <meta property="og:type" content="article">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #272342;
+      --primary-soft: #f3f3fb;
+      --primary-softer: #f7f7ff;
+      --accent: #4f46e5;
+      --border: #d4d4d8;
+      --border-soft: #e4e4e7;
+      --text: #111827;
+      --muted: #6b7280;
+      --muted-light: #9ca3af;
+      --bg: #ffffff;
+      --bg-soft: #f9fafb;
+      --warn-bg: #fffbeb;
+      --warn-border: #f59e0b;
+      --info-bg: #f0f4ff;
+      --info-border: #272342;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --radius-sm: 6px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    .site-nav {
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .site-nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--primary);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-cta {
+      display: flex;
+      gap: 8px;
+    }
+    .btn {
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 7px 16px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.15s;
+    }
+    .btn-outline {
+      border-color: var(--border);
+      color: var(--text);
+      background: #fff;
+    }
+    .btn-outline:hover { border-color: var(--primary); }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover { opacity: 0.9; }
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    .breadcrumb a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .breadcrumb a:hover { color: var(--primary); }
+    .breadcrumb-sep { color: var(--border); }
+    .article-header { margin-bottom: 40px; }
+    .article-category {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .article-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .article-subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 13px;
+      color: var(--muted-light);
+      padding-top: 20px;
+      border-top: 1px solid var(--border-soft);
+    }
+    .meta-divider { color: var(--border); }
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--primary);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s linear;
+    }
+    .article-body { font-size: 16px; line-height: 1.8; }
+    .article-body h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 48px 0 16px;
+      line-height: 1.25;
+    }
+    .article-body h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 32px 0 12px;
+    }
+    .article-body p {
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+    .article-body ul,
+    .article-body ol {
+      padding-left: 22px;
+      margin-bottom: 20px;
+    }
+    .article-body li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .article-body a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .article-body strong { font-weight: 600; color: var(--primary); }
+    .callout {
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin: 28px 0;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .callout-warning {
+      background: var(--warn-bg);
+      border: 1px solid #fcd34d;
+      border-left: 4px solid var(--warn-border);
+    }
+    .callout-info {
+      background: var(--info-bg);
+      border: 1px solid #c7d2fe;
+      border-left: 4px solid var(--info-border);
+    }
+    .callout-title {
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+    .callout-warning .callout-title { color: #92400e; }
+    .callout-info .callout-title    { color: var(--primary); }
+    .table-wrap {
+      overflow-x: auto;
+      margin: 28px 0;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 480px;
+    }
+    th {
+      background: var(--bg-soft);
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    td {
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border-soft);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: var(--bg-soft); }
+    .td-label { font-weight: 500; color: var(--primary); }
+    .td-muted  { color: var(--muted); font-size: 13px; }
+    .key-points {
+      background: var(--primary-soft);
+      border: 1px solid #ddd8f8;
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+      margin: 36px 0;
+    }
+    .key-points-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .key-points ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+    .key-points li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: var(--primary);
+    }
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .stat {
+      background: var(--bg-soft);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      text-align: center;
+    }
+    .stat-number {
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .disclaimer {
+      margin-top: 56px;
+      padding: 24px 28px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .disclaimer-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .disclaimer p + p { margin-top: 10px; }
+    .sources {
+      margin-top: 40px;
+    }
+    .sources-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .sources ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sources li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .sources a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .article-cta {
+      margin: 48px 0;
+      background: var(--primary);
+      border-radius: var(--radius-lg);
+      padding: 32px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta-text { color: #fff; }
+    .cta-text h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+    }
+    .cta-text p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.5; }
+    .btn-cta {
+      background: #fff;
+      color: var(--primary);
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      white-space: nowrap;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.15s;
+    }
+    .btn-cta:hover { opacity: 0.9; }
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 64px; }
+      .site-nav  { padding: 0 16px; }
+      .nav-links { display: none; }
+      .article-cta { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-bar" id="progress"></div>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="logo">Settley.</a>
+      <ul class="nav-links">
+        <li><a href="/listings">Listings</a></li>
+        <li><a href="/how-it-works">How it Works</a></li>
+        <li><a href="/learn">Learn</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="/login" class="btn btn-outline">Login</a>
+        <a href="/signup" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+  <main class="page-wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/learn">Learn</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Comparison</span>
+    </nav>
+    <header class="article-header">
+      <span class="article-category">Comparison</span>
+      <h1 class="article-title">Tokenized Real Estate vs REITs: An Honest Comparison (2026)</h1>
+      <p class="article-subtitle">Both give you property exposure without buying whole buildings. But they're fundamentally different. Here's how to choose.</p>
+      <div class="article-meta">
+        <span>March 2026</span>
+        <span class="meta-divider">·</span>
+        <span>8 min read</span>
+        <span class="meta-divider">·</span>
+        <span>Last updated March 2026</span>
+      </div>
+    </header>
+    <article class="article-body">
+      <div class="callout callout-warning">
+        <div class="callout-title">⚠ Important</div>
+        This article is for educational purposes only. It is not financial advice. All property investment carries risk. Capital at risk. You could lose some or all of your investment.
+      </div>
+      <div class="stat-row">
+        <div class="stat">
+          <div class="stat-number">£1</div>
+          <div class="stat-label">REIT minimum (share price)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">£500</div>
+          <div class="stat-label">Tokenized minimum</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">5-10%</div>
+          <div class="stat-label">REIT expected return</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">6-12%</div>
+          <div class="stat-label">Tokenized expected return</div>
+        </div>
+      </div>
+      <div class="key-points">
+        <div class="key-points-title">Key Takeaways</div>
+        <ul>
+          <li>REITs are publicly traded companies (stock market); tokenized property is direct ownership via blockchain tokens.</li>
+          <li>REITs offer daily liquidity; tokenized property has limited or no secondary market (3-7 year hold typical).</li>
+          <li>REITs are diversified (50+ properties); tokenized lets you pick specific properties.</li>
+          <li>REITs are FCA-regulated (full); tokenized platforms face new FCA regime (October 2027).</li>
+          <li>REIT returns: 5-10% p.a. (dividends + appreciation); tokenized: 6-12% p.a. (rent + appreciation).</li>
+          <li>Choose REITs for liquidity and diversification; choose tokenized for control and higher potential returns.</li>
+        </ul>
+      </div>
+      <h2>The Quick Answer</h2>
+      <p><strong>Choose REITs if you want:</strong> Daily liquidity, instant diversification, FCA protection, and don't mind lower returns (5-10% p.a.).</p>
+      <p><strong>Choose tokenized property if you want:</strong> Direct property ownership, choice of specific assets, higher potential returns (6-12% p.a.), and can lock up capital for 3-7 years.</p>
+      <p>They're both valid. They're both property. But they solve different problems for different investors.</p>
+      <h2>What Are REITs?</h2>
+      <h3>The Basics</h3>
+      <p>REITs (Real Estate Investment Trusts) are companies that own and operate income-generating property. You buy shares on the stock market — just like buying Tesla or Barclays stock.</p>
+      <p>Key features:</p>
+      <ul>
+        <li><strong>Publicly traded:</strong> Listed on London Stock Exchange (LSE)</li>
+        <li><strong>Tax-efficient:</strong> REITs don't pay corporation tax on rental profits (must distribute 90% to shareholders)</li>
+        <li><strong>Professional management:</strong> Team of property experts makes all decisions</li>
+        <li><strong>Diversified portfolios:</strong> Single REIT may own 50-100+ properties</li>
+      </ul>
+      <h3>How You Make Money</h3>
+      <ul>
+        <li><strong>Dividends:</strong> 90% of rental income distributed to shareholders (typically 3-6% yield)</li>
+        <li><strong>Capital appreciation:</strong> Share price increases as property portfolio grows in value (2-5% p.a. historical)</li>
+        <li><strong>Total return:</strong> 5-10% p.a. (combined dividends + appreciation)</li>
+      </ul>
+      <h3>Popular UK REITs</h3>
+      <ul>
+        <li><strong>British Land (BLND):</strong> Retail and office (£5.7B portfolio)</li>
+        <li><strong>Land Securities (LAND):</strong> Commercial and residential (£6.8B portfolio)</li>
+        <li><strong>Segro (SGRO):</strong> Warehouses and logistics (£16.5B portfolio)</li>
+        <li><strong>Tritax Big Box (BBOX):</strong> Large-format retail warehouses (£2.4B portfolio)</li>
+      </ul>
+      <h2>What Is Tokenized Real Estate?</h2>
+      <h3>The Basics</h3>
+      <p>Tokenized real estate uses blockchain technology to represent ownership of individual properties. A property is purchased by an SPV (Special Purpose Vehicle — a UK Limited Company), which issues digital tokens representing shares.</p>
+      <p>Key features:</p>
+      <ul>
+        <li><strong>Direct ownership:</strong> You own tokens representing a specific property, not a diversified portfolio</li>
+        <li><strong>Blockchain recorded:</strong> Ownership is recorded on a blockchain (Ethereum, Polygon, etc.)</li>
+        <li><strong>Lower minimums:</strong> Typically £500-£1,000 vs. £50k+ for traditional buy-to-let</li>
+        <li><strong>Professional management:</strong> Platform handles tenants, maintenance, compliance</li>
+      </ul>
+      <h3>How You Make Money</h3>
+      <ul>
+        <li><strong>Rental distributions:</strong> Monthly or quarterly rent payments (4-7% yield)</li>
+        <li><strong>Capital appreciation:</strong> Property value increases over time (2-5% p.a.)</li>
+        <li><strong>Total return:</strong> 6-12% p.a. (combined rent + appreciation)</li>
+      </ul>
+      <h3>UK Platforms (Emerging)</h3>
+      <ul>
+        <li><strong>Settley:</strong> Tokenized residential properties (waitlist phase)</li>
+        <li><strong>Bricksave:</strong> International properties available to UK investors</li>
+        <li><strong>Uprise:</strong> Commercial property tokens</li>
+      </ul>
+      <div class="callout callout-info">
+        <div class="callout-title">Regulatory Note</div>
+        The FCA's new cryptoasset regime (October 2027) will require tokenized property platforms to be FCA-authorised. Check platform compliance status before investing.
+      </div>
+      <h2>Head-to-Head Comparison</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th>REITs</th>
+              <th>Tokenized Property</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-label">Minimum Investment</td>
+              <td>£1 (share price)</td>
+              <td>£500-£1,000</td>
+            </tr>
+            <tr>
+              <td class="td-label">Liquidity</td>
+              <td>High (daily trading on LSE)</td>
+              <td>Low-Medium (platform dependent, 3-7 year hold)</td>
+            </tr>
+            <tr>
+              <td class="td-label">Ownership</td>
+              <td>Shares in a company</td>
+              <td>Tokens representing direct property ownership</td>
+            </tr>
+            <tr>
+              <td class="td-label">Diversification</td>
+              <td>High (50-100+ properties per REIT)</td>
+              <td>Low (single property, must diversify manually)</td>
+            </tr>
+            <tr>
+              <td class="td-label">Control</td>
+              <td>None (professional managers decide)</td>
+              <td>Some (choose specific properties to invest in)</td>
+            </tr>
+            <tr>
+              <td class="td-label">Expected Returns</td>
+              <td>5-10% p.a.</td>
+              <td>6-12% p.a.</td>
+            </tr>
+            <tr>
+              <td class="td-label">FCA Regulation</td>
+              <td>Full (listed securities)</td>
+              <td>Partial now, full from Oct 2027</td>
+            </tr>
+            <tr>
+              <td class="td-label">Tax Wrapper</td>
+              <td>ISA eligible</td>
+              <td>Not yet (may change post-regulation)</td>
+            </tr>
+            <tr>
+              <td class="td-label">Transparency</td>
+              <td>High (public filings, quarterly reports)</td>
+              <td>Medium (platform dashboards, blockchain records)</td>
+            </tr>
+            <tr>
+              <td class="td-label">Track Record</td>
+              <td>30+ years (UK REITs since 2007)</td>
+              <td>3-5 years (emerging technology)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>The Trade-Offs: What You Gain and Lose</h2>
+      <h3>REITs: What You Gain</h3>
+      <ul>
+        <li>✅ <strong>Liquidity:</strong> Sell anytime during market hours (90%+ of capital accessible within days)</li>
+        <li>✅ <strong>Diversification:</strong> Single REIT holds 50-100+ properties across sectors and regions</li>
+        <li>✅ <strong>Regulation:</strong> Full FCA oversight, listed company disclosure requirements</li>
+        <li>✅ <strong>Track record:</strong> 30+ years of UK REIT performance data</li>
+        <li>✅ <strong>Tax efficiency:</strong> ISA-eligible, dividend tax allowances apply</li>
+      </ul>
+      <h3>REITs: What You Lose</h3>
+      <ul>
+        <li>❌ <strong>Control:</strong> You can't choose which properties the REIT buys or sells</li>
+        <li>❌ <strong>Direct ownership:</strong> You own shares in a company, not bricks and mortar</li>
+        <li>❌ <strong>Lower returns:</strong> Diversification reduces both risk and upside potential</li>
+        <li>❌ <strong>Market volatility:</strong> Share price fluctuates daily with stock market sentiment</li>
+      </ul>
+      <h3>Tokenized Property: What You Gain</h3>
+      <ul>
+        <li>✅ <strong>Direct ownership:</strong> You own a specific property (or share of one)</li>
+        <li>✅ <strong>Choice:</strong> Pick properties by location, type, yield, and strategy</li>
+        <li>✅ <strong>Higher returns:</strong> Concentrated risk = concentrated reward potential</li>
+        <li>✅ <strong>Transparency:</strong> Blockchain records show exact ownership and distributions</li>
+        <li>✅ <strong>Lower minimums:</strong> £500 gets you in vs. £50k+ for traditional buy-to-let</li>
+      </ul>
+      <h3>Tokenized Property: What You Lose</h3>
+      <ul>
+        <li>❌ <strong>Liquidity:</strong> Most platforms have no secondary market (capital locked for 3-7 years)</li>
+        <li>❌ <strong>Diversification:</strong> Must manually spread capital across multiple properties</li>
+        <li>❌ <strong>Track record:</strong> Emerging technology (most platforms launched 2020-2025)</li>
+        <li>❌ <strong>Regulatory certainty:</strong> FCA regime not fully implemented until October 2027</li>
+        <li>❌ <strong>Platform risk:</strong> If the platform fails, exits become complicated</li>
+      </ul>
+      <h2>When to Choose REITs</h2>
+      <p><strong>REITs are better if you:</strong></p>
+      <ul>
+        <li>Want to be able to sell within days (not years)</li>
+        <li>Prefer "set it and forget it" investing (no property selection needed)</li>
+        <li>Want instant diversification with a single purchase</li>
+        <li>Value regulatory protection and long track records</li>
+        <li>Want to use your ISA allowance (tax-free growth)</li>
+        <li>Are comfortable with stock market volatility</li>
+      </ul>
+      <h3>Ideal REIT Investor Profile</h3>
+      <ul>
+        <li><strong>Investment horizon:</strong> 5+ years (but wants option to sell sooner)</li>
+        <li><strong>Risk tolerance:</strong> Medium (comfortable with 20-30% drawdowns in crises)</li>
+        <li><strong>Capital:</strong> £1,000-£100,000+</li>
+        <li><strong>Involvement:</strong> Passive (no interest in property selection)</li>
+      </ul>
+      <h2>When to Choose Tokenized Property</h2>
+      <p><strong>Tokenized property is better if you:</strong></p>
+      <ul>
+        <li>Can lock up capital for 3-7 years without needing access</li>
+        <li>Want to choose specific properties (location, type, strategy)</li>
+        <li>Are comfortable with emerging technology and regulatory evolution</li>
+        <li>Want higher potential returns (and accept higher risk)</li>
+        <li>Prefer direct property ownership over company shares</li>
+        <li>Want to start with £500-£5,000 (not £50k+)</li>
+      </ul>
+      <h3>Ideal Tokenized Property Investor Profile</h3>
+      <ul>
+        <li><strong>Investment horizon:</strong> 5-10 years (capital locked up)</li>
+        <li><strong>Risk tolerance:</strong> Medium-High (comfortable with platform and technology risk)</li>
+        <li><strong>Capital:</strong> £500-£50,000</li>
+        <li><strong>Involvement:</strong> Active (wants to choose properties)</li>
+      </ul>
+      <h2>A Third Option: Do Both</h2>
+      <p>You don't have to choose one or the other. Many investors use a <strong>core-satellite approach</strong>:</p>
+      <ul>
+        <li><strong>Core (60-70%):</strong> REITs for liquidity, diversification, and stability</li>
+        <li><strong>Satellite (30-40%):</strong> Tokenized property for higher returns and direct ownership</li>
+      </ul>
+      <h3>Example Portfolio (£10,000)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Investment</th>
+              <th>Amount</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-label">UK REIT (e.g., British Land)</td>
+              <td>£3,000</td>
+              <td>Liquidity + diversification</td>
+            </tr>
+            <tr>
+              <td class="td-label">Global REIT (e.g., Segro)</td>
+              <td>£3,000</td>
+              <td>Geographic diversification</td>
+            </tr>
+            <tr>
+              <td class="td-label">Tokenized Property #1 (Manchester)</td>
+              <td>£2,000</td>
+              <td>Direct ownership + yield</td>
+            </tr>
+            <tr>
+              <td class="td-label">Tokenized Property #2 (Birmingham)</td>
+              <td>£2,000</td>
+              <td>Geographic diversification</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>This gives you:</p>
+      <ul>
+        <li>✅ 60% liquid (can sell REITs anytime)</li>
+        <li>✅ 40% direct property ownership</li>
+        <li>✅ Diversification across 4+ properties</li>
+        <li>✅ Blend of stability (REITs) and upside (tokenized)</li>
+      </ul>
+      <h2>Risks to Understand (Both)</h2>
+      <div class="callout callout-warning">
+        <div class="callout-title">Capital at Risk</div>
+        All property investment carries risk. You could lose some or all of your capital. Past performance does not indicate future results. Never invest money you cannot afford to lose.
+      </div>
+      <h3>REIT-Specific Risks</h3>
+      <ul>
+        <li><strong>Market risk:</strong> Share prices can fall 30-50% in crises (2008: UK REITs fell 60%)</li>
+        <li><strong>Interest rate risk:</strong> Higher rates make REIT dividends less attractive vs. bonds</li>
+        <li><strong>Property risk:</strong> REIT portfolios can lose value if property markets decline</li>
+        <li><strong>Management risk:</strong> Poor acquisition or disposal decisions affect returns</li>
+      </ul>
+      <h3>Tokenized Property Risks</h3>
+      <ul>
+        <li><strong>Liquidity risk:</strong> May not be able to sell when you want (or at all)</li>
+        <li><strong>Platform risk:</strong> If platform fails, your investment may be tied up in administration</li>
+        <li><strong>Technology risk:</strong> Smart contract bugs, blockchain issues, or wallet security</li>
+        <li><strong>Regulatory risk:</strong> Future rules may affect platform operations or your rights</li>
+        <li><strong>Property risk:</strong> Same as REITs (void periods, value declines, maintenance costs)</li>
+      </ul>
+      <h2>Bottom Line</h2>
+      <p><strong>REITs and tokenized real estate are both valid ways to invest in property without buying whole buildings.</strong></p>
+      <p><strong>REITs</strong> are the mature, liquid, diversified option — ideal for passive investors who want stock market accessibility with property exposure.</p>
+      <p><strong>Tokenized property</strong> is the emerging, higher-return, direct-ownership option — ideal for investors who want to choose specific properties and can lock up capital for years.</p>
+      <p><strong>Neither is "better."</strong> They solve different problems for different investors at different stages of their journey.</p>
+      <p>If you value liquidity and diversification above all: <strong>choose REITs</strong>.</p>
+      <p>If you value control and higher returns (and can accept illiquidity): <strong>choose tokenized</strong>.</p>
+      <p>If you want both: <strong>do a core-satellite split</strong> (60% REITs, 40% tokenized).</p>
+      <div class="article-cta">
+        <div class="cta-text">
+          <h3>Explore Tokenized Property</h3>
+          <p>Join the Settley waitlist for FCA-compliant tokenized property investments from £500. UK-focused, professionally managed, transparent.</p>
+        </div>
+        <a href="/signup" class="btn-cta">Join the waitlist →</a>
+      </div>
+      <div class="disclaimer">
+        <div class="disclaimer-title">Disclaimer</div>
+        <p>This article is for educational and informational purposes only. It does not constitute financial advice, investment recommendations, or tax advice.</p>
+        <p>All property investment carries risk. You could lose some or all of your capital. Past performance does not indicate future results. Property values can go down as well as up.</p>
+        <p>REITs are subject to stock market volatility. Tokenized property is an emerging asset class with limited track record and evolving regulation.</p>
+        <p>Always conduct your own research and consult a qualified financial adviser before making investment decisions.</p>
+        <p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+      </div>
+      <div class="sources">
+        <div class="sources-title">Sources</div>
+        <ul>
+          <li><a href="https://www.gov.uk/guidance/reits" target="_blank" rel="noopener">GOV.UK: Real Estate Investment Trusts (REITs)</a></li>
+          <li><a href="https://www.investmentassociation.org/" target="_blank" rel="noopener">Investment Association: REIT sector data</a></li>
+          <li><a href="https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation" target="_blank" rel="noopener">FCA: New regime for cryptoasset regulation</a></li>
+          <li><a href="https://www.bankofengland.co.uk/statistics/house-price-index" target="_blank" rel="noopener">Bank of England: UK House Price Index</a></li>
+          <li><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/latest" target="_blank" rel="noopener">ONS: House Price Index</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+  <script>
+    const bar = document.getElementById("progress");
+    window.addEventListener("scroll", () => {
+      const scrolled = window.scrollY;
+      const total = document.body.scrollHeight - window.innerHeight;
+      bar.style.width = Math.min((scrolled / total) * 100, 100) + "%";
+    });
+  </script>
+</body>
+</html>
