@@ -174,6 +174,12 @@ No content until tech is confirmed working. Publish to a broken site = wasted ef
 
 Every article must use `settley-article-template.html` with the **same section order**. This is now a fixed pattern, not freeform writing.
 
+Editorial structure and page-quality rules are defined in:
+
+- `content/templates/mira-article-blueprint.md`
+
+If the shell template and the blueprint conflict, follow the blueprint for hierarchy, pacing, and CTA discipline.
+
 **Core variables to fill first (before drafting):**
 
 ```
@@ -221,6 +227,7 @@ Every article must use `settley-article-template.html` with the **same section o
 ### Pre-publish checklist
 
 - [ ] Template applied — article renders correctly on mobile
+- [ ] Blueprint followed — `content/templates/mira-article-blueprint.md`
 - [ ] Meta title: 55-60 chars, keyword in first 40 chars
 - [ ] Meta description: 150-160 chars
 - [ ] H1 contains target keyword
@@ -238,6 +245,11 @@ Every article must use `settley-article-template.html` with the **same section o
 - [ ] Readability: no paragraphs longer than 4 lines
 - [ ] Images: alt text includes keyword where natural
 - [ ] FAQ schema kept only if FAQ answers are complete and accurate
+- [ ] No duplicated title, category, or breadcrumb copy
+- [ ] No generic stat row that does not change the reader's decision
+- [ ] No more than 2 interactive embeds
+- [ ] Primary interactive or visual proof block visible early on page
+- [ ] Single CTA direction only
 
 ### Post-publish checklist
 

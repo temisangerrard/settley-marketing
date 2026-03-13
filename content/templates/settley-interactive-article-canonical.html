@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Property Tokenisation Works in the UK | Settley</title>
+  <meta name="description" content="A canonical Settley article template for explaining property tokenisation with one strong visual, clear ownership logic, risks, and a single CTA.">
+  <meta property="og:title" content="How Property Tokenisation Works in the UK | Settley">
+  <meta property="og:description" content="A canonical Settley article template for explaining property tokenisation with one strong visual, clear ownership logic, risks, and a single CTA.">
+  <meta property="og:type" content="article">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #272342;
+      --primary-soft: #f3f3fb;
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --border: #d4d4d8;
+      --border-soft: #e4e4e7;
+      --text: #111827;
+      --muted: #6b7280;
+      --muted-light: #9ca3af;
+      --bg: #ffffff;
+      --bg-soft: #f9fafb;
+      --warn-bg: #fffbeb;
+      --warn-border: #f59e0b;
+      --info-bg: #f0f4ff;
+      --info-border: #272342;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --radius-sm: 6px;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.07), 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .site-nav {
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+
+    .site-nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--primary);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover { color: var(--primary); }
+
+    .nav-cta {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 7px 16px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.15s;
+    }
+
+    .btn-outline {
+      border-color: var(--border);
+      color: var(--text);
+      background: #fff;
+    }
+
+    .btn-outline:hover { border-color: var(--primary); }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover { opacity: 0.9; }
+
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .breadcrumb a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover { color: var(--primary); }
+
+    .breadcrumb-sep { color: var(--border); }
+
+    .article-header { margin-bottom: 40px; }
+
+    .article-category {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .article-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .article-subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .hero-note {
+      background: linear-gradient(135deg, var(--primary-soft), #fff);
+      border: 1px solid #ddd8f8;
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      font-size: 15px;
+      color: var(--primary);
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 13px;
+      color: var(--muted-light);
+      padding-top: 20px;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .meta-divider { color: var(--border); }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--primary);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s linear;
+    }
+
+    .article-body { font-size: 16px; line-height: 1.8; }
+
+    .article-body h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 48px 0 16px;
+      line-height: 1.25;
+    }
+
+    .article-body h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 28px 0 12px;
+    }
+
+    .article-body p {
+      margin-bottom: 18px;
+      color: var(--text);
+    }
+
+    .article-body ul,
+    .article-body ol {
+      padding-left: 22px;
+      margin-bottom: 20px;
+    }
+
+    .article-body li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .article-body a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .article-body strong { font-weight: 600; color: var(--primary); }
+
+    .callout {
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin: 28px 0;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .callout-warning {
+      background: var(--warn-bg);
+      border: 1px solid #fcd34d;
+      border-left: 4px solid var(--warn-border);
+    }
+
+    .callout-info {
+      background: var(--info-bg);
+      border: 1px solid #c7d2fe;
+      border-left: 4px solid var(--info-border);
+    }
+
+    .callout-title {
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .callout-warning .callout-title { color: #92400e; }
+    .callout-info .callout-title { color: var(--primary); }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .stat {
+      background: var(--bg-soft);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .key-points {
+      background: var(--primary-soft);
+      border: 1px solid #ddd8f8;
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+      margin: 36px 0;
+    }
+
+    .key-points-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .key-points ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .key-points li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: var(--primary);
+    }
+
+    .visual-block {
+      margin: 28px 0;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+
+    .visual-frame {
+      display: block;
+      width: 100%;
+      height: 450px;
+      border: 0;
+      background: var(--bg-soft);
+    }
+
+    .visual-caption {
+      padding: 14px 16px;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid var(--border-soft);
+      background: var(--bg-soft);
+    }
+
+    .compare-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .compare-card {
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      background: #fff;
+    }
+
+    .compare-card.featured {
+      border-color: #c7d2fe;
+      background: var(--accent-soft);
+    }
+
+    .compare-card-title {
+      font-family: "Playfair Display", serif;
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .compare-card p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .compare-card ul {
+      margin-bottom: 0;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 28px 0;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 480px;
+    }
+
+    th {
+      background: var(--bg-soft);
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    td {
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border-soft);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .td-label { font-weight: 600; color: var(--primary); }
+
+    .article-cta {
+      margin: 48px 0;
+      background: var(--primary);
+      border-radius: var(--radius-lg);
+      padding: 32px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .cta-text { color: #fff; }
+
+    .cta-text h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+    }
+
+    .cta-text p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.5;
+    }
+
+    .btn-cta {
+      background: #fff;
+      color: var(--primary);
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      white-space: nowrap;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.15s;
+    }
+
+    .btn-cta:hover { opacity: 0.9; }
+
+    .disclaimer {
+      margin-top: 56px;
+      padding: 24px 28px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .disclaimer-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .disclaimer p + p { margin-top: 10px; }
+
+    .sources {
+      margin-top: 40px;
+    }
+
+    .sources-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .sources ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sources li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 64px; }
+      .site-nav { padding: 0 16px; }
+      .nav-links { display: none; }
+      .article-cta { flex-direction: column; align-items: flex-start; }
+      .visual-frame { height: 520px; }
+      .compare-grid { grid-template-columns: 1fr; }
+      .article-meta { flex-wrap: wrap; gap: 8px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-bar" id="progress"></div>
+
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="logo">Settley.</a>
+      <ul class="nav-links">
+        <li><a href="/listings">Listings</a></li>
+        <li><a href="/how-it-works">How it Works</a></li>
+        <li><a href="/blog">Learn</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="/login" class="btn btn-outline">Login</a>
+        <a href="/signup" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/learn">Learn</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Explainer</span>
+    </nav>
+
+    <header class="article-header">
+      <span class="article-category">Explainer</span>
+      <h1 class="article-title">How Property Tokenisation Actually Works in the UK</h1>
+      <p class="article-subtitle">One clear walkthrough, one ownership model, and one realistic picture of what you buy, what you earn, and what can still go wrong.</p>
+      <div class="hero-note">
+        Use this file as the canonical example for future Mira-written interactive articles. It shows the house structure: one hero, one primary visual moment, one secondary calculator, one CTA direction.
+      </div>
+      <div class="article-meta">
+        <span>March 2026</span>
+        <span class="meta-divider">·</span>
+        <span>9 min read</span>
+        <span class="meta-divider">·</span>
+        <span>Last updated March 2026</span>
+      </div>
+    </header>
+
+    <article class="article-body">
+      <div class="callout callout-warning">
+        <div class="callout-title">Important</div>
+        This article is educational only. It is not financial, legal, or tax advice. Property investments can fall in value, rental income can vary, and liquidity may be limited.
+      </div>
+
+      <div class="stat-row">
+        <div class="stat">
+          <div class="stat-number">£500</div>
+          <div class="stat-label">Example entry size</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">1 SPV</div>
+          <div class="stat-label">Per property structure</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">Monthly</div>
+          <div class="stat-label">Typical rent distribution cadence</div>
+        </div>
+      </div>
+
+      <div class="key-points">
+        <div class="key-points-title">Key Takeaways</div>
+        <ul>
+          <li>You usually buy shares or tokens linked to an SPV that owns the property, not the deed directly in your own name.</li>
+          <li>The useful part is fractional access and cleaner administration, not blockchain theatre.</li>
+          <li>Your return still depends on rent, costs, occupancy, and exit liquidity, just like any other property exposure.</li>
+          <li>The strongest article moment should explain ownership visually before the reader hits the legal detail.</li>
+        </ul>
+      </div>
+
+      <h2>The One Thing To Understand First</h2>
+      <p>Most bad tokenisation articles start with buzzwords. The better framing is simpler: a property sits inside a legal wrapper, that wrapper is divided into smaller ownership units, and investors buy those units rather than buying a whole building themselves.</p>
+      <p>That means the real question is not “what chain is this on?” It is “what exactly do I own, who manages it, how does cash move, and how do I get out?”</p>
+
+      <h2>The Core Ownership Flow</h2>
+      <p>This should be the page’s main event. It explains the full path from property to investor without forcing the reader through six sections of prose first.</p>
+
+      <div class="visual-block">
+        <iframe class="visual-frame" title="Canonical tokenisation flow" srcdoc='<!DOCTYPE html><html><head><meta charset="UTF-8"><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif;background:#f8fafc;color:#111827;padding:18px}.wrap{display:grid;gap:14px;max-width:700px;margin:0 auto}.step{background:#fff;border:1px solid #dbe2f1;border-radius:16px;padding:16px 16px 16px 18px;box-shadow:0 4px 14px rgba(15,23,42,.06)}.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#4f46e5;font-weight:700;margin-bottom:6px}.title{font-size:18px;font-weight:700;color:#272342;margin-bottom:6px}.body{font-size:14px;line-height:1.55;color:#475569}.row{display:grid;grid-template-columns:1fr 20px 1fr;gap:12px;align-items:stretch}.arrow{display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:20px}.note{margin-top:4px;font-size:13px;color:#6b7280;text-align:center}.pill{display:inline-block;margin-top:8px;background:#eef2ff;color:#3730a3;padding:5px 8px;border-radius:999px;font-size:12px;font-weight:600}@media (max-width:640px){.row{grid-template-columns:1fr}.arrow{transform:rotate(90deg);height:20px}}</style></head><body><div class="wrap"><div class="row"><div class="step"><div class="kicker">Step 1</div><div class="title">Property sits in an SPV</div><div class="body">A limited company or similar special purpose vehicle holds the asset, rent contracts, and operating costs.</div><div class="pill">Legal wrapper first</div></div><div class="arrow">→</div><div class="step"><div class="kicker">Step 2</div><div class="title">Ownership gets divided</div><div class="body">The SPV issues smaller ownership units so multiple investors can participate without buying the whole property.</div><div class="pill">Fractional access</div></div></div><div class="row"><div class="step"><div class="kicker">Step 3</div><div class="title">Rent flows through costs</div><div class="body">Gross rent is not your return. Management, maintenance, voids, and compliance costs are deducted first.</div><div class="pill">Net income matters</div></div><div class="arrow">→</div><div class="step"><div class="kicker">Step 4</div><div class="title">Investor gets distributions</div><div class="body">The investor receives their proportional share of the net cash flow and any eventual upside or downside on exit.</div><div class="pill">You own exposure, not magic</div></div></div><div class="note">If a page cannot explain this cleanly, it is not ready to publish.</div></div></body></html>'></iframe>
+        <div class="visual-caption">Interpretation: the blockchain layer may record ownership, but the value still comes from legal structure, property performance, and administration discipline.</div>
+      </div>
+
+      <h2>What The Investor Actually Owns</h2>
+      <div class="compare-grid">
+        <div class="compare-card">
+          <div class="compare-card-title">Traditional Buy-to-Let</div>
+          <p>You buy the property directly, fund the purchase, handle the legal transfer, and either self-manage or hire an agent.</p>
+          <ul>
+            <li>Higher capital requirement</li>
+            <li>Direct control</li>
+            <li>Lower flexibility to diversify</li>
+          </ul>
+        </div>
+        <div class="compare-card featured">
+          <div class="compare-card-title">Tokenised Access</div>
+          <p>You buy a smaller ownership slice linked to the SPV, not the whole building. Management is abstracted away, but so is some control.</p>
+          <ul>
+            <li>Lower minimum entry point</li>
+            <li>Cleaner administration</li>
+            <li>Heavier dependence on platform quality</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout-info">
+        <div class="callout-title">Ownership Test</div>
+        If the page cannot answer “what do I legally own?” in one sentence, it is still too vague. The answer should be boringly precise.
+      </div>
+
+      <h2>How The Economics Change With Position Size</h2>
+      <p>The calculator is a secondary device, not the hero. It helps the reader test stake size after they already understand the structure.</p>
+
+      <div class="visual-block">
+        <iframe class="visual-frame" title="Canonical ownership calculator" srcdoc='<!DOCTYPE html><html><head><meta charset="UTF-8"><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif;background:#f8fafc;padding:18px;color:#111827}.card{max-width:620px;margin:0 auto;background:#fff;border:1px solid #dbe2f1;border-radius:16px;padding:20px;box-shadow:0 4px 14px rgba(15,23,42,.06)}.group{margin-bottom:18px}label{display:block;font-size:13px;font-weight:700;color:#272342;margin-bottom:8px}input[type=range]{width:100%}.value{font-size:13px;color:#6b7280;margin-top:6px;text-align:right}.results{display:grid;gap:10px;margin-top:22px;background:#eef2ff;border-radius:12px;padding:16px}.row{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid #c7d2fe;padding-bottom:10px}.row:last-child{border-bottom:0;padding-bottom:0}.k{font-size:13px;color:#475569}.v{font-size:15px;font-weight:700;color:#272342}.strong{color:#3730a3}.foot{margin-top:12px;font-size:12px;color:#64748b;line-height:1.5}</style></head><body><div class="card"><div class="group"><label>Investment amount</label><input id="investment" type="range" min="500" max="25000" step="500" value="5000"><div class="value">£<span id="investmentValue">5,000</span></div></div><div class="group"><label>Property value</label><input id="property" type="range" min="500000" max="3000000" step="50000" value="1200000"><div class="value">£<span id="propertyValue">1,200,000</span></div></div><div class="group"><label>Net annual yield</label><input id="yield" type="range" min="3" max="8" step="0.1" value="5.8"><div class="value"><span id="yieldValue">5.8</span>%</div></div><div class="results"><div class="row"><span class="k">Ownership share</span><span class="v strong" id="ownership">0.417%</span></div><div class="row"><span class="k">Monthly income example</span><span class="v" id="monthly">£24</span></div><div class="row"><span class="k">Annual income example</span><span class="v" id="annual">£290</span></div><div class="row"><span class="k">Exit value if property grows 3%</span><span class="v" id="exit">£5,150</span></div></div><div class="foot">This is an educational illustration only. Net yield and exit value are not guaranteed and should never be presented as platform promises.</div></div><script>const investment=document.getElementById("investment"),property=document.getElementById("property"),yieldEl=document.getElementById("yield");function update(){const i=parseInt(investment.value,10),p=parseInt(property.value,10),y=parseFloat(yieldEl.value);document.getElementById("investmentValue").textContent=i.toLocaleString();document.getElementById("propertyValue").textContent=p.toLocaleString();document.getElementById("yieldValue").textContent=y.toFixed(1);const own=(i/p)*100;const annual=i*(y/100);const monthly=annual/12;const exit=i*1.03;document.getElementById("ownership").textContent=own.toFixed(3)+'%';document.getElementById("annual").textContent='£'+Math.round(annual).toLocaleString();document.getElementById("monthly").textContent='£'+Math.round(monthly).toLocaleString();document.getElementById("exit").textContent='£'+Math.round(exit).toLocaleString()}[investment,property,yieldEl].forEach(el=>el.addEventListener('input',update));update();</script></body></html>'></iframe>
+        <div class="visual-caption">Interpretation: keep this kind of calculator disciplined. It should illustrate mechanics, not flirt with return-promise copy.</div>
+      </div>
+
+      <h2>Where Readers Usually Get Misled</h2>
+      <p>The dangerous version of this category focuses on “easy access” and “monthly income” while barely mentioning control, secondary market depth, vacancy, or legal nuance. That is how pages drift from education into dressed-up sales copy.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Question that matters</th>
+              <th>What the page should answer clearly</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-label">What do I own?</td>
+              <td>A stake in the SPV or equivalent structure, not a vague “piece of a house.”</td>
+            </tr>
+            <tr>
+              <td class="td-label">What creates the return?</td>
+              <td>Net rent after costs, plus any exit gain or loss, not blockchain mechanics.</td>
+            </tr>
+            <tr>
+              <td class="td-label">What can break?</td>
+              <td>Property performance, governance, liquidity, platform quality, and regulation.</td>
+            </tr>
+            <tr>
+              <td class="td-label">What should I do next?</td>
+              <td>Read a deal, compare routes, or join the waitlist. One clear next action only.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Constraints And Risks</h2>
+      <div class="callout callout-warning">
+        <div class="callout-title">Where This Breaks Down</div>
+        Tokenisation does not remove property risk. It repackages access and administration. Poor underwriting, platform failure, weak liquidity, or loose legal structure can still produce a bad investment outcome.
+      </div>
+
+      <h3>Liquidity is not automatic</h3>
+      <p>Many readers infer that “tokenised” means “easy to sell.” It does not. A token can still be hard to exit if the platform has thin buyer demand or transfers are restricted.</p>
+
+      <h3>Management quality still dominates</h3>
+      <p>The nicer the interface, the easier it is to forget that real assets still need boring competence: maintenance, tenant management, compliance, reporting, and disciplined distribution handling.</p>
+
+      <h2>What The Reader Should Do Next</h2>
+      <ol>
+        <li>Understand the ownership structure before looking at yield numbers.</li>
+        <li>Ask what net income assumptions include and exclude.</li>
+        <li>Check whether secondary liquidity is real or just described aspirationally.</li>
+        <li>Only then decide whether to join the waitlist or compare another route.</li>
+      </ol>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Why keep two interactive blocks instead of one?</h3>
+      <p>Because one block explains structure and the second tests economics. Anything beyond that usually becomes gimmickry and flattens the page.</p>
+
+      <h3>Why is the CTA only pushed once?</h3>
+      <p>Because pages feel cheaper when every section is secretly another conversion ambush. One strong CTA at the right moment performs better and reads better.</p>
+
+      <h3>Why is this file a template example and not a publish target?</h3>
+      <p>Because Mira needs a clean reference implementation she can copy from without mistaking it for a final article ready to ship unchanged.</p>
+
+      <h2>Bottom Line</h2>
+      <p>This is the standard Mira should follow: one precise hero, one visible ownership explanation, one secondary calculator, one honest risk section, and one clear next action. If a future article feels noisier than this, it is probably drifting again.</p>
+
+      <div class="article-cta">
+        <div class="cta-text">
+          <h3>Use This As The House Reference</h3>
+          <p>Copy this structure for future Settley explainers, then replace the content without breaking the hierarchy, pacing, or CTA discipline.</p>
+        </div>
+        <a href="/signup" class="btn-cta">Join the waitlist →</a>
+      </div>
+    </article>
+
+    <div class="disclaimer">
+      <div class="disclaimer-title">Disclaimer</div>
+      <p>This canonical file is a design and publishing reference. It is not financial, legal, or tax advice.</p>
+      <p>Any numbers shown in the interactive examples are illustrative only and must not be treated as promised returns.</p>
+      <p>Future published articles should be reviewed for legal precision, factual accuracy, and mobile usability before going live.</p>
+      <p><strong>Capital at risk. Clarity first, hype never.</strong></p>
+    </div>
+
+    <div class="sources">
+      <div class="sources-title">Sources</div>
+      <ul>
+        <li><a href="https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation" target="_blank" rel="noopener">FCA: New regime for cryptoasset regulation</a></li>
+        <li><a href="https://www.gov.uk/limited-company-formation" target="_blank" rel="noopener">GOV.UK: Limited company formation</a></li>
+        <li><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/latest" target="_blank" rel="noopener">ONS: UK House Price Index</a></li>
+        <li><a href="https://www.gov.uk/guidance/reits" target="_blank" rel="noopener">GOV.UK: Real Estate Investment Trusts</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    const bar = document.getElementById("progress");
+    window.addEventListener("scroll", () => {
+      const scrolled = window.scrollY;
+      const total = document.body.scrollHeight - window.innerHeight;
+      bar.style.width = Math.min((scrolled / total) * 100, 100) + "%";
+    });
+  </script>
+</body>
+</html>
