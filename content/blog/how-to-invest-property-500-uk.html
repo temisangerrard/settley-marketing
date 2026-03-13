@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Invest in Property with £500 in the UK (2026) | Settley</title>
+  <meta name="description" content="Practical guide to investing in UK property with small amounts. Learn about fractional ownership, tokenization, crowdfunding, and REITs starting from £500.">
+  <meta property="og:title" content="How to Invest in Property with £500 in the UK (2026) | Settley">
+  <meta property="og:description" content="Practical guide to investing in UK property with small amounts. Fractional ownership, tokenization, crowdfunding, and REITs from £500.">
+  <meta property="og:type" content="article">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #272342;
+      --primary-soft: #f3f3fb;
+      --primary-softer: #f7f7ff;
+      --accent: #4f46e5;
+      --border: #d4d4d8;
+      --border-soft: #e4e4e7;
+      --text: #111827;
+      --muted: #6b7280;
+      --muted-light: #9ca3af;
+      --bg: #ffffff;
+      --bg-soft: #f9fafb;
+      --warn-bg: #fffbeb;
+      --warn-border: #f59e0b;
+      --info-bg: #f0f4ff;
+      --info-border: #272342;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --radius-sm: 6px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    .site-nav {
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .site-nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--primary);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-cta {
+      display: flex;
+      gap: 8px;
+    }
+    .btn {
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 7px 16px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.15s;
+    }
+    .btn-outline {
+      border-color: var(--border);
+      color: var(--text);
+      background: #fff;
+    }
+    .btn-outline:hover { border-color: var(--primary); }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover { opacity: 0.9; }
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    .breadcrumb a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .breadcrumb a:hover { color: var(--primary); }
+    .breadcrumb-sep { color: var(--border); }
+    .article-header { margin-bottom: 40px; }
+    .article-category {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .article-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .article-subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 13px;
+      color: var(--muted-light);
+      padding-top: 20px;
+      border-top: 1px solid var(--border-soft);
+    }
+    .meta-divider { color: var(--border); }
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--primary);
+      width: 0%;
+      z-index: 100;
+      transition: width 0.1s linear;
+    }
+    .article-body { font-size: 16px; line-height: 1.8; }
+    .article-body h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 48px 0 16px;
+      line-height: 1.25;
+    }
+    .article-body h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 32px 0 12px;
+    }
+    .article-body p {
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+    .article-body ul,
+    .article-body ol {
+      padding-left: 22px;
+      margin-bottom: 20px;
+    }
+    .article-body li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .article-body a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .article-body strong { font-weight: 600; color: var(--primary); }
+    .callout {
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin: 28px 0;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .callout-warning {
+      background: var(--warn-bg);
+      border: 1px solid #fcd34d;
+      border-left: 4px solid var(--warn-border);
+    }
+    .callout-info {
+      background: var(--info-bg);
+      border: 1px solid #c7d2fe;
+      border-left: 4px solid var(--info-border);
+    }
+    .callout-title {
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+    .callout-warning .callout-title { color: #92400e; }
+    .callout-info .callout-title    { color: var(--primary); }
+    .timeline {
+      margin: 28px 0;
+      position: relative;
+      padding-left: 28px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: var(--border-soft);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: 7px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--border);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--border);
+    }
+    .timeline-item.active::before {
+      background: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+    .timeline-date {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 2px;
+    }
+    .timeline-text {
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      margin: 28px 0;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 480px;
+    }
+    th {
+      background: var(--bg-soft);
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    td {
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border-soft);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: var(--bg-soft); }
+    .td-label { font-weight: 500; color: var(--primary); }
+    .td-muted  { color: var(--muted); font-size: 13px; }
+    .key-points {
+      background: var(--primary-soft);
+      border: 1px solid #ddd8f8;
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+      margin: 36px 0;
+    }
+    .key-points-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .key-points ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+    .key-points li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: var(--primary);
+    }
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .stat {
+      background: var(--bg-soft);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      text-align: center;
+    }
+    .stat-number {
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .disclaimer {
+      margin-top: 56px;
+      padding: 24px 28px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .disclaimer-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .disclaimer p + p { margin-top: 10px; }
+    .sources {
+      margin-top: 40px;
+    }
+    .sources-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .sources ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sources li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .sources a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .article-cta {
+      margin: 48px 0;
+      background: var(--primary);
+      border-radius: var(--radius-lg);
+      padding: 32px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta-text { color: #fff; }
+    .cta-text h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+    }
+    .cta-text p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.5; }
+    .btn-cta {
+      background: #fff;
+      color: var(--primary);
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      white-space: nowrap;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.15s;
+    }
+    .btn-cta:hover { opacity: 0.9; }
+    @media (max-width: 600px) {
+      .page-wrap { padding: 32px 16px 64px; }
+      .site-nav  { padding: 0 16px; }
+      .nav-links { display: none; }
+      .article-cta { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-bar" id="progress"></div>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="logo">Settley.</a>
+      <ul class="nav-links">
+        <li><a href="/listings">Listings</a></li>
+        <li><a href="/how-it-works">How it Works</a></li>
+        <li><a href="/learn">Learn</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="/login" class="btn btn-outline">Login</a>
+        <a href="/signup" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+  <main class="page-wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/learn">Learn</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Beginner Guide</span>
+    </nav>
+    <header class="article-header">
+      <span class="article-category">Beginner Guide</span>
+      <h1 class="article-title">How to Invest in Property with £500 in the UK (2026)</h1>
+      <p class="article-subtitle">Practical pathways to property investment without the £50k+ deposit. Fractional ownership, tokenization, crowdfunding, and REITs explained.</p>
+      <div class="article-meta">
+        <span>March 2026</span>
+        <span class="meta-divider">·</span>
+        <span>10 min read</span>
+        <span class="meta-divider">·</span>
+        <span>Last updated March 2026</span>
+      </div>
+    </header>
+    <article class="article-body">
+      <div class="callout callout-warning">
+        <div class="callout-title">⚠ Important</div>
+        This article is for educational purposes only. It is not financial advice. All property investment carries risk. Capital at risk. You could lose some or all of your investment.
+      </div>
+      <div class="stat-row">
+        <div class="stat">
+          <div class="stat-number">£500</div>
+          <div class="stat-label">Minimum for fractional/tokenized</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">£1-5k</div>
+          <div class="stat-label">Typical crowdfunding minimum</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">£1</div>
+          <div class="stat-label">REIT share price (some)</div>
+        </div>
+      </div>
+      <div class="key-points">
+        <div class="key-points-title">Key Takeaways</div>
+        <ul>
+          <li>Traditional buy-to-let requires £30k-£50k+ deposit — but fractional and tokenized models start from £500.</li>
+          <li>Four main pathways: REITs (most liquid), crowdfunding (balanced), fractional/tokenized (emerging), property bonds (higher risk).</li>
+          <li>Each option has trade-offs: liquidity, control, returns, and risk profile vary significantly.</li>
+          <li>FCA regulation applies to most platforms — check authorisation status before investing.</li>
+          <li>Diversification is easier with smaller minimums — spread risk across multiple properties.</li>
+          <li>Always read the legal structure: are you buying shares, tokens, loan notes, or direct ownership?</li>
+        </ul>
+      </div>
+      <h2>The Problem: Traditional Property Is Gated</h2>
+      <p>Let's be honest: traditional UK property investment is a rich person's game.</p>
+      <p>A typical buy-to-let requires:</p>
+      <ul>
+        <li><strong>Deposit:</strong> 25% minimum (£50,000-£75,000 on a £200k-£300k property)</li>
+        <li><strong>Stamp Duty:</strong> 3% surcharge on second properties (£6,000-£9,000)</li>
+        <li><strong>Legal fees:</strong> £1,000-£2,000</li>
+        <li><strong>Broker fees:</strong> £500-£1,000</li>
+        <li><strong>Renovation buffer:</strong> £5,000-£10,000</li>
+      </ul>
+      <p><strong>Total: £60,000-£100,000+ minimum.</strong></p>
+      <p>That's before you've collected a single pound of rent. For 92% of UK adults, this is completely out of reach.</p>
+      <p>But the landscape is changing. New models have emerged that let you invest in property with £500, £1,000, or £5,000 — not £50,000.</p>
+      <h2>Four Pathways to Property with £500</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Minimum</th>
+              <th>Liquidity</th>
+              <th>Expected Return</th>
+              <th>Risk Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-label">REITs</td>
+              <td>£1 (share price)</td>
+              <td>High (daily trading)</td>
+              <td>4-8% p.a.</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td class="td-label">Property Crowdfunding</td>
+              <td>£1,000-£5,000</td>
+              <td>Medium (1-5 year hold)</td>
+              <td>6-10% p.a.</td>
+              <td>Medium-High</td>
+            </tr>
+            <tr>
+              <td class="td-label">Fractional/Tokenized</td>
+              <td>£500-£1,000</td>
+              <td>Low-Medium (platform dependent)</td>
+              <td>5-9% p.a.</td>
+              <td>Medium-High</td>
+            </tr>
+            <tr>
+              <td class="td-label">Property Bonds</td>
+              <td>£1,000-£5,000</td>
+              <td>Low (fixed term)</td>
+              <td>6-12% p.a.</td>
+              <td>High</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Let's break down each option — what you're actually buying, how returns work, and what can go wrong.</p>
+      <h2>1. REITs (Real Estate Investment Trusts)</h2>
+      <h3>What You're Buying</h3>
+      <p>REITs are publicly traded companies that own and operate income-generating property. When you buy REIT shares, you own a small piece of a property portfolio — similar to buying stocks.</p>
+      <h3>How It Works</h3>
+      <ul>
+        <li>REITs must distribute 90% of rental income to shareholders (tax-free)</li>
+        <li>Shares trade on the London Stock Exchange (LSE)</li>
+        <li>You can buy and sell daily during market hours</li>
+        <li>No stamp duty on second properties (REIT pays at corporate level)</li>
+      </ul>
+      <h3>Minimum Investment</h3>
+      <p><strong>£1-£50</strong> — share price varies by REIT. Some trade at £0.50, others at £5-£10.</p>
+      <h3>Expected Returns</h3>
+      <ul>
+        <li><strong>Dividend yield:</strong> 3-6% p.a. (rental income distributed)</li>
+        <li><strong>Capital appreciation:</strong> 2-5% p.a. (property value growth)</li>
+        <li><strong>Total return:</strong> 5-10% p.a. (historical average)</li>
+      </ul>
+      <h3>Pros</h3>
+      <ul>
+        <li>✅ Most liquid option — sell anytime during market hours</li>
+        <li>✅ Lowest minimum — accessible with pocket change</li>
+        <li>✅ Diversified portfolios — single REIT may own 50+ properties</li>
+        <li>✅ FCA-regulated — listed companies must meet strict disclosure rules</li>
+        <li>✅ Tax-efficient — dividends are tax-free at REIT level</li>
+      </ul>
+      <h3>Cons</h3>
+      <ul>
+        <li>❌ No direct property ownership — you own shares, not bricks</li>
+        <li>❌ Market volatility — share price fluctuates daily</li>
+        <li>❌ No control — you can't choose which properties to invest in</li>
+        <li>❌ Lower returns — diversification reduces both risk and upside</li>
+      </ul>
+      <h3>Popular UK REITs</h3>
+      <ul>
+        <li><strong>British Land (BLND):</strong> Retail and office properties</li>
+        <li><strong>Land Securities (LAND):</strong> Commercial and residential</li>
+        <li><strong>Segro (SGRO):</strong> Warehouses and logistics</li>
+        <li><strong>Tritax Big Box (BBOX):</strong> Large-format retail warehouses</li>
+      </ul>
+      <h3>How to Start</h3>
+      <ol>
+        <li>Open a stocks & shares ISA or trading account (Hargreaves Lansdown, Interactive Investor, Trading 212)</li>
+        <li>Research REITs (check portfolio, dividend history, debt levels)</li>
+        <li>Buy shares (minimum 1 share, typically £1-£50)</li>
+        <li>Receive dividends quarterly or semi-annually</li>
+      </ol>
+      <h2>2. Property Crowdfunding</h2>
+      <h3>What You're Buying</h3>
+      <p>Property crowdfunding platforms pool money from multiple investors to fund property purchases or developments. You're typically buying loan notes (debt) or equity shares in a property-holding company.</p>
+      <h3>How It Works</h3>
+      <ul>
+        <li>Platform sources a property or development project</li>
+        <li>Investors contribute funds (minimum £1k-£5k typical)</li>
+        <li>Property is purchased or developed</li>
+        <li>Rental income or sale proceeds are distributed to investors</li>
+      </ul>
+      <h3>Minimum Investment</h3>
+      <p><strong>£1,000-£5,000</strong> — varies by platform and project.</p>
+      <h3>Expected Returns</h3>
+      <ul>
+        <li><strong>Debt investments:</strong> 6-10% p.a. (fixed interest)</li>
+        <li><strong>Equity investments:</strong> 8-15% p.a. (rental + appreciation, variable)</li>
+      </ul>
+      <h3>Pros</h3>
+      <ul>
+        <li>✅ Direct property exposure — you know exactly which property you're invested in</li>
+        <li>✅ Higher returns than REITs — concentrated risk, concentrated reward</li>
+        <li>✅ Some platforms offer IFISA wrappers — tax-free returns</li>
+        <li>✅ Choose your properties — pick locations, types, and strategies you believe in</li>
+      </ul>
+      <h3>Cons</h3>
+      <ul>
+        <li>❌ Illiquid — most platforms have no secondary market (5-7 year hold typical)</li>
+        <li>❌ Higher minimums — £1k-£5k per project</li>
+        <li>❌ Platform risk — if the platform fails, your investment may be tied up</li>
+        <li>❌ Project risk — development delays, void periods, or property value declines affect returns</li>
+      </ul>
+      <h3>Popular UK Platforms</h3>
+      <ul>
+        <li><strong>Property Partner:</strong> Residential buy-to-let portfolios</li>
+        <li><strong>CrowdProperty:</strong> Development finance (debt)</li>
+        <li><strong>Property Moose:</strong> Buy-to-let properties (equity)</li>
+        <li><strong>Brickowner:</strong> Residential properties (equity)</li>
+      </ul>
+      <h3>How to Start</h3>
+      <ol>
+        <li>Sign up to a crowdfunding platform</li>
+        <li>Complete appropriateness assessment (FCA requirement)</li>
+        <li>Browse available properties</li>
+        <li>Invest minimum amount (£1k-£5k)</li>
+        <li>Receive quarterly distributions or lump sum on sale</li>
+      </ol>
+      <h2>3. Fractional / Tokenized Property</h2>
+      <h3>What You're Buying</h3>
+      <p>Fractional or tokenized property uses blockchain technology to represent ownership shares digitally. You buy tokens that represent a percentage of a property-holding SPV (Special Purpose Vehicle).</p>
+      <h3>How It Works</h3>
+      <ul>
+        <li>Property is purchased by an SPV (UK Limited Company)</li>
+        <li>SPV issues digital tokens representing shares</li>
+        <li>Investors buy tokens (minimum £500-£1,000)</li>
+        <li>Rental income is distributed to token holders</li>
+        <li>Tokens may be tradable on secondary markets (platform dependent)</li>
+      </ul>
+      <h3>Minimum Investment</h3>
+      <p><strong>£500-£1,000</strong> — lowest minimum for direct property ownership.</p>
+      <h3>Expected Returns</h3>
+      <ul>
+        <li><strong>Rental yield:</strong> 4-7% p.a. (monthly or quarterly distributions)</li>
+        <li><strong>Capital appreciation:</strong> 2-5% p.a. (property value growth)</li>
+        <li><strong>Total return:</strong> 6-12% p.a. (combined)</li>
+      </ul>
+      <h3>Pros</h3>
+      <ul>
+        <li>✅ Lowest minimum for direct ownership — £500 gets you in the door</li>
+        <li>✅ Transparent ownership — tokens recorded on blockchain</li>
+        <li>✅ Potential liquidity — some platforms offer secondary trading</li>
+        <li>✅ Diversification — spread £5k across 10 properties instead of 1</li>
+        <li>✅ Professional management — no landlord responsibilities</li>
+      </ul>
+      <h3>Cons</h3>
+      <ul>
+        <li>❌ Emerging technology — regulatory framework still evolving (FCA regime Oct 2027)</li>
+        <li>❌ Limited track record — most platforms launched 2020-2025</li>
+        <li>❌ Liquidity uncertain — secondary markets may not be active</li>
+        <li>❌ Platform concentration — if the platform fails, exits become complicated</li>
+      </ul>
+      <h3>UK Platforms (Emerging)</h3>
+      <ul>
+        <li><strong>Settley:</strong> Tokenized residential properties (waitlist phase)</li>
+        <li><strong>Bricksave:</strong> International properties available to UK investors</li>
+        <li><strong>Uprise:</strong> Commercial property tokens</li>
+      </ul>
+      <div class="callout callout-info">
+        <div class="callout-title">Regulatory Note</div>
+        The FCA's new cryptoasset regime (October 2027) will require tokenized property platforms to be FCA-authorised. Check platform compliance status before investing.
+      </div>
+      <h3>How to Start</h3>
+      <ol>
+        <li>Sign up to a fractional/tokenized property platform</li>
+        <li>Complete KYC and appropriateness assessment</li>
+        <li>Browse available properties</li>
+        <li>Invest minimum amount (£500-£1,000)</li>
+        <li>Receive tokens in your digital wallet</li>
+        <li>Receive rental distributions (monthly or quarterly)</li>
+      </ol>
+      <h2>4. Property Bonds (Peer-to-Peer Lending)</h2>
+      <h3>What You're Buying</h3>
+      <p>Property bonds are loan notes issued by property developers or investors. You're lending money secured against property, not buying ownership. Returns come from interest payments, not rent or appreciation.</p>
+      <h3>How It Works</h3>
+      <ul>
+        <li>Developer needs finance for a project</li>
+        <li>Platform issues bonds (loan notes) to investors</li>
+        <li>Investors lend money (minimum £1k-£5k)</li>
+        <li>Property is used as security (first or second charge)</li>
+        <li>Developer pays interest (typically 6-12% p.a.)</li>
+        <li>Principal returned at bond maturity (1-5 years)</li>
+      </ul>
+      <h3>Minimum Investment</h3>
+      <p><strong>£1,000-£5,000</strong> — varies by bond issue.</p>
+      <h3>Expected Returns</h3>
+      <ul>
+        <li><strong>Fixed interest:</strong> 6-12% p.a. (paid quarterly, semi-annually, or at maturity)</li>
+        <li><strong>No capital appreciation</strong> — you're a lender, not an owner</li>
+      </ul>
+      <h3>Pros</h3>
+      <ul>
+        <li>✅ Fixed returns — know exactly what you'll earn</li>
+        <li>✅ Property security — loan secured against real assets</li>
+        <li>✅ Regular income — interest paid quarterly or semi-annually</li>
+        <li>✅ Defined term — know when you'll get your capital back</li>
+      </ul>
+      <h3>Cons</h3>
+      <ul>
+        <li>❌ No upside — you don't benefit from property value growth</li>
+        <li>❌ Default risk — if developer fails, you may lose capital (despite security)</li>
+        <li>❌ Illiquid — bonds typically cannot be sold before maturity</li>
+        <li>❌ Security complexity — first charge is strong, second charge is weaker</li>
+      </ul>
+      <h3>Popular Platforms</h3>
+      <ul>
+        <li><strong>CrowdProperty:</strong> Development finance bonds</li>
+        <li><strong>Property Partner:</strong> Buy-to-let mortgage bonds</li>
+        <li><strong>Lendy (defunct):</strong> ⚠️ Warning — platform failed 2019, investors lost capital</li>
+      </ul>
+      <div class="callout callout-warning">
+        <div class="callout-title">Risk Warning</div>
+        Property bonds are high-risk. Lendy (formerly Property Partner) collapsed in 2019 with £100M+ in investor funds tied up. Always check platform track record, security position, and diversification.
+      </div>
+      <h3>How to Start</h3>
+      <ol>
+        <li>Sign up to a property bond platform</li>
+        <li>Complete appropriateness assessment</li>
+        <li>Browse available bond issues</li>
+        <li>Invest minimum amount (£1k-£5k)</li>
+        <li>Receive interest payments per bond terms</li>
+        <li>Receive principal at maturity</li>
+      </ol>
+      <h2>Comparison: Which Should You Choose?</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th>REITs</th>
+              <th>Crowdfunding</th>
+              <th>Fractional</th>
+              <th>Bonds</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-label">Minimum</td>
+              <td>£1</td>
+              <td>£1k-£5k</td>
+              <td>£500-£1k</td>
+              <td>£1k-£5k</td>
+            </tr>
+            <tr>
+              <td class="td-label">Liquidity</td>
+              <td>Daily</td>
+              <td>1-7 years</td>
+              <td>Platform dependent</td>
+              <td>1-5 years</td>
+            </tr>
+            <tr>
+              <td class="td-label">Returns</td>
+              <td>5-10%</td>
+              <td>6-15%</td>
+              <td>6-12%</td>
+              <td>6-12%</td>
+            </tr>
+            <tr>
+              <td class="td-label">Risk</td>
+              <td>Medium</td>
+              <td>Medium-High</td>
+              <td>Medium-High</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td class="td-label">Control</td>
+              <td>None</td>
+              <td>Some</td>
+              <td>Some</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td class="td-label">Tax Wrapper</td>
+              <td>ISA eligible</td>
+              <td>IFISA (some)</td>
+              <td>Not yet</td>
+              <td>IFISA (some)</td>
+            </tr>
+            <tr>
+              <td class="td-label">Regulation</td>
+              <td>FCA (full)</td>
+              <td>FCA (partial)</td>
+              <td>FCA (Oct 2027)</td>
+              <td>FCA (partial)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Recommended Strategy for £500-£5,000</h2>
+      <h3>If You Have £500-£1,000</h3>
+      <ol>
+        <li><strong>Start with REITs</strong> — Buy £500-£1,000 of a diversified UK REIT (British Land, Land Securities)</li>
+        <li><strong>Learn the basics</strong> — Understand how property returns work (rent + appreciation)</li>
+        <li><strong>Save more</strong> — Add £100-£200/month until you reach £5,000</li>
+        <li><strong>Diversify</strong> — Once you have £5k, spread across 2-3 fractional properties or crowdfunding projects</li>
+      </ol>
+      <h3>If You Have £5,000-£10,000</h3>
+      <ol>
+        <li><strong>Split your investment</strong> — 50% REITs (liquidity), 50% fractional/crowdfunding (higher returns)</li>
+        <li><strong>Use IFISA wrappers</strong> — Where available, shelter returns from tax</li>
+        <li><strong>Diversify across 5+ properties</strong> — Don't put all capital in one property or platform</li>
+        <li><strong>Track performance</strong> — Monitor rental yields, void periods, and platform health quarterly</li>
+      </ol>
+      <h3>If You Have £10,000+</h3>
+      <ol>
+        <li><strong>Core-satellite approach</strong> — 60% REITs (core), 40% direct property (satellite)</li>
+        <li><strong>Geographic diversification</strong> — London, Manchester, Birmingham, regional cities</li>
+        <li><strong>Property type diversification</strong> — Residential, commercial, logistics, student accommodation</li>
+        <li><strong>Consider direct ownership</strong> — At £50k+, traditional buy-to-let becomes viable</li>
+      </ol>
+      <h2>Risks to Understand</h2>
+      <div class="callout callout-warning">
+        <div class="callout-title">Capital at Risk</div>
+        All property investment carries risk. You could lose some or all of your capital. Past performance does not indicate future results. Never invest money you cannot afford to lose.
+      </div>
+      <h3>Market Risk</h3>
+      <p>Property values can fall. UK house prices dropped 10-15% during the 2008 financial crisis. Regional variation is significant — London fell more than the North.</p>
+      <h3>Liquidity Risk</h3>
+      <p>Unlike REITs (daily trading), most fractional and crowdfunding investments cannot be sold quickly. Assume your capital is locked up for 3-7 years.</p>
+      <h3>Platform Risk</h3>
+      <p>If the platform fails, your investment may be tied up in administration. Check platform track record, financial health, and regulatory status.</p>
+      <h3>Void Period Risk</h3>
+      <p>Properties may sit empty between tenants. No tenant = no rent = no distribution. Most platforms model 5-10% void periods in yield projections.</p>
+      <h3>Interest Rate Risk</h3>
+      <p>Higher interest rates affect property values and buyer demand. The 2022-2023 rate rises cooled UK property markets.</p>
+      <h3>Regulatory Risk</h3>
+      <p>Future governments could change tax treatment or regulations affecting property investment platforms. The FCA's 2027 cryptoasset regime may impact tokenized property.</p>
+      <h2>Action Plan: Start This Week</h2>
+      <ol>
+        <li><strong>Define your budget</strong> — How much can you invest without affecting your emergency fund?</li>
+        <li><strong>Choose your pathway</strong> — REITs (liquid), crowdfunding (balanced), fractional (emerging), bonds (fixed income)</li>
+        <li><strong>Research platforms</strong> — Check FCA registration, track record, fees, and investor reviews</li>
+        <li><strong>Start small</strong> — Invest minimum amount first to test the platform</li>
+        <li><strong>Track performance</strong> — Monitor returns, distributions, and platform communications quarterly</li>
+        <li><strong>Scale gradually</strong> — Add more capital as you gain confidence and the platform proves reliable</li>
+      </ol>
+      <h2>Bottom Line</h2>
+      <p>Property investment with £500 is possible — but it's not the same as traditional buy-to-let. You're trading control and direct ownership for accessibility and diversification.</p>
+      <p><strong>REITs</strong> are the safest, most liquid option — but returns are modest and you don't own property directly.</p>
+      <p><strong>Crowdfunding</strong> offers higher returns and direct property exposure — but capital is locked up for years.</p>
+      <p><strong>Fractional/tokenized</strong> property is the most accessible — £500 gets you in — but the technology is emerging and regulation is still evolving.</p>
+      <p><strong>Property bonds</strong> offer fixed returns — but you're a lender, not an owner, and default risk is real.</p>
+      <p>Choose based on your goals, risk tolerance, and time horizon. Diversify across platforms and property types. And never invest money you can't afford to lock up (or lose).</p>
+      <div class="article-cta">
+        <div class="cta-text">
+          <h3>Start with £500</h3>
+          <p>Join the Settley waitlist for tokenized property investment opportunities from £500. FCA-compliant, UK-focused, professionally managed.</p>
+        </div>
+        <a href="/signup" class="btn-cta">Join the waitlist →</a>
+      </div>
+      <div class="disclaimer">
+        <div class="disclaimer-title">Disclaimer</div>
+        <p>This article is for educational and informational purposes only. It does not constitute financial advice, investment recommendations, or tax advice.</p>
+        <p>All property investment carries risk. You could lose some or all of your capital. Past performance does not indicate future results. Property values can go down as well as up.</p>
+        <p>Always conduct your own research and consult a qualified financial adviser before making investment decisions. Check FCA registration status of any platform before investing.</p>
+        <p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+      </div>
+      <div class="sources">
+        <div class="sources-title">Sources</div>
+        <ul>
+          <li><a href="https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation" target="_blank" rel="noopener">FCA: New regime for cryptoasset regulation</a></li>
+          <li><a href="https://www.gov.uk/guidance/reits" target="_blank" rel="noopener">GOV.UK: Real Estate Investment Trusts (REITs)</a></li>
+          <li><a href="https://www.bankofengland.co.uk/statistics/house-price-index" target="_blank" rel="noopener">Bank of England: UK House Price Index</a></li>
+          <li><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/latest" target="_blank" rel="noopener">ONS: House Price Index</a></li>
+          <li><a href="https://www.investmentassociation.org/" target="_blank" rel="noopener">Investment Association: REIT sector data</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+  <script>
+    const bar = document.getElementById("progress");
+    window.addEventListener("scroll", () => {
+      const scrolled = window.scrollY;
+      const total = document.body.scrollHeight - window.innerHeight;
+      bar.style.width = Math.min((scrolled / total) * 100, 100) + "%";
+    });
+  </script>
+</body>
+</html>
