@@ -168,6 +168,13 @@ Rules:
 
 If everything feels medium, the page will feel generic.
 
+### Images
+
+- Check `/Users/temisan/Downloads/settley-marketing/assets/images` before sourcing or generating article visuals.
+- Prefer images from that folder when they fit the article instead of reaching for external stock by default.
+- If a local image is used, make it earn its place: support the argument, improve scannability, or break up dense sections.
+- If none of the local images fit the article, then use another source deliberately rather than ignoring the folder by habit.
+
 ### Interactivity
 
 Interactive blocks must:
@@ -222,9 +229,22 @@ Do not stack six prose sections in a row.
 - More than one hero summary block
 - Generic stat filler
 - Broken placeholder artifacts
+- Internal instruction copy leaking into reader-facing prose
+- Meta lines that talk to Mira instead of the reader
+- Phrases like "use this as the house reference", "future published articles", or "this file is a template"
 - Footer junk
 - Two embeds back to back without interpretation
 - CTA only at the very bottom after excessive legal copy
+
+## Template Discipline
+
+The blueprint is for Mira, not for the reader.
+
+- Never publish instructional text that explains how to write the article.
+- Never leave template coaching, QA reminders, or process notes inside CTA blocks, FAQ answers, captions, or disclaimers.
+- Convert every section into reader-facing copy before publishing. If a sentence would only make sense to an editor, remove or rewrite it.
+- Disclaimers should cover legal/financial caution only. They should not mention templates, publishing workflow, or future review steps.
+- Before shipping, do one explicit leakage pass: scan for words like `template`, `canonical`, `reference`, `future article`, `publish target`, `house standard`, and `Mira`.
 
 ## Pre-Publish Review
 
@@ -235,6 +255,7 @@ Before publishing, verify:
 - The CTA feels earned, not bolted on.
 - Mobile view still makes the core interactive block obvious.
 - Nothing on the page looks auto-generated or unreviewed.
+- No line reads like an instruction to the writer or a note from the template.
 
 ## Quick Skeleton
 

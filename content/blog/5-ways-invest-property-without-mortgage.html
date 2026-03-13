@@ -1,0 +1,205 @@
+<style>
+:root{--primary:#272342;--primary-soft:#f3f3fb;--accent:#4f46e5;--accent-soft:#eef2ff;--border:#d4d4d8;--border-soft:#e4e4e7;--text:#111827;--muted:#6b7280;--bg:#ffffff;--bg-soft:#f9fafb;--warn-bg:#fffbeb;--warn-border:#f59e0b;--info-bg:#f0f4ff;--info-border:#272342;--radius-lg:16px;--radius-md:10px;--shadow:0 1px 3px rgba(0,0,0,0.07),0 4px 16px rgba(0,0,0,0.05)}
+.article-body{font-size:16px;line-height:1.8;color:var(--text)}
+.article-body h2{font-family:"Playfair Display",serif;font-size:1.55rem;font-weight:700;color:var(--primary);margin:48px 0 16px;line-height:1.25}
+.article-body h3{font-size:1.1rem;font-weight:600;color:var(--text);margin:28px 0 12px}
+.article-body p{margin-bottom:18px;color:var(--text)}
+.article-body ul,.article-body ol{padding-left:22px;margin-bottom:20px}
+.article-body li{margin-bottom:8px;color:var(--text)}
+.article-body a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.article-body strong{font-weight:600;color:var(--primary)}
+.callout{border-radius:var(--radius-md);padding:18px 20px;margin:28px 0;font-size:15px;line-height:1.65}
+.callout-warning{background:var(--warn-bg);border:1px solid #fcd34d;border-left:4px solid var(--warn-border)}
+.callout-info{background:var(--info-bg);border:1px solid #c7d2fe;border-left:4px solid var(--info-border)}
+.callout-title{font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px}
+.callout-warning .callout-title{color:#92400e}
+.callout-info .callout-title{color:var(--primary)}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin:28px 0}
+.stat{background:var(--bg-soft);border:1px solid var(--border-soft);border-radius:var(--radius-md);padding:16px 18px;text-align:center}
+.stat-number{font-family:"Playfair Display",serif;font-size:1.8rem;font-weight:700;color:var(--primary);line-height:1;margin-bottom:6px}
+.stat-label{font-size:12px;color:var(--muted);line-height:1.4}
+.key-points{background:var(--primary-soft);border:1px solid #ddd8f8;border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0}
+.key-points-title{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--accent);margin-bottom:14px}
+.key-points ul{padding-left:18px;margin:0}
+.key-points li{margin-bottom:8px;font-size:15px;color:var(--primary)}
+.table-wrap{overflow-x:auto;margin:28px 0;border:1px solid var(--border-soft);border-radius:var(--radius-md)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:480px}
+th{background:var(--bg-soft);padding:12px 16px;text-align:left;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);border-bottom:1px solid var(--border-soft)}
+td{padding:13px 16px;border-bottom:1px solid var(--border-soft);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+.td-label{font-weight:600;color:var(--primary)}
+.article-cta{margin:48px 0;background:var(--primary);border-radius:var(--radius-lg);padding:32px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cta-text{color:#fff}
+.cta-text h3{font-family:"Playfair Display",serif;font-size:1.25rem;margin-bottom:6px}
+.cta-text p{font-size:14px;color:rgba(255,255,255,0.78);line-height:1.5}
+.btn-cta{background:#fff;color:var(--primary);font-weight:600;padding:12px 24px;border-radius:999px;font-size:14px;white-space:nowrap;text-decoration:none;display:inline-block;transition:opacity 0.15s}
+.btn-cta:hover{opacity:0.9}
+.disclaimer{margin-top:56px;padding:24px 28px;background:var(--bg-soft);border:1px solid var(--border-soft);border-radius:var(--radius-lg);font-size:13px;color:var(--muted);line-height:1.65}
+.disclaimer-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--muted);margin-bottom:10px}
+.disclaimer p+p{margin-top:10px}
+.sources{margin-top:40px}
+.sources-title{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--muted);margin-bottom:12px}
+.sources ul{list-style:none;padding:0}
+.sources li{margin-bottom:8px;font-size:14px}
+.sources a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){.article-cta{flex-direction:column;align-items:flex-start}}
+</style>
+
+<article class="article-body">
+
+<div class="callout callout-warning">
+<div class="callout-title">Important</div>
+This article is educational only. It is not financial advice. All property investment carries risk. Capital at risk. You could lose some or all of your investment.
+</div>
+
+<div class="stat-row">
+<div class="stat"><div class="stat-number">£500</div><div class="stat-label">Minimum to start</div></div>
+<div class="stat"><div class="stat-number">5</div><div class="stat-label">Alternative routes</div></div>
+<div class="stat"><div class="stat-number">5-12%</div><div class="stat-label">Potential annual returns</div></div>
+</div>
+
+<div class="key-points">
+<div class="key-points-title">Key Takeaways</div>
+<ul>
+<li>Traditional buy-to-let requires £50k-£100k deposit. These alternatives start from £500-£5,000.</li>
+<li>Each route has different liquidity, control, and risk profiles — match to your goals.</li>
+<li>REITs offer daily liquidity but lower returns. Direct ownership offers higher returns but locked capital.</li>
+<li>All options avoid mortgage debt, interest rate risk, and landlord responsibilities.</li>
+<li>Diversification across multiple properties is easier with lower minimums.</li>
+</ul>
+</div>
+
+<h2>Why Avoid Mortgages?</h2>
+<p>Traditional buy-to-let requires a 25% deposit (£50k-£100k minimum), mortgage approval (income 3x loan), and takes on significant debt risk. If interest rates rise, your mortgage payment rises. If void periods hit, you still owe the bank.</p>
+<p>These five alternatives let you gain property exposure without debt, without landlord stress, and without needing £100k to start.</p>
+
+<h2>1. REITs (Real Estate Investment Trusts)</h2>
+<p><strong>Minimum:</strong> £1 (share price)<br>
+<strong>Liquidity:</strong> Daily (stock market)<br>
+<strong>Expected return:</strong> 5-10% p.a.</p>
+<p>REITs are publicly traded companies that own income-generating property. You buy shares on the London Stock Exchange. REITs must distribute 90% of rental income to shareholders tax-free at corporate level.</p>
+<p><strong>Best for:</strong> Investors who want daily liquidity, instant diversification, and FCA protection.</p>
+<p><strong>Popular UK REITs:</strong> British Land (BLND), Land Securities (LAND), Segro (SGRO), Tritax Big Box (BBOX)</p>
+
+<h2>2. Property Crowdfunding (Equity)</h2>
+<p><strong>Minimum:</strong> £1,000-£5,000<br>
+<strong>Liquidity:</strong> Low (3-7 year hold typical)<br>
+<strong>Expected return:</strong> 8-15% p.a.</p>
+<p>Platforms pool money from multiple investors to fund property purchases. You buy equity shares in a specific property or portfolio. Returns come from rental income and eventual property sale.</p>
+<p><strong>Best for:</strong> Investors who want direct property exposure and higher returns, and can lock up capital long-term.</p>
+<p><strong>Popular UK Platforms:</strong> Property Partner, CrowdProperty, Property Moose, Brickowner</p>
+
+<h2>3. Tokenized Property</h2>
+<p><strong>Minimum:</strong> £500-£1,000<br>
+<strong>Liquidity:</strong> Low-Medium (platform dependent)<br>
+<strong>Expected return:</strong> 6-12% p.a.</p>
+<p>Property is purchased by an SPV (Special Purpose Vehicle — a UK Limited Company). The SPV issues digital tokens representing shares. You buy tokens, own a portion of the property, and receive rental distributions.</p>
+<p><strong>Best for:</strong> Investors who want the lowest minimums, direct ownership, and are comfortable with emerging technology.</p>
+<p><strong>UK Platforms (Emerging):</strong> Settley (waitlist), Bricksave, Uprise</p>
+
+<div class="callout callout-info">
+<div class="callout-title">Regulatory Note</div>
+The FCA's new cryptoasset regime (October 2027) will require tokenized property platforms to be FCA-authorised. Settley is building to be compliant from day one.
+</div>
+
+<h2>4. Property Bonds (Debt)</h2>
+<p><strong>Minimum:</strong> £1,000-£5,000<br>
+<strong>Liquidity:</strong> Low (fixed term, 1-5 years)<br>
+<strong>Expected return:</strong> 6-12% p.a. (fixed)</p>
+<p>You lend money to a property developer or investor. The loan is secured against property. You receive fixed interest payments. Principal is returned at maturity. You're a lender, not an owner.</p>
+<p><strong>Best for:</strong> Investors who want fixed returns and defined terms, not variable rental income.</p>
+<p><strong>Popular Platforms:</strong> CrowdProperty, Property Partner</p>
+
+<div class="callout callout-warning">
+<div class="callout-title">Risk Warning</div>
+Property bonds are high-risk. Lendy (formerly Property Partner) collapsed in 2019 with £100M+ in investor funds tied up. Always check platform track record, security position, and diversification.
+</div>
+
+<h2>5. Property Investment Companies</h2>
+<p><strong>Minimum:</strong> £50-£100 (share price)<br>
+<strong>Liquidity:</strong> Daily (stock market)<br>
+<strong>Expected return:</strong> 5-9% p.a.</p>
+<p>Similar to REITs but without the tax advantages. These are investment trusts or companies that own property portfolios. You buy shares on the stock exchange. Returns come from dividends and share price appreciation.</p>
+<p><strong>Best for:</strong> Investors who want stock market liquidity with property exposure, but don't need ISA eligibility.</p>
+<p><strong>Examples:</strong> Real Estate Investors (REI), Primary Health Properties (PHP), Care REIT</p>
+
+<h2>Comparison: Which Should You Choose?</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Route</th><th>Minimum</th><th>Liquidity</th><th>Returns</th><th>Risk</th></tr>
+</thead>
+<tbody>
+<tr><td class="td-label">REITs</td><td>£1</td><td>Daily</td><td>5-10%</td><td>Medium</td></tr>
+<tr><td class="td-label">Crowdfunding (Equity)</td><td>£1k-£5k</td><td>3-7 years</td><td>8-15%</td><td>Medium-High</td></tr>
+<tr><td class="td-label">Tokenized</td><td>£500-£1k</td><td>Platform dependent</td><td>6-12%</td><td>Medium-High</td></tr>
+<tr><td class="td-label">Property Bonds</td><td>£1k-£5k</td><td>1-5 years</td><td>6-12% (fixed)</td><td>High</td></tr>
+<tr><td class="td-label">Property Companies</td><td>£50-£100</td><td>Daily</td><td>5-9%</td><td>Medium</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Risks to Understand</h2>
+<div class="callout callout-warning">
+<div class="callout-title">Capital at Risk</div>
+All property investment carries risk. You could lose some or all of your capital. Past performance does not indicate future results. Never invest money you cannot afford to lose.
+</div>
+
+<h3>Market Risk</h3>
+<p>Property values can fall. UK house prices dropped 10-15% during the 2008 financial crisis. Regional variation is significant — London fell more than the North.</p>
+
+<h3>Liquidity Risk</h3>
+<p>Unlike REITs (daily trading), most fractional and crowdfunding investments cannot be sold quickly. Assume your capital is locked up for 3-7 years.</p>
+
+<h3>Platform Risk</h3>
+<p>If the platform fails, your investment may be tied up in administration. Check platform track record, financial health, and regulatory status.</p>
+
+<h3>Void Period Risk</h3>
+<p>Properties may sit empty between tenants. No tenant = no rent = no distribution. Most platforms model 5-10% void periods in yield projections.</p>
+
+<h2>How to Start</h2>
+<ol>
+<li><strong>Define your budget</strong> — How much can you invest without affecting your emergency fund?</li>
+<li><strong>Choose your route</strong> — REITs (liquid), crowdfunding (higher returns), tokenized (lowest minimum), bonds (fixed income)</li>
+<li><strong>Research platforms</strong> — Check FCA registration, track record, fees, and investor reviews</li>
+<li><strong>Start small</strong> — Invest minimum amount first to test the platform</li>
+<li><strong>Diversify</strong> — Spread capital across multiple properties and platforms</li>
+<li><strong>Track performance</strong> — Monitor returns, distributions, and platform communications quarterly</li>
+</ol>
+
+<h2>Bottom Line</h2>
+<p>Property investment with £500 is possible — but it's not the same as traditional buy-to-let. You're trading control and direct ownership for accessibility and diversification.</p>
+<p><strong>REITs</strong> are the safest, most liquid option — but returns are modest and you don't own property directly.</p>
+<p><strong>Crowdfunding</strong> offers higher returns and direct property exposure — but capital is locked up for years.</p>
+<p><strong>Tokenized property</strong> is the most accessible — £500 gets you in — but the technology is emerging and regulation is still evolving.</p>
+<p><strong>Property bonds</strong> offer fixed returns — but you're a lender, not an owner, and default risk is real.</p>
+<p>Choose based on your goals, risk tolerance, and time horizon. Diversify across platforms and property types. And never invest money you can't afford to lock up (or lose).</p>
+
+<div class="article-cta">
+<div class="cta-text">
+<h3>Start with £500</h3>
+<p>Join the Settley waitlist for FCA-compliant tokenized property investments from £500. UK-focused, professionally managed, transparent.</p>
+</div>
+<a href="/signup" class="btn-cta">Join the waitlist →</a>
+</div>
+
+<div class="disclaimer">
+<div class="disclaimer-title">Disclaimer</div>
+<p>This article is for educational and informational purposes only. It does not constitute financial advice, investment recommendations, or tax advice.</p>
+<p>All property investment carries risk. You could lose some or all of your capital. Past performance does not indicate future results. Property values can go down as well as up.</p>
+<p>Always conduct your own research and consult a qualified financial adviser before making investment decisions.</p>
+<p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+</div>
+
+<div class="sources">
+<div class="sources-title">Sources</div>
+<ul>
+<li><a href="https://www.gov.uk/guidance/reits" target="_blank" rel="noopener">GOV.UK: Real Estate Investment Trusts (REITs)</a></li>
+<li><a href="https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation" target="_blank" rel="noopener">FCA: New regime for cryptoasset regulation</a></li>
+<li><a href="https://www.bankofengland.co.uk/statistics/house-price-index" target="_blank" rel="noopener">Bank of England: UK House Price Index</a></li>
+<li><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/latest" target="_blank" rel="noopener">ONS: House Price Index</a></li>
+<li><a href="https://www.investmentassociation.org/" target="_blank" rel="noopener">Investment Association: REIT sector data</a></li>
+</ul>
+</div>
+
+</article>

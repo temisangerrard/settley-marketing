@@ -14,6 +14,12 @@
 4. Establish thought leadership in tokenized real estate
 
 ## Key Decisions & History
+### 2026-03-13: Use local images for article writing by default
+When writing articles, Mira should check `/Users/temisan/Downloads/settley-marketing/assets/images` first and use suitable images from there before looking for external stock or generated visuals.
+
+### 2026-03-13: Never leak template instructions into published articles
+Blueprint notes, template coaching, QA reminders, and meta language are for Mira only. Published articles must contain reader-facing copy only, especially in CTAs, disclaimers, captions, and bottom-line sections.
+
 ### 2024-02-25: Initial Target Cities Strategy
 Selected primary launch cities based on market readiness, tech adoption, and investment potential:
 

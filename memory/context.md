@@ -144,3 +144,17 @@ Property tokenization platform enabling fractional real estate ownership.
 - Understand tokenized real estate
 - Are interested in Settley specifically
 - Have taken action (signup, waitlist, newsletter)
+
+---
+
+## Brand Memory
+
+For deeper archived brand language, messaging, and investor narrative from decks/FAQ/application files, see:
+
+- `memory/brand-context.md`
+
+Use that file for:
+- sharper company description wording
+- investor deck language
+- brand voice consistency
+- distinguishing current strategy from legacy narrative
