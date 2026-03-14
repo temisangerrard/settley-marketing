@@ -1,28 +1,16 @@
 {
   "date": "2026-03-14",
-  "total_articles": 15,
+  "total_articles": 6,
   "passed": 6,
-  "failed": 9,
+  "failed": 0,
   "average_scores": {
-    "overall": 84.8,
-    "brand": 88.1,
-    "design": 73.6,
-    "seo": 96.7,
-    "quality": 80.7
+    "overall": 94.6,
+    "brand": 100.0,
+    "design": 100.0,
+    "seo": 100.0,
+    "quality": 78.5
   },
   "articles": [
-    {
-      "id": "6984bc29a65d4c23c2b804b8",
-      "title": "How Fractional Property Ownership Works ",
-      "passed": false,
-      "overall_score": 58.2,
-      "brand_score": 72,
-      "design_score": 0,
-      "seo_score": 90.0,
-      "quality_score": 71.0,
-      "word_count": 367,
-      "issue_count": 14
-    },
     {
       "id": "69b324239b0dd5e8aac560f4",
       "title": "Complete Guide to Tokenized Real Estate in the UK (2026)",
@@ -94,102 +82,6 @@
       "quality_score": 87.0,
       "word_count": 2629,
       "issue_count": 6
-    },
-    {
-      "id": "69b43ef1d2d694302bb345e9",
-      "title": "How Tokenization Actually Works: An Interactive Guide (2026) \u2014 FIXED",
-      "passed": false,
-      "overall_score": 88.2,
-      "brand_score": 75,
-      "design_score": 97.0,
-      "seo_score": 90.0,
-      "quality_score": 91.0,
-      "word_count": 1190,
-      "issue_count": 6
-    },
-    {
-      "id": "69b441d71ce046130686b312",
-      "title": "How Tokenization Actually Works: An Interactive Guide (2026) \u2014 V2",
-      "passed": false,
-      "overall_score": 69.0,
-      "brand_score": 75,
-      "design_score": 20.0,
-      "seo_score": 90.0,
-      "quality_score": 91.0,
-      "word_count": 1136,
-      "issue_count": 10
-    },
-    {
-      "id": "69b443781ce046130686b32c",
-      "title": "How Tokenization Actually Works: An Interactive Guide (2026) \u2014 V3 Canonical",
-      "passed": false,
-      "overall_score": 82.0,
-      "brand_score": 75,
-      "design_score": 65.0,
-      "seo_score": 95.0,
-      "quality_score": 93.0,
-      "word_count": 1690,
-      "issue_count": 8
-    },
-    {
-      "id": "69b4779d68bafe357be173f1",
-      "title": "5 Ways to Invest in Property Without a Mortgage (2026)",
-      "passed": false,
-      "overall_score": 82.0,
-      "brand_score": 75,
-      "design_score": 62.0,
-      "seo_score": 100.0,
-      "quality_score": 91.0,
-      "word_count": 1190,
-      "issue_count": 7
-    },
-    {
-      "id": "69b48068528195959496c6b5",
-      "title": "FCA Cryptoasset Rules 2026 \u2014 What UK Investors Need to Know (Fixed)",
-      "passed": false,
-      "overall_score": 78.2,
-      "brand_score": 75,
-      "design_score": 65.0,
-      "seo_score": 95.0,
-      "quality_score": 78.0,
-      "word_count": 2670,
-      "issue_count": 13
-    },
-    {
-      "id": "69b4808c528195959496c6b7",
-      "title": "Fractional Property Investment UK: Complete Guide (2026) \u2014 Fixed",
-      "passed": false,
-      "overall_score": 83.8,
-      "brand_score": 100.0,
-      "design_score": 65.0,
-      "seo_score": 95.0,
-      "quality_score": 75.0,
-      "word_count": 3425,
-      "issue_count": 18
-    },
-    {
-      "id": "69b4808f528195959496c6b9",
-      "title": "How to Invest in Property with \u00a3500 in the UK (2026) \u2014 Fixed",
-      "passed": false,
-      "overall_score": 85.0,
-      "brand_score": 100.0,
-      "design_score": 65.0,
-      "seo_score": 100,
-      "quality_score": 75.0,
-      "word_count": 3281,
-      "issue_count": 17
-    },
-    {
-      "id": "69b48091528195959496c6bb",
-      "title": "Tokenized Real Estate vs REITs: An Honest Comparison (2026) \u2014 Fixed",
-      "passed": false,
-      "overall_score": 77.5,
-      "brand_score": 75,
-      "design_score": 65.0,
-      "seo_score": 95.0,
-      "quality_score": 75.0,
-      "word_count": 2724,
-      "issue_count": 15
     }
   ]
 }
