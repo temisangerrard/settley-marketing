@@ -1,765 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tokenized Real Estate UK Guide (2026) | Settley</title>
-  <meta name="description" content="Learn how tokenized real estate works in the UK, key risks, regulation, and how beginners can start with smaller amounts.">
-  <meta property="og:title" content="Tokenized Real Estate UK Guide (2026) | Settley">
-  <meta property="og:description" content="Learn how tokenized real estate works in the UK, key risks, regulation, and how beginners can start with smaller amounts.">
-  <meta property="og:type" content="article">
+<style>
+:root {
+  --primary: #272342;
+  --primary-soft: #f3f3fb;
+  --accent: #4f46e5;
+  --accent-soft: #eef2ff;
+  --border: #d4d4d8;
+  --border-soft: #e4e4e7;
+  --text: #111827;
+  --muted: #6b7280;
+  --muted-light: #9ca3af;
+  --bg: #ffffff;
+  --bg-soft: #f9fafb;
+  --warn-bg: #fffbeb;
+  --warn-border: #f59e0b;
+  --info-bg: #f0f4ff;
+  --info-border: #272342;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.07), 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+.article-body { font-size: 16px; line-height: 1.8; color: var(--text); }
+.article-body h2 { font-family: "Playfair Display", serif; font-size: 1.55rem; font-weight: 700; color: var(--primary); margin: 48px 0 16px; line-height: 1.25; }
+.article-body h3 { font-size: 1.1rem; font-weight: 600; color: var(--text); margin: 28px 0 12px; }
+.article-body p { margin-bottom: 18px; color: var(--text); }
+.article-body ul, .article-body ol { padding-left: 22px; margin-bottom: 20px; }
+.article-body li { margin-bottom: 8px; color: var(--text); }
+.article-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.article-body strong { font-weight: 600; color: var(--primary); }
+.callout { border-radius: var(--radius-md); padding: 18px 20px; margin: 28px 0; font-size: 15px; line-height: 1.65; }
+.callout-warning { background: var(--warn-bg); border: 1px solid #fcd34d; border-left: 4px solid var(--warn-border); }
+.callout-info { background: var(--info-bg); border: 1px solid #c7d2fe; border-left: 4px solid var(--info-border); }
+.callout-title { font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+.callout-warning .callout-title { color: #92400e; }
+.callout-info .callout-title { color: var(--primary); }
+.stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 28px 0; }
+.stat { background: var(--bg-soft); border: 1px solid var(--border-soft); border-radius: var(--radius-md); padding: 16px 18px; text-align: center; }
+.stat-number { font-family: "Playfair Display", serif; font-size: 1.8rem; font-weight: 700; color: var(--primary); line-height: 1; margin-bottom: 6px; }
+.stat-label { font-size: 12px; color: var(--muted); line-height: 1.4; }
+.key-points { background: var(--primary-soft); border: 1px solid #ddd8f8; border-radius: var(--radius-lg); padding: 24px 28px; margin: 36px 0; }
+.key-points-title { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 14px; }
+.key-points ul { padding-left: 18px; margin: 0; }
+.key-points li { margin-bottom: 8px; font-size: 15px; color: var(--primary); }
+.table-wrap { overflow-x: auto; margin: 28px 0; border: 1px solid var(--border-soft); border-radius: var(--radius-md); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 480px; }
+th { background: var(--bg-soft); padding: 12px 16px; text-align: left; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); border-bottom: 1px solid var(--border-soft); }
+td { padding: 13px 16px; border-bottom: 1px solid var(--border-soft); vertical-align: top; line-height: 1.5; }
+tr:last-child td { border-bottom: none; }
+.td-label { font-weight: 600; color: var(--primary); }
+.article-cta { margin: 48px 0; background: var(--primary); border-radius: var(--radius-lg); padding: 32px 36px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.cta-text { color: #fff; }
+.cta-text h3 { font-family: "Playfair Display", serif; font-size: 1.25rem; margin-bottom: 6px; }
+.cta-text p { font-size: 14px; color: rgba(255, 255, 255, 0.78); line-height: 1.5; }
+.btn-cta { background: #fff; color: var(--primary); font-weight: 600; padding: 12px 24px; border-radius: 999px; font-size: 14px; white-space: nowrap; text-decoration: none; display: inline-block; transition: opacity 0.15s; }
+.btn-cta:hover { opacity: 0.9; }
+.disclaimer { margin-top: 56px; padding: 24px 28px; background: var(--bg-soft); border: 1px solid var(--border-soft); border-radius: var(--radius-lg); font-size: 13px; color: var(--muted); line-height: 1.65; }
+.disclaimer-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 10px; }
+.disclaimer p + p { margin-top: 10px; }
+.sources { margin-top: 40px; }
+.sources-title { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 12px; }
+.sources ul { list-style: none; padding: 0; }
+.sources li { margin-bottom: 8px; font-size: 14px; }
+.sources a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 600px) {
+  .article-cta { flex-direction: column; align-items: flex-start; }
+}
+</style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<article class="article-body">
 
-  <style>
-    /* ─── Design tokens (matches Settley site) ─── */
-    :root {
-      --primary:       #272342;
-      --primary-soft:  #f3f3fb;
-      --primary-softer:#f7f7ff;
-      --accent:        #4f46e5;
-      --border:        #d4d4d8;
-      --border-soft:   #e4e4e7;
-      --text:          #111827;
-      --muted:         #6b7280;
-      --muted-light:   #9ca3af;
-      --bg:            #ffffff;
-      --bg-soft:       #f9fafb;
-      --warn-bg:       #fffbeb;
-      --warn-border:   #f59e0b;
-      --info-bg:       #f0f4ff;
-      --info-border:   #272342;
-      --radius-lg:     16px;
-      --radius-md:     10px;
-      --radius-sm:     6px;
-      --shadow:        0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
-    }
+<div class="callout callout-warning">
+<div class="callout-title">Important</div>
+This article is for educational purposes only. It is not financial, legal, or tax advice. Investing involves risk. Capital at risk.
+</div>
 
-    /* ─── Reset ─── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<div class="stat-row">
+<div class="stat">
+<div class="stat-number">£500</div>
+<div class="stat-label">Typical minimum on tokenized offers</div>
+</div>
+<div class="stat">
+<div class="stat-number">24/7</div>
+<div class="stat-label">Digital access to portfolio dashboards</div>
+</div>
+<div class="stat">
+<div class="stat-number">3</div>
+<div class="stat-label">Core checks before investing</div>
+</div>
+</div>
 
-    /* ─── Page shell ─── */
-    body {
-      font-family: "Inter", system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
-    }
+<div class="key-points">
+<div class="key-points-title">Key Takeaways</div>
+<ul>
+<li>Tokenized real estate splits property value into digital units investors can buy in smaller amounts.</li>
+<li>Lower minimums improve access, but risk does not disappear just because entry is cheaper.</li>
+<li>You should assess legal structure, asset quality, and platform operations before investing.</li>
+<li>UK regulation is tightening; investors should prefer transparent, compliance-first platforms.</li>
+<li>Treat tokenized property as a long-term allocation, not a get-rich-quick trade.</li>
+</ul>
+</div>
 
-    /* ─── Minimal nav (matches Settley) ─── */
-    .site-nav {
-      border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-    }
-    .site-nav-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 56px;
-    }
-    .logo {
-      font-family: "Playfair Display", serif;
-      font-weight: 600;
-      font-size: 20px;
-      color: var(--primary);
-      letter-spacing: 0.04em;
-      text-decoration: none;
-    }
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      list-style: none;
-      font-size: 14px;
-      color: var(--muted);
-    }
-    .nav-links a {
-      text-decoration: none;
-      color: var(--muted);
-      transition: color 0.15s;
-    }
-    .nav-links a:hover { color: var(--primary); }
-    .nav-cta {
-      display: flex;
-      gap: 8px;
-    }
-    .btn {
-      font-family: "Inter", sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-      padding: 7px 16px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      transition: all 0.15s;
-    }
-    .btn-outline {
-      border-color: var(--border);
-      color: var(--text);
-      background: #fff;
-    }
-    .btn-outline:hover { border-color: var(--primary); }
-    .btn-primary {
-      background: var(--primary);
-      color: #fff;
-    }
-    .btn-primary:hover { opacity: 0.9; }
+<div style="margin: 36px 0; border: 1px solid var(--border-soft); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
+<img src="/assets/images/Settley images/2.png" alt="UK property investment landscape" style="width: 100%; height: auto; display: block;">
+<div style="padding: 14px 16px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--border-soft); background: var(--bg-soft);">Tokenized real estate platforms are emerging in the UK market, offering lower minimums than traditional buy-to-let while maintaining legal structure and regulatory compliance.</div>
+</div>
 
-    /* ─── Layout ─── */
-    .page-wrap {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 96px;
-    }
+<h2>What Is Tokenized Real Estate?</h2>
+<p>Tokenized real estate is a model where ownership economics of a property are represented in digital tokens. Instead of buying an entire flat or house, investors buy smaller units that represent exposure to rental income and potential price movement.</p>
+<p>In practice, the property is usually held by a legal vehicle and token holders gain rights defined by platform terms and underlying legal documents. The key point: tokenization changes access and administration, but the underlying asset risk remains real estate risk.</p>
 
-    /* ─── Breadcrumb ─── */
-    .breadcrumb {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 32px;
-    }
-    .breadcrumb a {
-      color: var(--muted);
-      text-decoration: none;
-    }
-    .breadcrumb a:hover { color: var(--primary); }
-    .breadcrumb-sep { color: var(--border); }
+<h2>How the Model Works in Practice</h2>
+<p>A platform sources a property, performs due diligence, sets up a legal wrapper, and offers tokens to investors. Investors fund their position, track performance through a dashboard, and receive distributions where applicable.</p>
+<p>The quality of this process is what separates credible platforms from weak ones. Investors should focus less on marketing language and more on legal clarity, reporting discipline, and asset-level transparency.</p>
 
-    /* ─── Article header ─── */
-    .article-header { margin-bottom: 40px; }
-    .article-category {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--accent);
-      margin-bottom: 14px;
-    }
-    .article-title {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(1.9rem, 4vw, 2.6rem);
-      font-weight: 700;
-      line-height: 1.2;
-      color: var(--primary);
-      margin-bottom: 16px;
-    }
-    .article-subtitle {
-      font-size: 1.1rem;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 24px;
-    }
-    .article-meta {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      font-size: 13px;
-      color: var(--muted-light);
-      padding-top: 20px;
-      border-top: 1px solid var(--border-soft);
-    }
-    .meta-divider { color: var(--border); }
+<div class="callout callout-info">
+<div class="callout-title">Core Building Blocks</div>
+Property selected and valued with transparent assumptions<br>
+Legal structure defines investor rights and cashflow treatment<br>
+Platform handles operations, reporting, and investor communication
+</div>
 
-    /* ─── Reading progress bar ─── */
-    .progress-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 3px;
-      background: var(--primary);
-      width: 0%;
-      z-index: 100;
-      transition: width 0.1s linear;
-    }
+<h2>What to Evaluate Before You Invest</h2>
+<p>Before allocating capital, run a simple evaluation framework. If any of these areas are unclear, do not proceed until documentation is explicit.</p>
 
-    /* ─── Prose ─── */
-    .article-body { font-size: 16px; line-height: 1.8; }
+<ul>
+<li>Legal rights: what exactly do tokens entitle you to?</li>
+<li>Asset quality: location, tenancy strength, and cost assumptions</li>
+<li>Platform risk: governance, custody, and operational resilience</li>
+<li>Liquidity reality: likely hold period and realistic exit pathways</li>
+</ul>
 
-    .article-body h2 {
-      font-family: "Playfair Display", serif;
-      font-size: 1.55rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin: 48px 0 16px;
-      line-height: 1.25;
-    }
-    .article-body h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--text);
-      margin: 32px 0 12px;
-    }
-    .article-body p {
-      margin-bottom: 20px;
-      color: var(--text);
-    }
-    .article-body ul,
-    .article-body ol {
-      padding-left: 22px;
-      margin-bottom: 20px;
-    }
-    .article-body li {
-      margin-bottom: 8px;
-      color: var(--text);
-    }
-    .article-body a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-    .article-body strong { font-weight: 600; color: var(--primary); }
+<h2>Main Risks Investors Ignore</h2>
 
-    /* ─── Callout boxes ─── */
-    .callout {
-      border-radius: var(--radius-md);
-      padding: 18px 20px;
-      margin: 28px 0;
-      font-size: 15px;
-      line-height: 1.65;
-    }
-    .callout-warning {
-      background: var(--warn-bg);
-      border: 1px solid #fcd34d;
-      border-left: 4px solid var(--warn-border);
-    }
-    .callout-info {
-      background: var(--info-bg);
-      border: 1px solid #c7d2fe;
-      border-left: 4px solid var(--info-border);
-    }
-    .callout-title {
-      font-weight: 600;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 8px;
-    }
-    .callout-warning .callout-title { color: #92400e; }
-    .callout-info .callout-title    { color: var(--primary); }
+<div class="callout callout-warning">
+<div class="callout-title">Risk is structural, not optional</div>
+Lower minimums do not eliminate concentration risk, execution risk, or market risk. Invest only what you can afford to lock up and potentially lose.
+</div>
 
-    /* ─── Timeline ─── */
-    .timeline {
-      margin: 28px 0;
-      position: relative;
-      padding-left: 28px;
-    }
-    .timeline::before {
-      content: "";
-      position: absolute;
-      left: 7px;
-      top: 6px;
-      bottom: 6px;
-      width: 2px;
-      background: var(--border-soft);
-    }
-    .timeline-item {
-      position: relative;
-      margin-bottom: 20px;
-    }
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      left: -25px;
-      top: 7px;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--border);
-      border: 2px solid #fff;
-      box-shadow: 0 0 0 2px var(--border);
-    }
-    .timeline-item.active::before {
-      background: var(--primary);
-      box-shadow: 0 0 0 2px var(--primary);
-    }
-    .timeline-date {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--primary);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 2px;
-    }
-    .timeline-text {
-      font-size: 15px;
-      color: var(--text);
-      line-height: 1.55;
-    }
+<h3>Liquidity mismatch</h3>
+<p>Some offerings market flexibility, but real exits depend on buyer demand, platform mechanics, and legal constraints. Assume liquidity can dry up during stress.</p>
 
-    /* ─── Data table ─── */
-    .table-wrap {
-      overflow-x: auto;
-      margin: 28px 0;
-      border: 1px solid var(--border-soft);
-      border-radius: var(--radius-md);
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-      min-width: 480px;
-    }
-    th {
-      background: var(--bg-soft);
-      padding: 12px 16px;
-      text-align: left;
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-      border-bottom: 1px solid var(--border-soft);
-    }
-    td {
-      padding: 13px 16px;
-      border-bottom: 1px solid var(--border-soft);
-      vertical-align: top;
-      line-height: 1.5;
-    }
-    tr:last-child td { border-bottom: none; }
-    tbody tr:hover { background: var(--bg-soft); }
-    .td-label { font-weight: 500; color: var(--primary); }
-    .td-muted  { color: var(--muted); font-size: 13px; }
+<h3>Operational dependency</h3>
+<p>Tokenized property outcomes depend heavily on platform execution: reporting, tenant management, cash controls, and compliance. A weak operator can damage returns even if the property is decent.</p>
 
-    /* ─── Key points / summary box ─── */
-    .key-points {
-      background: var(--primary-soft);
-      border: 1px solid #ddd8f8;
-      border-radius: var(--radius-lg);
-      padding: 24px 28px;
-      margin: 36px 0;
-    }
-    .key-points-title {
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--accent);
-      margin-bottom: 14px;
-    }
-    .key-points ul {
-      padding-left: 18px;
-      margin: 0;
-    }
-    .key-points li {
-      margin-bottom: 8px;
-      font-size: 15px;
-      color: var(--primary);
-    }
+<h2>Tokenized Real Estate vs Traditional Buy-to-Let</h2>
 
-    /* ─── Inline stat ─── */
-    .stat-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      margin: 28px 0;
-    }
-    .stat {
-      background: var(--bg-soft);
-      border: 1px solid var(--border-soft);
-      border-radius: var(--radius-md);
-      padding: 16px 18px;
-      text-align: center;
-    }
-    .stat-number {
-      font-family: "Playfair Display", serif;
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--primary);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .stat-label {
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.4;
-    }
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Tokenized Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="td-label">Minimum capital</td>
+<td>Lower entry point; easier diversification</td>
+</tr>
+<tr>
+<td class="td-label">Management burden</td>
+<td>Platform-managed operations for investors</td>
+</tr>
+<tr>
+<td class="td-label">Control</td>
+<td>Less direct control than owning property outright</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-    /* ─── Disclaimer ─── */
-    .disclaimer {
-      margin-top: 56px;
-      padding: 24px 28px;
-      background: var(--bg-soft);
-      border: 1px solid var(--border-soft);
-      border-radius: var(--radius-lg);
-      font-size: 13px;
-      color: var(--muted);
-      line-height: 1.65;
-    }
-    .disclaimer-title {
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-    .disclaimer p + p { margin-top: 10px; }
+<h2>Action Plan for First-Time Investors</h2>
+<ol>
+<li>Set a risk budget first; decide what percentage of net assets is appropriate for high-risk alternatives.</li>
+<li>Compare at least 2-3 opportunities using the same evaluation checklist.</li>
+<li>Read legal docs and fee schedules fully before committing funds.</li>
+<li>Start small, track results quarterly, and only scale allocation after process confidence improves.</li>
+</ol>
 
-    /* ─── Sources ─── */
-    .sources {
-      margin-top: 40px;
-    }
-    .sources-title {
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-    .sources ul {
-      list-style: none;
-      padding: 0;
-    }
-    .sources li {
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-    .sources a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
+<h2>Frequently Asked Questions</h2>
+<h3>Is tokenized real estate legal in the UK?</h3>
+<p>The model can be legal when structured correctly under UK law and financial promotion rules. Investors should verify legal structure and platform disclosures before investing.</p>
+<h3>Can I lose money in tokenized property?</h3>
+<p>Yes. Property values can fall, occupancy can drop, costs can rise, and platform failures can affect outcomes. Capital is at risk.</p>
+<h3>Is it better than a REIT?</h3>
+<p>It depends on your goals. REITs often offer deeper liquidity; tokenized models may offer asset-level visibility and lower entry points. Compare fees, liquidity, and governance before deciding.</p>
 
-    /* ─── CTA strip ─── */
-    .article-cta {
-      margin: 48px 0;
-      background: var(--primary);
-      border-radius: var(--radius-lg);
-      padding: 32px 36px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .cta-text { color: #fff; }
-    .cta-text h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 1.25rem;
-      margin-bottom: 6px;
-    }
-    .cta-text p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.5; }
-    .btn-cta {
-      background: #fff;
-      color: var(--primary);
-      font-weight: 600;
-      padding: 12px 24px;
-      border-radius: 999px;
-      font-size: 14px;
-      white-space: nowrap;
-      text-decoration: none;
-      display: inline-block;
-      transition: opacity 0.15s;
-    }
-    .btn-cta:hover { opacity: 0.9; }
+<h2>Bottom Line</h2>
+<p>Tokenized real estate can widen access to property investing in the UK, but only disciplined due diligence makes it investable. Focus on legal clarity, asset fundamentals, and platform quality before committing capital.</p>
 
-    /* ─── Responsive ─── */
-    @media (max-width: 600px) {
-      .page-wrap { padding: 32px 16px 64px; }
-      .site-nav  { padding: 0 16px; }
-      .nav-links { display: none; }
-      .article-cta { flex-direction: column; align-items: flex-start; }
-    }
-  </style>
-</head>
-<body>
+<div class="article-cta">
+<div class="cta-text">
+<h3>Start learning before you invest</h3>
+<p>Join the Settley waitlist for practical UK market explainers and launch updates.</p>
+</div>
+<a href="/signup" class="btn-cta">Join the waitlist →</a>
+</div>
 
-  <div class="progress-bar" id="progress"></div>
+<div class="disclaimer">
+<div class="disclaimer-title">Disclaimer</div>
+<p>This article is for education only and is not financial, legal, or tax advice.</p>
+<p>All investing involves risk. Property and crypto-linked instruments can be volatile and illiquid.</p>
+<p>Always review official documents and consult qualified professionals before investing.</p>
+<p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+</div>
 
-  <!-- ── Nav ── -->
-  <nav class="site-nav">
-    <div class="site-nav-inner">
-      <a href="/" class="logo">Settley.</a>
-      <ul class="nav-links">
-        <li><a href="/listings">Listings</a></li>
-        <li><a href="/how-it-works">How it Works</a></li>
-        <li><a href="/blog">Learn</a></li>
-        <li><a href="/faqs">FAQs</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a href="/login"  class="btn btn-outline">Login</a>
-        <a href="/signup" class="btn btn-primary">Get Started</a>
-      </div>
-    </div>
-  </nav>
+<div class="sources">
+<div class="sources-title">Sources</div>
+<ul>
+<li><a href="https://www.fca.org.uk/consumers/cryptoassets" target="_blank" rel="noopener">FCA: Cryptoassets consumer information</a></li>
+<li><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/latest" target="_blank" rel="noopener">ONS: UK House Price Index</a></li>
+<li><a href="https://www.gov.uk/browse/housing-local-services/buying-owning-property" target="_blank" rel="noopener">GOV.UK: Buying and owning property guidance</a></li>
+<li><a href="https://www.bankofengland.co.uk/financial-stability" target="_blank" rel="noopener">Bank of England: Financial stability</a></li>
+</ul>
+</div>
 
-  <main class="page-wrap">
-
-    <!-- ── Breadcrumb ── -->
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a>
-      <span class="breadcrumb-sep">›</span>
-      <a href="/learn">Learn</a>
-      <span class="breadcrumb-sep">›</span>
-      <span>Beginner Guide</span>
-    </nav>
-
-    <!-- ── Article header ── -->
-    <header class="article-header">
-      <span class="article-category">Beginner Guide</span>
-      <h1 class="article-title">Complete Guide to Tokenized Real Estate in the UK (2026)</h1>
-      <p class="article-subtitle">How it works, where the risks are, and how to evaluate opportunities without hype.</p>
-      <div class="article-meta">
-        <span>March 2026</span>
-        <span class="meta-divider">·</span>
-        <span>12 min read</span>
-        <span class="meta-divider">·</span>
-        <span>Last updated March 2026</span>
-      </div>
-    </header>
-
-    <article class="article-body">
-
-      <!-- 0) REQUIRED: Risk callout (all investment content) -->
-      <div class="callout callout-warning">
-        <div class="callout-title">⚠ Important</div>
-        This article is for educational purposes only. It is not financial, legal, or tax advice. Investing involves risk. Capital at risk.
-      </div>
-
-      <!-- 1) Optional: key stats row (use for pillar/regulation/comparison) -->
-      <div class="stat-row">
-        <div class="stat">
-          <div class="stat-number">£500</div>
-          <div class="stat-label">Typical minimum on tokenized offers</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">24/7</div>
-          <div class="stat-label">Digital access to portfolio dashboards</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">3</div>
-          <div class="stat-label">Core checks before investing</div>
-        </div>
-      </div>
-
-      <!-- 2) REQUIRED: Key takeaways (3–5 bullets, plain language) -->
-      <div class="key-points">
-        <div class="key-points-title">Key Takeaways</div>
-        <ul>
-          <li>Tokenized real estate splits property value into digital units investors can buy in smaller amounts.</li>
-          <li>Lower minimums improve access, but risk does not disappear just because entry is cheaper.</li>
-          <li>You should assess legal structure, asset quality, and platform operations before investing.</li>
-          <li>UK regulation is tightening; investors should prefer transparent, compliance-first platforms.</li>
-          <li>Treat tokenized property as a long-term allocation, not a get-rich-quick trade.</li>
-        </ul>
-      </div>
-
-      <div style="margin: 36px 0; border: 1px solid var(--border-soft); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
-        <img src="/assets/images/Settley images/2.png" alt="UK property investment landscape" style="width: 100%; height: auto; display: block;">
-        <div style="padding: 14px 16px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--border-soft); background: var(--bg-soft);">Tokenized real estate platforms are emerging in the UK market, offering lower minimums than traditional buy-to-let while maintaining legal structure and regulatory compliance.</div>
-      </div>
-
-      <!-- 3) REQUIRED: Intro section (keyword in first 100 words) -->
-      <h2>What Is Tokenized Real Estate?</h2>
-      <p>Tokenized real estate is a model where ownership economics of a property are represented in digital tokens. Instead of buying an entire flat or house, investors buy smaller units that represent exposure to rental income and potential price movement.</p>
-      <p>In practice, the property is usually held by a legal vehicle and token holders gain rights defined by platform terms and underlying legal documents. The key point: tokenization changes access and administration, but the underlying asset risk remains real estate risk.</p>
-
-      <!-- 4) REQUIRED: Core explanation -->
-      <h2>How the Model Works in Practice</h2>
-      <p>A platform sources a property, performs due diligence, sets up a legal wrapper, and offers tokens to investors. Investors fund their position, track performance through a dashboard, and receive distributions where applicable.</p>
-      <p>The quality of this process is what separates credible platforms from weak ones. Investors should focus less on marketing language and more on legal clarity, reporting discipline, and asset-level transparency.</p>
-
-      <div class="callout callout-info">
-        <div class="callout-title">Core Building Blocks</div>
-        Property selected and valued with transparent assumptions<br>
-        Legal structure defines investor rights and cashflow treatment<br>
-        Platform handles operations, reporting, and investor communication
-      </div>
-
-      <!-- 5) Optional: timeline for regulation/process content -->
-      <h2>Typical Investor Journey</h2>
-
-      <div class="timeline">
-        <div class="timeline-item active">
-          <div class="timeline-date">Step 1</div>
-          <div class="timeline-text">Review property memo and legal summary</div>
-        </div>
-        <div class="timeline-item active">
-          <div class="timeline-date">Step 2</div>
-          <div class="timeline-text">Complete onboarding and appropriateness checks</div>
-        </div>
-        <div class="timeline-item active">
-          <div class="timeline-date">Step 3</div>
-          <div class="timeline-text">Invest amount and receive token allocation</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Step 4</div>
-          <div class="timeline-text">Track occupancy, income, and costs monthly</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Step 5</div>
-          <div class="timeline-text">Receive distributions according to terms</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Step 6</div>
-          <div class="timeline-text">Exit through secondary transfer or asset sale</div>
-        </div>
-      </div>
-
-      <!-- 6) REQUIRED: Practical application section -->
-      <h2>What to Evaluate Before You Invest</h2>
-      <p>Before allocating capital, run a simple evaluation framework. If any of these areas are unclear, do not proceed until documentation is explicit.</p>
-
-      <ul>
-        <li>Legal rights: what exactly do tokens entitle you to?</li>
-        <li>Asset quality: location, tenancy strength, and cost assumptions</li>
-        <li>Platform risk: governance, custody, and operational resilience</li>
-        <li>Liquidity reality: likely hold period and realistic exit pathways</li>
-      </ul>
-
-      <!-- 7) REQUIRED: Risks and constraints section -->
-      <h2>Main Risks Investors Ignore</h2>
-
-      <div class="callout callout-warning">
-        <div class="callout-title">Risk is structural, not optional</div>
-        Lower minimums do not eliminate concentration risk, execution risk, or market risk. Invest only what you can afford to lock up and potentially lose.
-      </div>
-
-      <h3>Liquidity mismatch</h3>
-      <p>Some offerings market flexibility, but real exits depend on buyer demand, platform mechanics, and legal constraints. Assume liquidity can dry up during stress.</p>
-
-      <h3>Operational dependency</h3>
-      <p>Tokenized property outcomes depend heavily on platform execution: reporting, tenant management, cash controls, and compliance. A weak operator can damage returns even if the property is decent.</p>
-
-      <!-- 8) Optional: comparison/data table -->
-      <h2>Tokenized Real Estate vs Traditional Buy-to-Let</h2>
-
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Factor</th>
-              <th>Tokenized Model</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="td-label">Minimum capital</td>
-              <td>Lower entry point; easier diversification</td>
-            </tr>
-            <tr>
-              <td class="td-label">Management burden</td>
-              <td>Platform-managed operations for investors</td>
-            </tr>
-            <tr>
-              <td class="td-label">Control</td>
-              <td>Less direct control than owning property outright</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- 9) REQUIRED: Actionable steps -->
-      <h2>Action Plan for First-Time Investors</h2>
-      <ol>
-        <li>Set a risk budget first; decide what percentage of net assets is appropriate for high-risk alternatives.</li>
-        <li>Compare at least 2-3 opportunities using the same evaluation checklist.</li>
-        <li>Read legal docs and fee schedules fully before committing funds.</li>
-        <li>Start small, track results quarterly, and only scale allocation after process confidence improves.</li>
-      </ol>
-
-      <!-- 10) REQUIRED for FAQ intent keywords -->
-      <h2>Frequently Asked Questions</h2>
-      <h3>Is tokenized real estate legal in the UK?</h3>
-      <p>The model can be legal when structured correctly under UK law and financial promotion rules. Investors should verify legal structure and platform disclosures before investing.</p>
-      <h3>Can I lose money in tokenized property?</h3>
-      <p>Yes. Property values can fall, occupancy can drop, costs can rise, and platform failures can affect outcomes. Capital is at risk.</p>
-      <h3>Is it better than a REIT?</h3>
-      <p>It depends on your goals. REITs often offer deeper liquidity; tokenized models may offer asset-level visibility and lower entry points. Compare fees, liquidity, and governance before deciding.</p>
-
-      <!-- 11) REQUIRED: Bottom line / summary -->
-      <h2>Bottom Line</h2>
-      <p>Tokenized real estate can widen access to property investing in the UK, but only disciplined due diligence makes it investable. Focus on legal clarity, asset fundamentals, and platform quality before committing capital.</p>
-
-      <!-- ── CTA strip ── -->
-      <div class="article-cta">
-        <div class="cta-text">
-          <h3>Start learning before you invest</h3>
-          <p>Join the Settley waitlist for practical UK market explainers and launch updates.</p>
-        </div>
-        <a href="/signup" class="btn-cta">Join the waitlist →</a>
-      </div>
-
-    </article>
-
-    <!-- ── Disclaimer ── -->
-    <div class="disclaimer">
-      <div class="disclaimer-title">Disclaimer</div>
-      <p>This article is for education only and is not financial, legal, or tax advice.</p>
-      <p>All investing involves risk. Property and crypto-linked instruments can be volatile and illiquid.</p>
-      <p>Always review official documents and consult qualified professionals before investing.</p>
-      <p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
-    </div>
-
-    <!-- ── Sources ── -->
-    <div class="sources">
-      <div class="sources-title">Sources</div>
-      <ul>
-        <li><a href="https://www.fca.org.uk/consumers/cryptoassets" target="_blank" rel="noopener">FCA: Cryptoassets consumer information</a></li>
-        <li><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/latest" target="_blank" rel="noopener">ONS: UK House Price Index</a></li>
-        <li><a href="https://www.gov.uk/browse/housing-local-services/buying-owning-property" target="_blank" rel="noopener">GOV.UK: Buying and owning property guidance</a></li>
-        <li><a href="https://www.bankofengland.co.uk/financial-stability" target="_blank" rel="noopener">Bank of England: Financial stability</a></li>
-      </ul>
-    </div>
-
-  </main>
-
-  <script>
-    // Reading progress bar
-    const bar = document.getElementById("progress");
-    window.addEventListener("scroll", () => {
-      const scrolled = window.scrollY;
-      const total = document.body.scrollHeight - window.innerHeight;
-      bar.style.width = Math.min((scrolled / total) * 100, 100) + "%";
-    });
-  </script>
-
-  <!-- Optional: FAQ schema block (only keep when FAQ section is fully populated) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is tokenized real estate legal in the UK?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The model can be legal when structured correctly under UK law and financial promotion rules. Investors should verify legal structure and platform disclosures before investing."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I lose money in tokenized property?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Property values can fall, occupancy can drop, costs can rise, and platform failures can affect outcomes. Capital is at risk."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is it better than a REIT?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It depends on your goals. REITs often offer deeper liquidity; tokenized models may offer asset-level visibility and lower entry points. Compare fees, liquidity, and governance before deciding."
-        }
-      }
-    ]
-  }
-  </script>
-
-</body>
-</html>
+</article>
