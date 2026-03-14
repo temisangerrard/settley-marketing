@@ -53,6 +53,56 @@ BRAND_GUIDELINES = {
             "verified"
         ]
     },
+    "design": {
+        "required_components": [
+            "breadcrumb",
+            "article_category",
+            "article_title",
+            "article_subtitle",
+            "article_meta",
+            "risk_callout",
+            "key_takeaways",
+            "disclaimer",
+            "cta_strip"
+        ],
+        "typography": {
+            "heading_font": "Playfair Display",
+            "body_font": "Inter",
+            "max_heading_hierarchy": 3  # h2, h3 only (no h4+)
+        },
+        "colors": {
+            "primary": "#272342",
+            "accent": "#4f46e5",
+            "text": "#111827",
+            "muted": "#6b7280"
+        },
+        "layout": {
+            "max_content_width": "720px",
+            "line_height": 1.75,
+            "paragraph_spacing": "20px"
+        },
+        "components": {
+            "callout_warning": {
+                "bg": "#fffbeb",
+                "border": "#f59e0b",
+                "required_for": ["investment_content", "risk_disclosure"]
+            },
+            "callout_info": {
+                "bg": "#f0f4ff",
+                "border": "#272342"
+            },
+            "timeline": "for processes/regulation",
+            "data_table": "for comparisons",
+            "key_points": "summary box with 3-5 bullets",
+            "stat_row": "optional stats (2-4 items)"
+        },
+        "prohibited": [
+            "full_html_wrapper",  # Should only output article body
+            "inline_styles",  # Use CSS classes
+            "javascript_alerts",
+            "external_scripts_except_analytics"
+        ]
+    },
     "required_elements": {
         "cta": {
             "required": True,
@@ -346,7 +396,8 @@ class BrandComplianceChecker:
 
 class SEOChecker:
     def __init__(self):
-        self.guidelines = BRAND_GUIDELINES["seo"]
+        self.seo_guidelines = BRAND_GUIDELINES["seo"]
+        self.quality_guidelines = BRAND_GUIDELINES["content_quality"]
     
     def check_article(self, text: str, title: str = "") -> List[QAIssue]:
         """Check SEO best practices."""
@@ -355,24 +406,24 @@ class SEOChecker:
         # Title length
         if title:
             title_len = len(title)
-            if title_len < self.guidelines["title_length"]["min"]:
+            if title_len < self.seo_guidelines["title_length"]["min"]:
                 issues.append(QAIssue(
                     severity="warning",
                     category="seo",
                     message=f"Title too short ({title_len} chars)",
                     suggestion=f"Aim for {self.guidelines['title_length']['min']}-{self.guidelines['title_length']['max']} characters"
                 ))
-            elif title_len > self.guidelines["title_length"]["max"]:
+            elif title_len > self.seo_guidelines["title_length"]["max"]:
                 issues.append(QAIssue(
                     severity="warning",
                     category="seo",
                     message=f"Title too long ({title_len} chars)",
-                    suggestion=f"Keep under {self.guidelines['title_length']['max']} characters for search results"
+                    suggestion=f"Keep under {self.seo_guidelines['title_length']['max']} characters for search results"
                 ))
         
         # Word count
         word_count = len(text.split())
-        min_words = self.guidelines["content_quality"]["min_word_count"]
+        min_words = self.quality_guidelines["min_word_count"]
         if word_count < min_words:
             issues.append(QAIssue(
                 severity="warning",
@@ -398,7 +449,7 @@ class SEOChecker:
                     base_score -= 5
         
         # Bonus for good word count
-        min_words = self.guidelines["content_quality"]["min_word_count"]
+        min_words = self.quality_guidelines["min_word_count"]
         if word_count >= min_words * 1.5:
             base_score = min(100, base_score + 5)
         
@@ -461,15 +512,149 @@ class QualityChecker:
         return max(0, base_score)
 
 # ============================================================================
+# DESIGN CHECKER
+# ============================================================================
+
+class DesignChecker:
+    def __init__(self):
+        self.guidelines = BRAND_GUIDELINES["design"]
+    
+    def check_article(self, html_content: str) -> List[QAIssue]:
+        """Check design requirements for published articles."""
+        issues = []
+        
+        # Check for required components
+        required = self.guidelines["required_components"]
+        
+        # Breadcrumb check
+        if "breadcrumb" in required:
+            if not re.search(r'class=["\']breadcrumb["\']', html_content, re.IGNORECASE):
+                issues.append(QAIssue(
+                    severity="critical",
+                    category="design",
+                    message="Missing breadcrumb navigation",
+                    suggestion="Add: <nav class=\"breadcrumb\"> with Home › Learn › Article path"
+                ))
+        
+        # Article category check
+        if "article_category" in required:
+            if not re.search(r'class=["\']article-category["\']', html_content, re.IGNORECASE):
+                issues.append(QAIssue(
+                    severity="warning",
+                    category="design",
+                    message="Missing article category label",
+                    suggestion="Add: <span class=\"article-category\">Category Name</span>"
+                ))
+        
+        # Risk callout check (critical for investment content)
+        if "risk_callout" in required:
+            if not re.search(r'class=["\']callout callout-warning["\']', html_content, re.IGNORECASE):
+                issues.append(QAIssue(
+                    severity="critical",
+                    category="design",
+                    message="Missing risk warning callout",
+                    suggestion="Add warning callout: 'This is not financial advice. Capital at risk.'"
+                ))
+        
+        # Key takeaways check
+        if "key_takeaways" in required:
+            if not re.search(r'class=["\']key-points["\']', html_content, re.IGNORECASE):
+                issues.append(QAIssue(
+                    severity="warning",
+                    category="design",
+                    message="Missing key takeaways box",
+                    suggestion="Add key-points div with 3-5 bullet summary"
+                ))
+        
+        # Disclaimer check
+        if "disclaimer" in required:
+            if not re.search(r'class=["\']disclaimer["\']', html_content, re.IGNORECASE):
+                issues.append(QAIssue(
+                    severity="critical",
+                    category="design",
+                    message="Missing disclaimer section",
+                    suggestion="Add disclaimer div with legal warning text"
+                ))
+        
+        # CTA strip check
+        if "cta_strip" in required:
+            if not re.search(r'class=["\']article-cta["\']', html_content, re.IGNORECASE):
+                issues.append(QAIssue(
+                    severity="warning",
+                    category="design",
+                    message="Missing CTA strip",
+                    suggestion="Add article-cta div with signup/link CTA"
+                ))
+        
+        # Check for prohibited elements
+        prohibited = self.guidelines["prohibited"]
+        
+        # Full HTML wrapper check (should be article body only)
+        if "full_html_wrapper" in prohibited:
+            if re.search(r'<!DOCTYPE html>', html_content, re.IGNORECASE):
+                # This is actually okay for published articles - they need full HTML
+                # Only flag if it's a draft that should be body-only
+                pass  # Skip this check for published articles
+        
+        # Check typography (heading hierarchy)
+        max_heading = self.guidelines["typography"]["max_heading_hierarchy"]
+        h4_matches = re.findall(r'<h[4-6]', html_content, re.IGNORECASE)
+        if h4_matches:
+            issues.append(QAIssue(
+                severity="info",
+                category="design",
+                message=f"Found {len(h4_matches)} heading(s) deeper than h3",
+                suggestion="Use h2 and h3 only for better hierarchy"
+            ))
+        
+        # Check for proper font usage
+        if "Playfair Display" in self.guidelines["typography"]["heading_font"]:
+            if not re.search(r'Playfair Display', html_content):
+                issues.append(QAIssue(
+                    severity="info",
+                    category="design",
+                    message="Playfair Display font not loaded",
+                    suggestion="Add Google Fonts link for Playfair Display (headings)"
+                ))
+        
+        if "Inter" in self.guidelines["typography"]["body_font"]:
+            if not re.search(r'Inter', html_content):
+                issues.append(QAIssue(
+                    severity="info",
+                    category="design",
+                    message="Inter font not loaded",
+                    suggestion="Add Google Fonts link for Inter (body text)"
+                ))
+        
+        return issues
+    
+    def calculate_design_score(self, issues: List[QAIssue]) -> float:
+        """Calculate design compliance score (0-100)."""
+        base_score = 100.0
+        
+        for issue in issues:
+            if issue.category == "design":
+                if issue.severity == "critical":
+                    base_score -= 25
+                elif issue.severity == "warning":
+                    base_score -= 10
+                else:
+                    base_score -= 3
+        
+        return max(0, base_score)
+
+# ============================================================================
 # MAIN QA TOOL
 # ============================================================================
 
 class ContentQATool:
-    def __init__(self, content_folder: str = "content/articles"):
+    def __init__(self, content_folder: str = "content/articles", api_base_url: str = None):
         self.duplicate_detector = DuplicateDetector(content_folder)
         self.brand_checker = BrandComplianceChecker()
         self.seo_checker = SEOChecker()
         self.quality_checker = QualityChecker()
+        self.design_checker = DesignChecker()
+        self.api_base_url = api_base_url or "https://settley.fly.dev"
         
         # Index existing articles
         self._index_existing_articles()
@@ -578,6 +763,104 @@ class ContentQATool:
                 print(f"   • {Path(dup['file']).name}: {dup['similarity']*100:.0f}% similar")
         
         # Issues by severity
+        if report.issues:
+            print(f"\n📋 ISSUES ({len(report.issues)} total):")
+            
+            critical = [i for i in report.issues if i.severity == "critical"]
+            warnings = [i for i in report.issues if i.severity == "warning"]
+            info = [i for i in report.issues if i.severity == "info"]
+            
+            if critical:
+                print(f"\n   🔴 CRITICAL ({len(critical)}):")
+                for issue in critical:
+                    print(f"      • [{issue.category}] {issue.message}")
+                    if issue.suggestion:
+                        print(f"        → {issue.suggestion}")
+            
+            if warnings:
+                print(f"\n   🟡 WARNINGS ({len(warnings)}):")
+                for issue in warnings:
+                    print(f"      • [{issue.category}] {issue.message}")
+                    if issue.suggestion:
+                        print(f"        → {issue.suggestion}")
+            
+            if info:
+                print(f"\n   🔵 INFO ({len(info)}):")
+                for issue in info:
+                    print(f"      • [{issue.category}] {issue.message}")
+        
+        print("\n" + "="*70)
+    
+    def check_api_article(self, article_data: Dict) -> QAReport:
+        """Run full QA check on an article from the API."""
+        article_id = article_data.get("_id", "unknown")
+        title = article_data.get("title", "Untitled")
+        html_content = article_data.get("content", "")
+        
+        # Extract plain text from HTML for content checks
+        text = re.sub(r'<[^>]+>', ' ', html_content)
+        text = re.sub(r'\s+', ' ', text).strip()
+        
+        word_count = len(text.split())
+        all_issues = []
+        
+        # 1. Design check (HTML content)
+        design_issues = self.design_checker.check_article(html_content)
+        all_issues.extend(design_issues)
+        design_score = self.design_checker.calculate_design_score(design_issues)
+        
+        # 2. Brand compliance
+        brand_issues = self.brand_checker.check_voice(text)
+        brand_issues.extend(self.brand_checker.check_required_elements(text, f"Article {article_id}"))
+        all_issues.extend(brand_issues)
+        brand_score = self.brand_checker.calculate_brand_score(brand_issues)
+        
+        # 3. SEO check
+        seo_issues = self.seo_checker.check_article(text, title)
+        all_issues.extend(seo_issues)
+        seo_score = self.seo_checker.calculate_seo_score(seo_issues, word_count)
+        
+        # 4. Quality check
+        quality_issues = self.quality_checker.check_article(text)
+        all_issues.extend(quality_issues)
+        quality_score = self.quality_checker.calculate_quality_score(quality_issues, word_count)
+        
+        # Calculate overall score (now includes design: 25% brand, 25% design, 25% SEO, 25% quality)
+        overall_score = (brand_score * 0.25 + design_score * 0.25 + seo_score * 0.25 + quality_score * 0.25)
+        
+        # Determine pass/fail
+        critical_issues = [i for i in all_issues if i.severity == "critical"]
+        passed = len(critical_issues) == 0 and overall_score >= 70
+        
+        return QAReport(
+            article_path=f"API Article: {title}",
+            word_count=word_count,
+            issues=all_issues,
+            duplicate_matches=[],  # Would need API-wide comparison
+            brand_score=brand_score,
+            seo_score=seo_score,
+            quality_score=quality_score,
+            overall_score=overall_score,
+            passed=passed
+        )
+    
+    def print_api_report(self, report: QAReport, article_id: str = ""):
+        """Print QA report for API article."""
+        print("\n" + "="*70)
+        print(f"QA REPORT: {report.article_path}")
+        print(f"Article ID: {article_id}")
+        print("="*70)
+        
+        # Scores
+        print(f"\n📊 SCORES:")
+        print(f"   Overall: {report.overall_score:.1f}/100 {'✅ PASS' if report.passed else '❌ FAIL'}")
+        print(f"   Brand:   {report.brand_score:.1f}/100")
+        print(f"   Design:  {getattr(report, 'design_score', 'N/A')}/100")
+        print(f"   SEO:     {report.seo_score:.1f}/100")
+        print(f"   Quality: {report.quality_score:.1f}/100")
+        print(f"   Words:   {report.word_count}")
+        
+        # Issues by severity (same as print_report)
         if report.issues:
             print(f"\n📋 ISSUES ({len(report.issues)} total):")
             
