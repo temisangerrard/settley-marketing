@@ -446,9 +446,9 @@ There's no prize for rushing. Start with low-risk routes (REITs, crowdfunding) w
 <div class="article-cta">
 <div class="cta-text">
 <h3>Want to explore fractional property investment?</h3>
-<p>Settley is building a platform for tokenised real estate access. Join the waitlist to follow new property drops and product updates.</p>
+<p>Settley is building a platform for tokenised real estate access. Sign up to follow new property drops and product updates.</p>
 </div>
-<a href="/signup" class="btn-cta">Join the waitlist →</a>
+<a href="/signup" class="btn-cta">Get started →</a>
 </div>
 
 ---

@@ -20,6 +20,13 @@ When writing articles, Mira should check `/Users/temisan/Downloads/settley-marke
 ### 2026-03-13: Never leak template instructions into published articles
 Blueprint notes, template coaching, QA reminders, and meta language are for Mira only. Published articles must contain reader-facing copy only, especially in CTAs, disclaimers, captions, and bottom-line sections.
 
+### 2026-03-15: Share work via GitHub links, not local paths
+When sharing documents, articles, or files with Temisan:
+- ALWAYS use GitHub URLs (e.g., `https://github.com/temisangerrard/settley-marketing/blob/main/content/blog/file.md`)
+- NEVER use local paths (e.g., `content/blog/file.md` or `/Users/temisan/Downloads/...`)
+- Commit and push files BEFORE sharing links
+- MD files are the preferred format for documents
+
 ### 2024-02-25: Initial Target Cities Strategy
 Selected primary launch cities based on market readiness, tech adoption, and investment potential:
 

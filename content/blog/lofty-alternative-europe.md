@@ -168,8 +168,24 @@ All investments carry risk. Property values can fall, tenants can default, and r
 **Can I invest from any EU country?**
 We're expanding EU access progressively. Currently accepting UK investors and select EU markets. Check [settley.co](https://settley.co) for current availability in your country.
 
+
+<div class="disclaimer">
+<div class="disclaimer-title">Disclaimer</div>
+<p>This article is for educational purposes only. It is not financial, legal, or tax advice.</p>
+<p>Investing involves risk. You may lose some or all of your capital.</p>
+<p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+</div>
+
 ---
 
 *Settley is the European alternative to Lofty.ai — built for UK and EU investors who want fractional real estate ownership in markets they understand.*
 
 [**Browse Properties →**](https://settley.co/listings) | [**Create Free Account →**](https://settley.co/signup)
+
+<div class="article-cta">
+<div class="cta-text">
+<h3>Want to learn more?</h3>
+<p>Join the Settley waitlist for practical UK market explainers and launch updates.</p>
+</div>
+<a href="/signup" class="btn-cta">Join the waitlist →</a>
+</div>

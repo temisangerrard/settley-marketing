@@ -30,3 +30,6 @@ Purpose: single source of truth for discovered tools/skills, known-good commands
 - 2026-03-08: Incident - `find-skills` command not found (log line 2457 on 2026-03-08T13:28Z)
   - Discovery commands: `openclaw docs "find-skills"`
   - Resolution: NOT RESOLVED. Need to confirm invocation method (likely via SKILL instructions rather than CLI); document correct usage.
+
+## Weekly Checks
+- 2026-03-15: Weekly discovery check — zero new incidents in last 7 days. Skills: 58/87 ready, 29 missing (all optional integrations: apple-notes, bear-notes, spotify-player, notion, slack, etc.). No action required.

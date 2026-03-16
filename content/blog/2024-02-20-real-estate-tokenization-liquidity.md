@@ -85,7 +85,23 @@ We believe liquidity should be real, not marketing. That’s why we’re focused
 
 If you want to explore tokenized property investing the right way, start here: https://settley.co
 
+
+<div class="disclaimer">
+<div class="disclaimer-title">Disclaimer</div>
+<p>This article is for educational purposes only. It is not financial, legal, or tax advice.</p>
+<p>Investing involves risk. You may lose some or all of your capital.</p>
+<p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+</div>
+
 ---
 
 **Related reading:**
 - [Tokenized Real Estate in the UK: A Practical Investor’s Guide](./2024-02-20-tokenized-real-estate-uk.md)
+
+<div class="article-cta">
+<div class="cta-text">
+<h3>Want to learn more?</h3>
+<p>Join the Settley waitlist for practical UK market explainers and launch updates.</p>
+</div>
+<a href="/signup" class="btn-cta">Join the waitlist →</a>
+</div>

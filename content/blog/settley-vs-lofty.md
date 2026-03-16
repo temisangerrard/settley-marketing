@@ -219,8 +219,24 @@ Settley is an early-stage platform, accepted into the CV Labs accelerator in Zug
 **What's the minimum to build a diversified portfolio?**
 On Settley, you can spread £500 across 5 properties (£100 each). On Lofty, $250 across 5 properties ($50 each). Both platforms make diversification accessible.
 
+
+<div class="disclaimer">
+<div class="disclaimer-title">Disclaimer</div>
+<p>This article is for educational purposes only. It is not financial, legal, or tax advice.</p>
+<p>Investing involves risk. You may lose some or all of your capital.</p>
+<p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+</div>
+
 ---
 
 *Last updated: February 2026*
 
 [**Start Investing on Settley →**](https://settley.co/signup) | [**Browse Properties →**](https://settley.co/listings)
+
+<div class="article-cta">
+<div class="cta-text">
+<h3>Want to learn more?</h3>
+<p>Join the Settley waitlist for practical UK market explainers and launch updates.</p>
+</div>
+<a href="/signup" class="btn-cta">Join the waitlist →</a>
+</div>

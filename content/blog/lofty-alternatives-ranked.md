@@ -246,6 +246,14 @@ For UK and European investors specifically, Settley is the most relevant platfor
 
 The tokenized real estate space is still early. Getting in now — on any of these platforms — means you're ahead of the mainstream adoption curve.
 
+
+<div class="disclaimer">
+<div class="disclaimer-title">Disclaimer</div>
+<p>This article is for educational purposes only. It is not financial, legal, or tax advice.</p>
+<p>Investing involves risk. You may lose some or all of your capital.</p>
+<p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+</div>
+
 ---
 
 [**Start with Settley →**](https://settley.co/signup) | [**Browse UK Properties →**](https://settley.co/listings)

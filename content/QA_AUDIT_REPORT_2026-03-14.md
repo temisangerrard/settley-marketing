@@ -316,6 +316,24 @@ python tools/content_qa.py compare article1.md article2.md
 
 ---
 
+## SEO Backlink Pipeline (NEW - 2026-03-15)
+
+**Blogger Dofollow Backlinks:** A new SEO pipeline has been established for acquiring free dofollow backlinks from Blogger.com (Google-owned, high authority).
+
+**Documentation:**
+- Pipeline: `ops/seo/blogger-backlink-pipeline.md`
+- Agent spec: `ops/agents/blogger-seo-agent.md`
+- Checkpoint tracker: `memory/loops/blogger-backlinks.md`
+
+**Target:** 10 blogs in 30 days (1 blog per Ralph loop, ~10 min each)
+**Progress:** 1/10 complete (settley-uk-tokenized-property.blogspot.com)
+
+**To execute:** Spawn `blogger-seo-agent` in Ralph loop mode, or manually follow pipeline docs.
+
+---
+
 **Report Generated:** 2026-03-14 20:15 GMT  
 **Tool Version:** Content QA Tool v1.0  
 **Auditor:** Mira, Settley Growth Team
+
+**Pipeline Update:** 2026-03-15 - Blogger SEO backlink pipeline added

@@ -84,3 +84,6 @@ This file is updated after each significant work session. It serves as instituti
 
 ## 2026-03-09
 - Tie every public claim to a concrete log or artifact the same day; memory entries without tool evidence create audit gaps.
+
+## 2026-03-15
+- Status dashboards must be updated immediately after agent runs complete — stale metrics create false audit findings. Auto-update or trigger dashboard refresh as part of agent completion flow.

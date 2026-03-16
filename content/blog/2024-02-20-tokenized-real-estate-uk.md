@@ -103,6 +103,14 @@ Use this quick checklist when comparing options:
 | Diversification | Easy across properties | Concentrated risk |
 | Time required | Minimal | High |
 
+
+<div class="disclaimer">
+<div class="disclaimer-title">Disclaimer</div>
+<p>This article is for educational purposes only. It is not financial, legal, or tax advice.</p>
+<p>Investing involves risk. You may lose some or all of your capital.</p>
+<p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+</div>
+
 ---
 
 ## Final thought: Start small, but start smart

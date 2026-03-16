@@ -216,6 +216,14 @@ Settley is expanding access progressively. Check [settley.co](https://settley.co
 **What's the difference between tokenized real estate and crypto?**
 Tokenized real estate uses blockchain technology, but it's backed by real physical assets — actual properties with tenants paying rent. It's not speculative like most cryptocurrencies. The value is tied to property fundamentals, not market sentiment.
 
+
+<div class="disclaimer">
+<div class="disclaimer-title">Disclaimer</div>
+<p>This article is for educational purposes only. It is not financial, legal, or tax advice.</p>
+<p>Investing involves risk. You may lose some or all of your capital.</p>
+<p><strong>Capital at risk. Never invest money you cannot afford to lose.</strong></p>
+</div>
+
 ---
 
 *Tokenized real estate is one of the most significant innovations in property investment in decades. It's not perfect, and it's still early — but the direction is clear.*

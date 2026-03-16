@@ -304,3 +304,11 @@ Tax treatment depends on individual circumstances and may change. Consult a qual
 4. Deloitte. "Tokenized Real Estate: 2025 Market Analysis," December 2025.
 5. Moneyfarm. "UK REIT ETFs and Investment Guide," January 2026.
 6. Investors Chronicle. "Britain's Best REITs," November 2025.
+
+<div class="article-cta">
+<div class="cta-text">
+<h3>Want to learn more?</h3>
+<p>Join the Settley waitlist for practical UK market explainers and launch updates.</p>
+</div>
+<a href="/signup" class="btn-cta">Join the waitlist →</a>
+</div>
