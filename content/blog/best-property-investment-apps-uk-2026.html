@@ -13,11 +13,12 @@
 
 <style>
 /* ═══════════════════════════════════════════════════════════════
-   SETTLEY DESIGN SYSTEM — Editorial Article Template
+   SETTLEY DESIGN SYSTEM — Editorial Article Template (Enhanced)
    ═══════════════════════════════════════════════════════════════ */
 :root {
   --purple-deep: #272342;
   --purple-indigo: #4f46e5;
+  --purple-light: #7c76d6;
   --bg-warm: #faf9f7;
   --surface: #f2f0eb;
   --text-primary: #1a1a1a;
@@ -38,6 +39,36 @@ body {
   color: var(--text-primary);
   background: var(--bg-warm);
   -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ENHANCED BACKGROUNDS — Noise texture + gradient mesh
+   ═══════════════════════════════════════════════════════════════ */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: -50%;
+  right: -20%;
+  width: 80%;
+  height: 150%;
+  background: radial-gradient(ellipse at center, rgba(124, 118, 214, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* Typography */
@@ -61,12 +92,28 @@ strong { font-weight: 500; }
   max-width: 840px;
   margin: 0 auto;
   padding: 0 24px;
+  position: relative;
+  z-index: 1;
 }
 
-/* Hero Section */
+/* ═══════════════════════════════════════════════════════════════
+   HERO SECTION — Enhanced with decorative elements
+   ═══════════════════════════════════════════════════════════════ */
 .hero {
   padding: var(--spacing-xl) 0 var(--spacing-lg);
   border-bottom: 1px solid rgba(39, 35, 66, 0.1);
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--purple-indigo) 0%, var(--purple-deep) 100%);
+  border-radius: 2px;
 }
 
 .category-badge {
@@ -81,21 +128,50 @@ strong { font-weight: 500; }
   padding: 6px 12px;
   border-radius: 100px;
   margin-bottom: 24px;
+  border: 1px solid rgba(79, 70, 229, 0.2);
 }
 
 .hero-meta {
   font-size: 14px;
   color: var(--text-muted);
   margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
-/* Risk Warning */
+.hero-meta::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: var(--purple-indigo);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RISK WARNING — Enhanced with pattern background
+   ═══════════════════════════════════════════════════════════════ */
 .risk-warning {
-  background: rgba(254, 243, 199, 0.5);
+  background: 
+    linear-gradient(135deg, rgba(254, 243, 199, 0.6) 0%, rgba(254, 243, 199, 0.3) 100%),
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(146, 64, 14, 0.03) 10px, rgba(146, 64, 14, 0.03) 20px);
   border-left: 6px solid #92400e;
   padding: 24px 32px;
   margin: 48px 0;
   border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.risk-warning::before {
+  content: '⚠';
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  opacity: 0.15;
+  color: #92400e;
 }
 
 .risk-warning p {
@@ -103,9 +179,12 @@ strong { font-weight: 500; }
   color: #92400e;
   margin: 0;
   max-width: none;
+  padding-right: 48px;
 }
 
-/* Tables */
+/* ═══════════════════════════════════════════════════════════════
+   TABLES — Enhanced with hover effects and gradient header
+   ═══════════════════════════════════════════════════════════════ */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -113,7 +192,18 @@ table {
   background: white;
   border-radius: var(--border-radius-lg);
   overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(39, 35, 66, 0.08);
+  position: relative;
+}
+
+table::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--purple-indigo) 0%, var(--purple-deep) 100%);
 }
 
 th {
@@ -122,45 +212,86 @@ th {
   font-weight: 500;
   text-align: left;
   padding: 16px 20px;
-  background: var(--surface);
+  background: linear-gradient(135deg, var(--surface) 0%, #e8e6df 100%);
   border-bottom: 2px solid rgba(39, 35, 66, 0.1);
+  color: var(--purple-deep);
 }
 
 td {
   padding: 16px 20px;
   border-bottom: 1px solid rgba(0,0,0,0.06);
   font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+tr:hover td {
+  background: rgba(79, 70, 229, 0.04);
 }
 
 tr:last-child td { border-bottom: none; }
 
-/* Key Takeaways */
+/* ═══════════════════════════════════════════════════════════════
+   KEY TAKEAWAYS — Enhanced with gradient mesh background
+   ═══════════════════════════════════════════════════════════════ */
 .key-takeaways {
-  background: linear-gradient(135deg, var(--purple-deep) 0%, #3d3866 100%);
+  background: 
+    linear-gradient(135deg, var(--purple-deep) 0%, #3d3866 60%, #2d284d 100%),
+    radial-gradient(circle at 30% 50%, rgba(124, 118, 214, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 70% 50%, rgba(79, 70, 229, 0.2) 0%, transparent 50%);
   color: white;
-  padding: 40px 48px;
+  padding: 48px 56px;
   border-radius: var(--border-radius-lg);
   margin: 48px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(39, 35, 66, 0.24);
+}
+
+.key-takeaways::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(124, 118, 214, 0.15) 0%, transparent 70%);
+  transform: rotate(15deg);
 }
 
 .key-takeaways h3 {
   font-family: 'Fraunces', serif;
   color: white;
-  margin: 0 0 24px;
-  font-size: 1.5rem;
+  margin: 0 0 32px;
+  font-size: 1.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.key-takeaways h3::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, transparent 100%);
+  margin-top: 12px;
 }
 
 .key-takeaways ul {
   list-style: none;
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .key-takeaways li {
-  padding: 12px 0 12px 32px;
+  padding: 16px 0 16px 40px;
   position: relative;
   font-size: 16px;
   line-height: 1.6;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+
+.key-takeaways li:last-child { border-bottom: none; }
 
 .key-takeaways li::before {
   content: '✓';
@@ -168,28 +299,64 @@ tr:last-child td { border-bottom: none; }
   left: 0;
   color: #a5f3fc;
   font-weight: 500;
+  font-size: 18px;
+  background: rgba(165, 243, 252, 0.15);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* CTA Strip */
+/* ═══════════════════════════════════════════════════════════════
+   CTA STRIP — Enhanced with animated gradient background
+   ═══════════════════════════════════════════════════════════════ */
 .cta-strip {
-  background: linear-gradient(135deg, var(--purple-indigo) 0%, var(--purple-deep) 100%);
+  background: linear-gradient(135deg, var(--purple-indigo) 0%, var(--purple-deep) 50%, #3d3866 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
   color: white;
-  padding: 48px 40px;
+  padding: 56px 48px;
   border-radius: var(--border-radius-lg);
   margin: 64px 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.32);
+}
+
+.cta-strip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(124, 118, 214, 0.4) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(165, 243, 252, 0.2) 0%, transparent 50%);
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 .cta-strip h3 {
   color: white;
   margin: 0 0 16px;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .cta-strip p {
   color: rgba(255,255,255,0.9);
-  margin: 0 auto 32px;
-  max-width: 540px;
+  margin: 0 auto 40px;
+  max-width: 580px;
+  position: relative;
+  z-index: 1;
 }
 
 .cta-button {
@@ -197,41 +364,75 @@ tr:last-child td { border-bottom: none; }
   background: white;
   color: var(--purple-indigo);
   font-weight: 500;
-  padding: 16px 32px;
+  padding: 20px 40px;
   border-radius: 100px;
   text-decoration: none;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
 }
 
 .cta-button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.24);
 }
 
-/* Disclaimer */
+/* ═══════════════════════════════════════════════════════════════
+   DISCLAIMER — Enhanced with subtle pattern
+   ═══════════════════════════════════════════════════════════════ */
 .disclaimer {
   font-size: 13px;
   color: var(--text-muted);
-  border-top: 1px solid rgba(0,0,0,0.1);
-  padding: 32px 0;
-  margin-top: 64px;
+  border-top: 1px solid rgba(39, 35, 66, 0.15);
+  padding: 40px 0;
+  margin-top: 80px;
+  background: linear-gradient(180deg, transparent 0%, rgba(39, 35, 66, 0.03) 100%);
 }
 
 .disclaimer p {
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.7;
+  max-width: none;
 }
 
-/* Animation */
+/* ═══════════════════════════════════════════════════════════════
+   ANIMATIONS — Orchestrated entrance sequence
+   ═══════════════════════════════════════════════════════════════ */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.hero { animation: fadeUp 0.6s ease-out; }
-.key-takeaways { animation: fadeUp 0.6s ease-out 0.2s both; }
-.cta-strip { animation: fadeUp 0.6s ease-out 0.4s both; }
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
 
-/* Responsive */
+.hero { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+.hero::before { animation: slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+.risk-warning { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both; }
+table { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both; }
+.key-takeaways { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both; }
+.cta-strip { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both; }
+
+/* ═══════════════════════════════════════════════════════════════
+   SCROLL-TRIGGERED REVEAL FOR SECTIONS
+   ═══════════════════════════════════════════════════════════════ */
+section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
   :root {
     --spacing-xl: 80px;
@@ -239,7 +440,7 @@ tr:last-child td { border-bottom: none; }
   }
   
   .key-takeaways, .cta-strip {
-    padding: 32px 24px;
+    padding: 40px 28px;
   }
   
   table {
@@ -248,6 +449,10 @@ tr:last-child td { border-bottom: none; }
   
   th, td {
     padding: 12px 16px;
+  }
+  
+  .hero::before {
+    width: 2px;
   }
 }
 </style>
@@ -260,12 +465,13 @@ tr:last-child td { border-bottom: none; }
     <span class="category-badge">Investment Guide</span>
     <h1>Best Property Investment Apps UK 2026: 10 Platforms Reviewed and Ranked</h1>
     <div class="hero-meta">
-      <span>Updated March 2026</span> · <span>12 min read</span>
+      <span>Updated March 2026</span>
+      <span>12 min read</span>
     </div>
   </header>
 
   <!-- Introduction -->
-  <section>
+  <section class="visible">
     <p>Property investment no longer requires six-figure deposits, mortgage applications, or becoming an accidental landlord. In 2026, you can start building a property portfolio directly from your phone — with some platforms letting you begin with as little as £50.</p>
     
     <p>The UK property investment app market has matured significantly. FCA regulation is now standard, mobile experiences have improved, and new models like tokenized real estate are challenging traditional crowdfunding. But not all platforms are created equal — some have collapsed, others are in wind-down, and a few stand out as genuinely reliable.</p>
@@ -371,6 +577,28 @@ tr:last-child td { border-bottom: none; }
     <p style="margin-top: 16px;"><strong>Last updated:</strong> March 16, 2026</p>
   </footer>
 </article>
+
+<script>
+// Scroll-triggered reveal for sections
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('section');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
+  
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+});
+</script>
 
 </body>
 </html>

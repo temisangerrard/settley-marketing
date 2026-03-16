@@ -20,8 +20,9 @@
 | 7 | lofty-alternative-europe.md | FCA Cryptoasset Rules Explained (2026) | 69b6841821185b6f7e6dda06 | /articles/69b68418... | ✅ | 2026-03-15 10:21 |
 | 8 | 2024-02-20-real-estate-tokenization-liquidity.md | Tokenized Real Estate Liquidity Explained | 69b6841921185b6f7e6dda08 | /articles/69b68419... | ✅ | 2026-03-15 10:21 |
 | 9 | 2024-02-20-tokenized-real-estate-uk.md | Tokenized Real Estate UK Guide | 69b6841a21185b6f7e6dda0a | /articles/69b6841a... | ✅ | 2026-03-15 10:21 |
+| 10 | best-property-investment-apps-uk-2026.html | Best Property Investment Apps UK 2026: 10 Platforms Reviewed and Ranked | 69b80400735cff6b4a622fe3 | /articles/69b80400... | ✅ | 2026-03-16 13:22 |
 
-**Total:** 9/9 articles published ✅
+**Total:** 10/10 articles published ✅
 
 ---
 
