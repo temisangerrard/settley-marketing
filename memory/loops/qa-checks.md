@@ -31,9 +31,10 @@
 
 ## Ongoing QA Queue (New Content)
 
-| File | Added Date | Priority | QA Status |
-|------|------------|----------|-----------|
-| [monitoring for new files] | - | - | - |
+| File | Added Date | Priority | QA Status | Score |
+|------|------------|----------|-----------|-------|
+| best-property-investment-apps-uk-2026.html | 2026-03-16 | P1 | ✅ PASS | 94.2/100 |
+| [monitoring for new files] | - | - | - | - |
 
 **Rule:** All new content must pass QA BEFORE publishing.
 
