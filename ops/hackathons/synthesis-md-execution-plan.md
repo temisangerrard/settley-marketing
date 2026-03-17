@@ -19,7 +19,7 @@
 
 ---
 
-## 🎯 Project: Arena Play Autoplay
+## 🎯 Project: Arena Play Autoplay + Filecoin Integration
 
 **Theme Fit:** "Agents that pay, trust, cooperate, keep secrets"
 
@@ -42,6 +42,12 @@
 - USDC settlements on Celo blockchain
 - Transparent, on-chain game outcomes
 - Agent wallet management
+
+**4. Filecoin Integration (Autobett — Bring Forward)**
+- Store game state on Filecoin (immutable game history)
+- Register Arena Play agents using ERC-8004 standard
+- Demonstrate verifiable, provably fair gameplay
+- Enable decentralized storage for agent training data
 
 ---
 
@@ -104,21 +110,27 @@
 
 ---
 
-### Day 4 (March 20): CELO INTEGRATION
+### Day 4 (March 20): CELO + FILECOIN INTEGRATION
 
 **Temisan (Build):**
 - [ ] Integrate Celo USDC payments
 - [ ] On-chain settlement for game outcomes
 - [ ] Wallet management (create, fund, withdraw)
+- [ ] **Filecoin:** Capture game state snapshots
+- [ ] **Filecoin:** Store game state using Filecoin Pin
+- [ ] **ERC-8004:** Register Arena Play agents as NFTs on Base Sepolia
 
 **Mira (Support):**
 - [ ] Document progress (tweet thread #3)
-- [ ] Record demo video (rough cut)
+- [ ] Record demo video (rough cut — include Filecoin demo)
 - [ ] Submit Celo bounty track
+- [ ] Submit Filecoin integration track (if exists)
 
 **End of Day Deliverable:**
 - ✅ Celo payments working
-- ✅ Demo video recorded
+- ✅ Filecoin game state storage working
+- ✅ ERC-8004 agent registration working
+- ✅ Demo video recorded (shows all 3 integrations)
 
 ---
 
@@ -184,8 +196,11 @@
 |-------|-------|-----|---------|
 | **Open Track** | Shared prize pool | ✅ Arena Play (agents that pay) | ✅ YES |
 | **Celo** | $10K+ | ✅ USDC settlements on Celo | ✅ YES |
+| **Filecoin** | TBD (bounty) | ✅ Game state storage + ERC-8004 | ✅ YES |
 | **Ethereum** | TBD | ⚠️ Could fit (on-chain agents) | Maybe |
 | **Other Partners** | TBD | ⏳ TBD | Review March 18 |
+
+**Total Potential:** $10K+ (Open + Celo) + Filecoin bounty
 
 ---
 
@@ -197,8 +212,10 @@
 | Autoplay feature | Working | ❌ Not started |
 | Admin dashboard | Live | ❌ Not started |
 | Celo integration | Working | ❌ Not started |
+| **Filecoin integration** | **Working** | ❌ **Not started** |
+| **ERC-8004 agent registration** | **Working** | ❌ **Not started** |
 | Demo video | 2-3 min | ❌ Not recorded |
-| Submission | Both tracks | ❌ Not submitted |
+| Submission | Open Track + Celo + Filecoin | ❌ Not submitted |
 | Twitter thread | 4 threads | ❌ 0 posted |
 
 ---
