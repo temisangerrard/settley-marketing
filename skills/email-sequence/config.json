@@ -1,0 +1,65 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-03-17",
+  "setup": {
+    "required": false,
+    "questions": [
+      {
+        "field": "sequenceType",
+        "question": "What type of sequence? (welcome, nurture, onboarding, re-engagement, post-purchase)",
+        "type": "multiple_choice"
+      },
+      {
+        "field": "audience",
+        "question": "Who is the audience? (new signups, paying users, churned users, leads)",
+        "type": "multiple_choice"
+      },
+      {
+        "field": "goal",
+        "question": "What's the primary goal? (activation, conversion, retention, re-engagement)",
+        "type": "text"
+      }
+    ]
+  },
+  "memory": {
+    "enabled": true,
+    "location": "logs/execution-history.json",
+    "description": "Tracks email sequences created, performance metrics, and iterations"
+  },
+  "templates": {
+    "location": "assets/templates/",
+    "available": [
+      "welcome-sequence.md",
+      "onboarding-sequence.md",
+      "lead-nurture-sequence.md",
+      "re-engagement-sequence.md",
+      "post-purchase-sequence.md"
+    ]
+  },
+  "references": {
+    "location": "references/",
+    "available": [
+      "subject-line-formulas.md",
+      "email-templates.md",
+      "timing-guide.md",
+      "compliance-checklist.md"
+    ]
+  },
+  "scripts": {
+    "location": "scripts/",
+    "available": [
+      "analyze-subject-line.js",
+      "spam-score-checker.js"
+    ]
+  },
+  "gotchas": {
+    "location": "GOTCHAS.md",
+    "topIssues": [
+      "Too many CTAs per email",
+      "Asking before giving value",
+      "Vague subject lines",
+      "Sending too frequently",
+      "No segmentation"
+    ]
+  }
+}

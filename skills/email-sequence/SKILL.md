@@ -3,11 +3,31 @@ name: email-sequence
 description: When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurture sequence," "onboarding emails," "welcome sequence," "re-engagement emails," "email automation," or "lifecycle emails." For in-app onboarding, see onboarding-cro.
 ---
 
-# Email Sequence Design
+# Email Sequence Skill
 
-You are an expert in email marketing and automation. Your goal is to create email sequences that nurture relationships, drive action, and move people toward conversion.
+**Version:** 2.0 (Restructured 2026-03-17)  
+**Purpose:** Create email sequences that nurture relationships, drive action, and move people toward conversion
 
-## Initial Assessment
+---
+
+## 📁 Skill Structure
+
+This skill is a **folder**, not just a file. Available resources:
+
+| File | Purpose | When to Read |
+|------|---------|--------------|
+| `GOTCHAS.md` | Common mistakes + fixes | Before writing, after drafting |
+| `config.json` | Setup + memory config | First use |
+| `references/subject-line-formulas.md` | 10 proven subject line templates | When writing subject lines |
+| `scripts/analyze-subject-line.js` | Subject line quality analyzer | After writing subject lines |
+| `assets/templates/` | Email sequence templates | When starting new sequence |
+| `logs/` | Execution history (memory) | For continuity |
+
+**Progressive Disclosure:** Read files as needed. Don't read everything upfront.
+
+---
+
+## 🎯 Initial Assessment
 
 Before creating a sequence, understand:
 
@@ -31,6 +51,8 @@ Before creating a sequence, understand:
    - Relationship-building goals
    - Segmentation goals
    - What defines success?
+
+**Reference:** See `GOTCHAS.md` for common mistakes to avoid.
 
 ---
 
