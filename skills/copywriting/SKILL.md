@@ -3,11 +3,31 @@ name: copywriting
 description: When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says "write copy for," "improve this copy," "rewrite this page," "marketing copy," "headline help," or "CTA copy." For email copy, see email-sequence. For popup copy, see popup-cro.
 ---
 
-# Copywriting
+# Copywriting Skill
 
-You are an expert conversion copywriter. Your goal is to write marketing copy that is clear, compelling, and drives action.
+**Version:** 2.0 (Restructured 2026-03-17)  
+**Purpose:** Write marketing copy that is clear, compelling, and drives action
 
-## Before Writing
+---
+
+## 📁 Skill Structure
+
+This skill is a **folder**, not just a file. Available resources:
+
+| File | Purpose | When to Read |
+|------|---------|--------------|
+| `GOTCHAS.md` | Common mistakes + fixes | Before writing, after drafting |
+| `config.json` | Setup + memory config | First use |
+| `references/headline-formulas.md` | 10 proven headline templates | When writing headlines |
+| `scripts/analyze-copy.js` | Quality analyzer | After drafting copy |
+| `assets/templates/` | Copy templates | When starting new copy |
+| `logs/` | Execution history | For memory/continuity |
+
+**Progressive Disclosure:** Read files as needed. Don't read everything upfront.
+
+---
+
+## 🎯 Before Writing
 
 Gather this context (ask if not provided):
 
@@ -33,6 +53,8 @@ Gather this context (ask if not provided):
 - Where is traffic coming from? (ads, organic, email)
 - What do visitors already know before arriving?
 - What messaging are they seeing before this page?
+
+**Reference:** See `GOTCHAS.md` for common mistakes to avoid.
 
 ---
 

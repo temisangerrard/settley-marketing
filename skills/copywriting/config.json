@@ -1,0 +1,47 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-03-17",
+  "setup": {
+    "required": false,
+    "questions": []
+  },
+  "memory": {
+    "enabled": true,
+    "location": "logs/execution-history.json",
+    "description": "Tracks copywriting sessions, outcomes, and iterations"
+  },
+  "templates": {
+    "location": "assets/templates/",
+    "available": [
+      "landing-page.md",
+      "email-sequence.md",
+      "social-post.md",
+      "cta-variations.md"
+    ]
+  },
+  "references": {
+    "location": "references/",
+    "available": [
+      "headline-formulas.md",
+      "benefit-examples.md",
+      "voice-of-customer.md"
+    ]
+  },
+  "scripts": {
+    "location": "scripts/",
+    "available": [
+      "analyze-copy.js",
+      "generate-headlines.js"
+    ]
+  },
+  "gotchas": {
+    "location": "GOTCHAS.md",
+    "topIssues": [
+      "Feature dumping instead of benefits",
+      "Vague claims without proof",
+      "Jargon without explanation",
+      "Multiple competing CTAs",
+      "Hedging language"
+    ]
+  }
+}
