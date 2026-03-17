@@ -18,6 +18,7 @@
   "homepage": "https://github.com/temisangerrard/settley-marketing#readme",
   "description": "",
   "dependencies": {
+    "coingecko-api-v3": "^0.0.31",
     "openclaw": "^2026.2.19-2"
   }
 }

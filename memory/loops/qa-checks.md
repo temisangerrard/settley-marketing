@@ -71,5 +71,40 @@
 
 ---
 
-**Last Updated:** 2026-03-16 09:05 GMT  
+**Last Updated:** 2026-03-17 09:20 GMT  
 **Next Action:** All articles passed — ready for publishing step
+
+---
+
+## Loop #2 — Daily Check (2026-03-17)
+
+**Task:** Daily QA check on all content/blog/ files
+
+**Results:**
+- **Checked:** 9 articles (.md files)
+- **Passed:** 9 (100%)
+- **Failed:** 0
+- **Auto-Fixed:** 0
+
+**Files Scanned:**
+| File | Status | Score |
+|------|--------|-------|
+| lofty-alternative-europe.md | ✅ PASS | ≥70 |
+| 2024-02-20-real-estate-tokenization-liquidity.md | ✅ PASS | ≥70 |
+| lofty-alternatives-ranked.md | ✅ PASS | ≥70 |
+| how-to-invest-property-no-money.md | ✅ PASS | ≥70 |
+| best-property-investment-apps-uk-2026.md | ✅ PASS | ≥70 |
+| 2024-02-20-tokenized-real-estate-uk.md | ✅ PASS | ≥70 |
+| tokenized-real-estate-vs-reits.md | ✅ PASS | ≥70 |
+| what-is-tokenized-real-estate.md | ✅ PASS | ≥70 |
+| settley-vs-lofty.md | ✅ PASS | ≥70 |
+
+**HTML Files (Previously QA'd):**
+- 5-ways-invest-property-without-mortgage.html ✅ (Loop #1)
+- best-property-investment-apps-uk-2026.html ✅ (Loop #1)
+- how-tokenization-works-interactive-v3.html ✅ (Loop #1)
+- tokenized-real-estate-uk-guide-2026.html ✅ (Loop #1)
+
+**Status:** ✅ DONE — All content passes QA threshold
+
+**Next Scheduled Check:** 2026-03-18 09:00 GMT
