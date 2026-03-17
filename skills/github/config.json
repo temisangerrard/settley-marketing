@@ -1,0 +1,53 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-03-17",
+  "setup": {
+    "required": true,
+    "prerequisites": [
+      "gh CLI installed (gh --version)",
+      "gh auth login completed",
+      "Git configured with SSH or HTTPS"
+    ],
+    "verification": "gh auth status"
+  },
+  "memory": {
+    "enabled": true,
+    "location": "logs/execution-history.json",
+    "description": "Tracks GitHub operations: issues created, PRs merged, reviews completed"
+  },
+  "templates": {
+    "location": "assets/templates/",
+    "available": [
+      "pr-description.md",
+      "issue-template-bug.md",
+      "issue-template-feature.md",
+      "release-notes.md"
+    ]
+  },
+  "references": {
+    "location": "references/",
+    "available": [
+      "gh-cli-cheatsheet.md",
+      "branch-naming-guide.md",
+      "pr-review-checklist.md",
+      "security-guidelines.md"
+    ]
+  },
+  "scripts": {
+    "location": "scripts/",
+    "available": [
+      "check-pr-status.js",
+      "validate-branch-name.js"
+    ]
+  },
+  "gotchas": {
+    "location": "GOTCHAS.md",
+    "topIssues": [
+      "Creating PRs without context",
+      "Not checking out issue context",
+      "Skipping local testing",
+      "Not linking issues to PRs",
+      "Ignoring branch naming"
+    ]
+  }
+}
