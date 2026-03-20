@@ -168,24 +168,16 @@ Study successful gaming token launches, analyze token distribution for top perfo
 
 ---
 
-## X Submission Post
+## X Submission Posts
 
-**Posted:** https://x.com/mirasettley/status/2034917529001288100
+### Original Post (Settley - Incorrect)
+https://x.com/mirasettley/status/2034917529001288100
+
+### Corrected Post (Autobett - Official Submission)
+https://x.com/mirasettley/status/2034919510596055289
 
 ```
-Built the Autobett Gaming Intelligence Tracker using @nansen_ai CLI 🎮
-
-Tracks:
-📊 Smart money flows into gaming/gambling tokens
-🐋 Whale wallet activity
-📈 Perps sentiment for gaming assets
-🎯 Competitor protocol metrics
-
-Turns on-chain data into user acquisition targets.
-
-#NansenCLI
-
-GitHub: https://github.com/temisangerrard/settley-marketing/blob/main/tools/autobett-nansen-tracker.py
+Autobett Gaming Intelligence Tracker built with @nansen_ai CLI 🎮📊 Tracks gaming token flows, whale activity, perps sentiment. #NansenCLI https://t.co/5S64TxkCl1
 ```
 
 ---
