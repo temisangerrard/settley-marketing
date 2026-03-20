@@ -90,3 +90,9 @@ This file is updated after each significant work session. It serves as instituti
 
 ## 2026-03-16
 - Daily self-audit passed: all cron claims (QA 11/11, article drafted 3,970 words, backlinks 2/10) verified against git log + checkpoint files. Zero mismatches. System integrity confirmed.
+
+## 2026-03-17
+- **Mismatch detected:** March 17 cron runs claimed QA fixes (11 articles) and article drafting (3,970 words) as same-day execution. Git log shows commit 4279c179 ("Content pipeline: QA complete") dated March 16, 12:35 — work was done previous day. Cron jobs re-processing completed work must not claim credit as new execution. Fix: cron jobs should check git timestamps before claiming "completed today."
+
+## 2026-03-19
+- **Mismatch detected:** Self-audit cron (bd423a1d) has timed out 7 of last 10 runs (Mar 10-19). QA agent (3ff8b881) and article drafting (53194b70) also timing out. Last git commit: March 16 (45ef13d7). No daily memory files created for Mar 16-19. Claim: "system operational" vs Evidence: zero commits in 72h, no memory artifacts, repeated timeout errors. Fix: (1) reduce cron job complexity to fit timeout window, (2) add pre-flight check for git activity before claiming execution, (3) require memory file creation as completion signal.
